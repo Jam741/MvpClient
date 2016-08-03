@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="rootStyle">
+        <item name="android:background">@color/windowBackground</item>
+    </style>
+
+    <style name="MyToolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:background">@color/actionBarColor</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:textSize">@dimen/text_title_medium</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextPassword">
+        <item name="android:maxLength">20</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNORQRSTUVWXYZ
+        </item>
+    </style>
+
+    <style name="EditTextPhone">
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <style name="EditTextNikeName">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="MyButton" >
+        <item name="android:background">@drawable/btn_bg_selector</item>
+    </style>
+
+    <style name="shadow">
+        <item name="android:translationZ" tools:targetApi="lollipop">3dp</item>
+        <item name="android:elevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+</resources>

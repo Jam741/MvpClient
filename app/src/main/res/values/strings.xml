@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">鹦鹉美家</string>
+
+    <!--========================================Error==================================-->
+    <string name="input_phone_error">手机号码错误，请重新输入</string>
+    <string name="input_password_error">密码错误，请重新输入</string>
+    <string name="input_smsCode_error">验证码错误，请重新输入</string>
+    <string name="input_verificationCode_error">验证码错误，请重新输入</string>
+    <string name="input_keywords_error">关键字输入错误，请重新输入</string>
+    <string name="input_nikename_error">昵称输入错误，请重新输入</string>
+    <!--<string name="input_agreement_error">input_agreement_error</string>-->
+    <string name="login_result_error">手机号或密码错误，请重新输入</string>
+    <string name="login_sucess">登录成功</string>
+
+    <string name="net_connect_error">网络异常,请检查网络设置</string>
+    <string name="net_network_fail">数据加载失败,请重试</string>
+
+    <string name="hint_password">输入8-20位数字或字母密码</string>
+
+
+    <string name="agree_agreement">我同意《用户服务协议》</string>
+    <string name="case_list_nav_style">风格</string>
+    <string name="case_list_nav_fx">房型</string>
+    <string name="case_list_nav_time">造价</string>
+    <string name="user_not_login">用户未登录</string>
+
+    <string name="collect_succ">收藏成功</string>
+    <string name="cancelCollect_succ">已取消收藏</string>
+
+
+    <!--========================================Dialog==================================-->
+    <string name="dialog_clear_cache">确认清除缓存?</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+
+    `
+    <!--=====================-->
+    <string name="edit_password_succ">修改密码成功</string>
+
+
+    <string name="sendSmsCode_succ">短信验证码发送成功</string>
+    <string name="sendSmsCode_error">短信验证码发送失败</string>
+
+    <string name="no_pressmion">没有权限</string>
+
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading"></string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="refreshing">正在刷新...</string>
+</resources>

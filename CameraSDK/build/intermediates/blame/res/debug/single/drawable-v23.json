@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-v23\\abc_control_background_material.xml"
+    }
+]

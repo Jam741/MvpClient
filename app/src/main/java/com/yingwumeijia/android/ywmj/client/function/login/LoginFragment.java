@@ -1,0 +1,132 @@
+package com.yingwumeijia.android.ywmj.client.function.login;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.rx.android.jamspeedlibrary.utils.T;
+import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
+
+/**
+ * Created by Jam on 2016/8/2.
+ * jamisonline.he@gmail.com
+ */
+public class LoginFragment extends BaseFragment implements LoginContract.View,
+        View.OnClickListener {
+
+    private TextInputEditText ed_phone;
+    private TextInputEditText ed_password;
+    private Button btnLogin;
+    private LoginContract.Presenter mPresenter;
+    private View root;
+
+    public static LoginFragment newInstance() {
+        return new LoginFragment();
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        if (root == null) {
+            root = inflater.inflate(R.layout.login_frag, container, false);
+
+            //bind View
+            ed_phone = (TextInputEditText) root.findViewById(R.id.ed_phone);
+            ed_password = (TextInputEditText) root.findViewById(R.id.ed_password);
+            btnLogin = (Button) root.findViewById(R.id.btn_login);
+
+            //set Listener
+            btnLogin.setOnClickListener(this);
+            ed_phone.addTextChangedListener(phoneTextWatcher);
+        }
+        return root;
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_login:
+                mPresenter.login(ed_phone.getText().toString(), ed_password.getText().toString(), null);
+                break;
+        }
+    }
+
+    @Override
+    public void showProgressBar() {
+        showBaseProgresDialog();
+    }
+
+    @Override
+    public void dismissProgressBar() {
+        dismisBaseProgressDialog();
+    }
+
+    @Override
+    public void showPhoneInputError() {
+        ed_phone.setError(getResources().getString(R.string.input_phone_error));
+    }
+
+    @Override
+    public void showPassordInputError() {
+        ed_password.setError(getResources().getString(R.string.input_password_error));
+    }
+
+    @Override
+    public void showLoginError(String errorMessage) {
+        Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void showLoginSuccess() {
+        T.showShort(context,R.string.login_sucess);
+    }
+
+    @Override
+    public void cleanPassord() {
+//        ed_phone.setText("");
+//        ed_password.setText("");
+    }
+
+    @Override
+    public void loginUnlock() {
+        btnLogin.setEnabled(true);
+    }
+
+
+    @Override
+    public void setPresener(LoginContract.Presenter presenter) {
+        mPresenter = presenter;
+    }
+
+    @Override
+    public void showNetConnectError() {
+        showBaseNetConnectError();
+    }
+
+
+    TextWatcher phoneTextWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            loginUnlock();
+        }
+
+        @Override
+        public void afterTextChanged(Editable editable) {
+
+        }
+    };
+}
