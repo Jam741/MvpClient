@@ -8,17 +8,20 @@
     <string name="input_verificationCode_error">验证码错误，请重新输入</string>
     <string name="input_keywords_error">关键字输入错误，请重新输入</string>
     <string name="input_nikename_error">昵称输入错误，请重新输入</string>
-    <!--<string name="input_agreement_error">input_agreement_error</string>-->
     <string name="login_result_error">手机号或密码错误，请重新输入</string>
     <string name="login_sucess">登录成功</string>
-
     <string name="net_connect_error">网络异常,请检查网络设置</string>
     <string name="net_network_fail">数据加载失败,请重试</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_phone">手机号</string>
+    <string name="hint_sms_code">验证嘛</string>
+    <string name="hint_new_password">新密码</string>
+    <string name="hint_old_password">旧密码</string>
+    <string name="hint_confirm_password">确认密码</string>
+    <string name="password_rule_text">8-20位数字或字母</string>
 
-    <string name="hint_password">输入8-20位数字或字母密码</string>
-
-
-    <string name="agree_agreement">我同意《用户服务协议》</string>
+    <string name="agree_agreement">未同意《用户服务协议》</string>
+    <string name="must_agree_agreement">我同意《用户服务协议》</string>
     <string name="case_list_nav_style">风格</string>
     <string name="case_list_nav_fx">房型</string>
     <string name="case_list_nav_time">造价</string>
@@ -40,6 +43,8 @@
 
     <string name="sendSmsCode_succ">短信验证码发送成功</string>
     <string name="sendSmsCode_error">短信验证码发送失败</string>
+    <string name="register_succ">注册成功</string>
+    <string name="register_error">注册失败</string>
 
     <string name="no_pressmion">没有权限</string>
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.view.View;
 import android.widget.TextView;
 
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
@@ -15,7 +16,7 @@ import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
  * Created by Jam on 2016/8/2.
  * jamisonline.he@gmail.com
  */
-public class LoginActivity extends BaseActivity {
+public class LoginActivity extends BaseActivity implements View.OnClickListener{
 
     private LoginPresenter mLoginPresenter;
 
@@ -62,5 +63,10 @@ public class LoginActivity extends BaseActivity {
         TextView    topLeft = (TextView) findViewById(R.id.topLeft);
         topTitle.setText("账号登录");
         TextViewUtils.setDrawableToLeft(context,topLeft,R.mipmap.back_ico);
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 }

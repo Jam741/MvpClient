@@ -114,8 +114,7 @@ public interface RegisterContract {
          * @param phone
          * @param password
          * @param smsCode
-         * @param loginCallBack
          */
-        void register(String phone, String password, String smsCode, LoginDataProvider.LoginCallBack loginCallBack);
+        void register(String phone, String password, String smsCode);
     }
 }

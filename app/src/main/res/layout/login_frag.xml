@@ -35,11 +35,7 @@
                 style="@style/EditTextPhone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:hint="请输入手机号码"
-                android:textColorHint="@color/text_color_weak"
-                android:textSize="@dimen/text_normal"
-                tools:ignore="HardcodedText" />
+                android:gravity="center" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -55,12 +51,7 @@
                 style="@style/EditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"
-                android:hint="请输入密码"
-                android:inputType="textPassword"
-                android:textColorHint="@color/text_color_weak"
-                android:textSize="@dimen/text_normal"
-                tools:ignore="HardcodedText" />
+                android:gravity="center" />
         </android.support.design.widget.TextInputLayout>
 
 

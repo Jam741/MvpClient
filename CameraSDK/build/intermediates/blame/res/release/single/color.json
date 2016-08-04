@@ -1,7 +1,7 @@
 [
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_dark.xml"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
@@ -12,123 +12,35 @@
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_search_url_text.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\default_text_color.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\res\\color\\default_text_color.xml"
-    },
-    {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\default_text_color.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\res\\color\\default_text_color.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\folder_text_color.xml",
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\color\\folder_text_color.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\folder_text_color.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\res\\color\\folder_text_color.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_light.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\folder_text_color.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\res\\color\\folder_text_color.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_light.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_search_url_text.xml"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_dark.xml",
-        "source": "E:\\Project\\MVP\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_dark.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\default_text_color.xml",
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\color\\default_text_color.xml"
-    },
-    {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\res\\merged\\release\\color\\switch_thumb_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\YWMJProject\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_light.xml"
     }
 ]

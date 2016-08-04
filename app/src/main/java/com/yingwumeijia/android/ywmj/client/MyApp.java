@@ -8,6 +8,7 @@ import android.util.Log;
 import com.rx.android.jamspeedlibrary.StarterApplication;
 import com.rx.android.jamspeedlibrary.utils.FakeCrashLibrary;
 import com.yingwumeijia.android.ywmj.client.im.listener.MyConnectionStatusListener;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.RetrofitBuilder;
 
 import io.rong.imkit.RongContext;
@@ -36,6 +37,9 @@ public class MyApp extends StarterApplication{
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //createRetrofit;
+        new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL).build();
 
         //init loger of Timber
         initTimber();

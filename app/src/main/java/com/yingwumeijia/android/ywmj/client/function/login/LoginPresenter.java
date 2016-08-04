@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.login;
 import android.content.Context;
 
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.findpassword.FindPasswordActivity;
@@ -37,6 +38,7 @@ public class LoginPresenter implements LoginContract.Presenter {
     @Override
     public void loginSuccessOperation(UserBean userBean) {
         UserManager.saveUserInfo(userBean);
+        StartActivityManager.startMain(context);
     }
 
     @Override
@@ -77,6 +79,7 @@ public class LoginPresenter implements LoginContract.Presenter {
     @Override
     public boolean checkPassword(String passwored) {
         if (!Constant.passwordRuleOk(passwored)) {
+            mLognView.showPassordInputError();
             return false;
         }
         return true;

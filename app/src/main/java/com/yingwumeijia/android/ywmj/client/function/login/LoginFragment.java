@@ -9,10 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.findpassword.FindPasswordActivity;
+import com.yingwumeijia.android.ywmj.client.function.register.RegisterActivity;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 
 /**
@@ -25,6 +28,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
     private TextInputEditText ed_phone;
     private TextInputEditText ed_password;
     private Button btnLogin;
+    private TextView btnFindPassword, btnRegister;
     private LoginContract.Presenter mPresenter;
     private View root;
 
@@ -43,9 +47,14 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
             ed_phone = (TextInputEditText) root.findViewById(R.id.ed_phone);
             ed_password = (TextInputEditText) root.findViewById(R.id.ed_password);
             btnLogin = (Button) root.findViewById(R.id.btn_login);
+            btnFindPassword = (TextView) root.findViewById(R.id.btn_findPwd);
+            btnRegister = (TextView) root.findViewById(R.id.btn_register);
 
             //set Listener
             btnLogin.setOnClickListener(this);
+            btnRegister.setOnClickListener(this);
+            btnFindPassword.setOnClickListener(this);
+
             ed_phone.addTextChangedListener(phoneTextWatcher);
         }
         return root;
@@ -56,6 +65,12 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
         switch (view.getId()) {
             case R.id.btn_login:
                 mPresenter.login(ed_phone.getText().toString(), ed_password.getText().toString(), null);
+                break;
+            case R.id.btn_findPwd:
+                FindPasswordActivity.start(context, ed_phone.getText().toString());
+                break;
+            case R.id.btn_register:
+                RegisterActivity.start(context, ed_password.getText().toString());
                 break;
         }
     }
@@ -87,7 +102,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public void showLoginSuccess() {
-        T.showShort(context,R.string.login_sucess);
+        T.showShort(context, R.string.login_sucess);
     }
 
     @Override

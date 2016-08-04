@@ -8,6 +8,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -70,9 +71,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
     @Override
     public void sendSmsCode(String phone, int source) {
-        if (!checkPhone(phone)) {
-            return;
-        }
+        if (!checkPhone(phone)) return;
         mRegisterView.showProgressBar();
         MyApp
                 .getApiService()
@@ -99,15 +98,16 @@ public class RegisterPresenter implements RegisterContract.Presenter {
     @Override
     public void registerSuccess(UserBean userBean) {
         UserManager.saveUserInfo(userBean);
+        StartActivityManager.startMain(context);
     }
 
     @Override
-    public void register(String phone, String password, String smsCode, LoginDataProvider.LoginCallBack loginCallBack) {
+    public void register(String phone, String password, String smsCode) {
 
-        if (!checkPhone(phone) && checkSmsCode(smsCode) && checkPassword(password))
-            checkPhone(phone);
-        checkSmsCode(smsCode);
-        checkPassword(password);
+        if (!checkPhone(phone)) return;
+        if (!checkSmsCode(smsCode)) return;
+        if (!checkPassword(password)) return;
+        if (!checkAgreementBox(mRegisterView.returnAgreementStatus())) return;
         mRegisterView.showProgressBar();
         MyApp
                 .getApiService()
@@ -116,6 +116,12 @@ public class RegisterPresenter implements RegisterContract.Presenter {
                     @Override
                     public void onResponse(Call<RegisterResultBean> call, Response<RegisterResultBean> response) {
                         mRegisterView.dismissProgressBar();
+                        if (response.body().getSucc()) {
+                            mRegisterView.showRegisterSuccess();
+                            registerSuccess(response.body().getData());
+                        } else {
+                            mRegisterView.showRegisterError(response.body().getMessage());
+                        }
                     }
 
                     @Override
