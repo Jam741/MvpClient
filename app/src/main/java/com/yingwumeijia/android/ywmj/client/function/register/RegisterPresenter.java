@@ -98,12 +98,14 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
     @Override
     public void register(String phone, String password, String smsCode) {
+        Log.i("jam", "register presenter");
+        Log.i("jam", "register presenter" + mRegisterView.returnAgreementStatus());
         if (!checkPhone(phone)) return;
         if (!checkSmsCode(smsCode)) return;
         if (!checkPassword(password)) return;
         if (!checkAgreementBox(mRegisterView.returnAgreementStatus())) return;
         mRegisterView.showProgressBar();
-        LoginRobot.createLoginRobot(phone, password, smsCode, loginCallBack);
+        LoginRobot.createLoginRobotForRegister(phone, password, smsCode, loginCallBack);
     }
 
     @Override

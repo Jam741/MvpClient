@@ -24,7 +24,7 @@ import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
  */
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
-    private LoginPresenter mLoginPresenter;
+    private LoginContract.Presenter mLoginPresenter;
     private LoginFragment loginFragment;
     private RegisterPresenter mRegisterPresenter;
     private RegisterFragment registerFragment;

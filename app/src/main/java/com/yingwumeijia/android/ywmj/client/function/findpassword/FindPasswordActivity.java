@@ -19,7 +19,7 @@ import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
  */
 public class FindPasswordActivity extends BaseActivity implements View.OnClickListener {
 
-    private FindPasswordPresenter mFindPasswordPresenter;
+    private FindPasswordContract.Presenter mFindPasswordPresenter;
 
     public static void start(Context context, String phone) {
         Intent starter = new Intent(context, FindPasswordActivity.class);
@@ -45,7 +45,8 @@ public class FindPasswordActivity extends BaseActivity implements View.OnClickLi
         if (findpasswordFragment == null) {
             //create fragment
             findpasswordFragment = FindpasswordFragment.newInstance();
-            ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),
+            ActivityUtils.addFragmentToActivity(
+                    getSupportFragmentManager(),
                     findpasswordFragment,
                     R.id.contentFragment);
         }

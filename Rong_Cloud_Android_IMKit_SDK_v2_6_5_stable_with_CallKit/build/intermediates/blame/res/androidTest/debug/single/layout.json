@@ -264,12 +264,12 @@
         "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_voip_contact_container.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_location_message.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_location_message.xml"
-    },
-    {
         "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_public_service_inf.xml",
         "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fr_public_service_inf.xml"
+    },
+    {
+        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_location_message.xml",
+        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_location_message.xml"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_camera.xml",

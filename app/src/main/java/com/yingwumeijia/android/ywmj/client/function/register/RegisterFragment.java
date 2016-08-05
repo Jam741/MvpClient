@@ -60,6 +60,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
             //setLisenter
             ed_phone.addTextChangedListener(phoneTextWatcher);
             btnSendSmsCode.setOnClickListener(this);
+            btnRegister.setOnClickListener(this);
 
         }
         return root;
@@ -117,6 +118,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
 
     @Override
     public boolean returnAgreementStatus() {
+        Log.i("jam", "isChecked" + cb_agree.isChecked());
         return cb_agree.isChecked();
     }
 
@@ -199,7 +201,12 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
                 StartActivityManager.startAgreementActivity(context);
                 break;
             case R.id.btn_register:
-                mRegisterPresenter.register(ed_phone.getText().toString(), ed_smsCode.getText().toString(), ed_password.getText().toString());
+                Log.i("jam", "register");
+                mRegisterPresenter.register(
+                        ed_phone.getText().toString(),
+                        ed_password.getText().toString(),
+                        ed_smsCode.getText().toString()
+                );
                 break;
         }
     }

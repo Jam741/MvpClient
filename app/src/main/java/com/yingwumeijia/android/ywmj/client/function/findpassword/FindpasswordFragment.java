@@ -47,8 +47,8 @@ public class FindpasswordFragment extends BaseFragment implements FindPasswordCo
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         if (root == null) {
-            View view = inflater.inflate(R.layout.findpassword_frag, container, false);
-            ButterKnife.bind(this, view);
+            root = inflater.inflate(R.layout.findpassword_frag, container, false);
+            ButterKnife.bind(this, root);
             edPhone.addTextChangedListener(phoneTextWatcher);
         }
         return root;
@@ -81,9 +81,7 @@ public class FindpasswordFragment extends BaseFragment implements FindPasswordCo
 
     @Override
     public void unlockSendSmsCode() {
-        btnSendSmsCode.setBackgroundColor(getResources().getColor(R.color.colorAccent));
         btnSendSmsCode.setEnabled(true);
-        btnSendSmsCode.setText("重新发出");
     }
 
     @Override

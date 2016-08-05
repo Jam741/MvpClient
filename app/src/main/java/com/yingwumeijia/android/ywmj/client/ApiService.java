@@ -12,6 +12,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.TokenResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -100,7 +101,7 @@ public interface ApiService {
      * @return
      */
     @GET("customer/getCustomerInfo")
-    Call<CustomResultBean> getCustomerInfo();
+    Call<BaseBean<UserBean>> getCustomerInfo();
 
     /**
      * 修改昵称

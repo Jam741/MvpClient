@@ -12,45 +12,46 @@ import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 public class UserManager {
 
     private static final String EMPTY_STRING = null;
-    private static final int  EMPTY_INTEGER = 0;
+    private static final int EMPTY_INTEGER = 0;
 
-    public static void saveRongIMToken(String token){
-        SPUtils.put(MyApp.appContext(),"rong_im_token",token);
+    public static void saveRongIMToken(String token) {
+        SPUtils.put(MyApp.appContext(), "rong_im_token", token);
     }
 
-    public static void getRongIMToken(){
-        SPUtils.get(MyApp.appContext(),"rong_im_token",EMPTY_STRING);
+    public static void getRongIMToken() {
+        SPUtils.get(MyApp.appContext(), "rong_im_token", EMPTY_STRING);
     }
 
-    public static void saveUserPhone(String phone){
-        SPUtils.put(MyApp.appContext(),"user_phone",phone);
+    public static void saveUserPhone(String phone) {
+        if (phone != null)
+            SPUtils.put(MyApp.appContext(), "user_phone", phone);
     }
 
-    public static void getUserPhone(){
-        SPUtils.get(MyApp.appContext(),"user_phone",EMPTY_STRING);
+    public static void getUserPhone() {
+        SPUtils.get(MyApp.appContext(), "user_phone", EMPTY_STRING);
     }
 
-     public static void saveUserPassword(String password){
-        SPUtils.put(MyApp.appContext(),"user_password",password);
+    public static void saveUserPassword(String password) {
+        SPUtils.put(MyApp.appContext(), "user_password", password);
     }
 
-    public static void geUserPassword(){
-        SPUtils.get(MyApp.appContext(),"user_password",EMPTY_STRING);
+    public static void geUserPassword() {
+        SPUtils.get(MyApp.appContext(), "user_password", EMPTY_STRING);
     }
 
-    public static void saveUserId(int userId){
-        SPUtils.put(MyApp.appContext(),"user_id",userId);
+    public static void saveUserId(int userId) {
+        SPUtils.put(MyApp.appContext(), "user_id", userId);
     }
 
-    public static void getUserId(){
-        SPUtils.get(MyApp.appContext(),"user_id",EMPTY_INTEGER);
+    public static void getUserId() {
+        SPUtils.get(MyApp.appContext(), "user_id", EMPTY_INTEGER);
     }
 
 
-    public static void saveUserInfo(UserBean userBean){
+    public static void saveUserInfo(UserBean userBean) {
         Constant.setLoginIn(MyApp.appContext());
         saveUserId(userBean.getId());
-        saveUserPhone(userBean.getPhone());
+        // saveUserPhone(userBean.getPhone());
     }
 
 }

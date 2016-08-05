@@ -656,12 +656,12 @@
         "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_location_selected.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voice_icon_right.png",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_voice_icon_right.png"
-    },
-    {
         "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voip_audio_right_connected.png",
         "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_voip_audio_right_connected.png"
+    },
+    {
+        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voice_icon_right.png",
+        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_voice_icon_right.png"
     },
     {
         "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f622.png",

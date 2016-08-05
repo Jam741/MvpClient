@@ -1,8 +1,10 @@
 package com.yingwumeijia.android.ywmj.client.function.mainfunction;
 
 import android.support.v7.widget.RecyclerView;
+import android.widget.ListView;
 
 import com.rx.android.jamspeedlibrary.utils.adapter.CommonRecyclerAdapter;
+import com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView;
 import com.yingwumeijia.android.ywmj.client.BasePresenter;
 import com.yingwumeijia.android.ywmj.client.BaseView;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
@@ -28,19 +30,16 @@ public interface CaseListContract {
 
         /**
          * 显示抽屉筛选栏
-         *
-         * @param caseTypeData
          */
-        void showDrawerLayout(List<CaseTypeEnum> caseTypeData);
+        void showDrawerLayout();
 
 
         /**
          * 刷新导航栏数据
          *
-         * @param caseTypeEnum
          * @param navigationPosition
          */
-        void refreshNavigationStatus(CaseTypeEnum caseTypeEnum, int navigationPosition);
+        void refreshNavigationStatus(String showText, int navigationPosition);
 
         /**
          * 显示没有更多
@@ -77,13 +76,33 @@ public interface CaseListContract {
          *
          * @return
          */
-        RecyclerView getCaseListView();
+        XRecyclerView getCaseListView();
 
+        /**
+         * 刷新完成
+         */
+        void caseListRefreshComplete();
+
+        /**
+         * 加载完成
+         */
+        void caseListLoadMoreComplete();
+
+        /**
+         * 加载没有更多数据
+         */
+        void caseListLoadNomore();
+
+        /**
+         * 重置加载状态
+         */
+        void caseListLoadRset();
 
         RecyclerView getCaseTypeListView();
 
 
         void startCaseDetailActivity(CaseBean caseBean);
+
 
     }
 
@@ -94,14 +113,14 @@ public interface CaseListContract {
          *
          * @return
          */
-        CommonRecyclerAdapter<CaseBean> createCaseTypeAdapter();
+        RecyclerView.Adapter createCaseTypeAdapter();
 
         /**
          * 创建案例列表适配器
          *
          * @return
          */
-        CommonRecyclerAdapter<CaseTypeEnum> createCaseListAdapter();
+        CaseTypeAdapter createCaseListAdapter();
 
         /**
          * 刷新列表数据
@@ -147,9 +166,22 @@ public interface CaseListContract {
         void caseListItemClick(CaseBean caseBean);
 
 
+        /**
+         * 加载案例列表数据
+         */
         void loadCaseListDate();
 
+        /**
+         * 加载筛选列表数据
+         */
         void loadCaseTypeData();
+
+        /**
+         * 刷新筛选导航栏数据
+         *
+         * @param navigationPosition
+         */
+        void refreshNavigationData(int navigationPosition);
 
     }
 

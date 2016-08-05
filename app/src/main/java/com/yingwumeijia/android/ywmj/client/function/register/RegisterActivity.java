@@ -21,7 +21,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
     private TextView topTitle;
     private TextView topLeft;
-    private RegisterPresenter mRegisterPresenter;
+    private RegisterContract.Presenter mRegisterPresenter;
     private Intent mIntent;
 
     public static void start(Context context, String phone) {
