@@ -8,6 +8,8 @@ import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
  */
 public interface LoginDataProvider {
 
+    void register(String phone,String password,String smsCode);
+
     void login(String phone,String password,String smsCode);
 
     void getToken();

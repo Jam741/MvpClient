@@ -15,7 +15,15 @@ public class ActivityUtils {
                                              @NonNull Fragment fragment,
                                              int fragmentId) {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.add(fragmentId,fragment);
+        transaction.add(fragmentId, fragment);
+        transaction.commit();
+    }
+
+    public static void replaceFragmentToActivity(@NonNull FragmentManager fragmentManager,
+                                                 @NonNull Fragment fragment,
+                                                 int fragmentId) {
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(fragmentId, fragment);
         transaction.commit();
     }
 }

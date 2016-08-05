@@ -30,7 +30,18 @@ public interface FindPasswordContract {
 
         void startLoginFunction();
 
+        void lockSendSmsButton();
+
+        void showSendSmsCodeSucess();
+
+        void showSendSmsCodeError(String message);
+
+        void refreshSendSmsButtonText(String text);
+
+        void unLockSendSmsButton();
+
         void finish();
+
     }
 
     interface Presenter extends BasePresenter {
@@ -41,9 +52,13 @@ public interface FindPasswordContract {
 
         boolean checkInputPassword(String password);
 
+        void sendSmsCode(String phone);
+
         void findSuccessOperation(UserBean userBean);
 
-        void findPassword(String phone,String smsCode,String password);
+        void findPassword(String phone, String smsCode, String password);
+
+        void destory();
 
     }
 }

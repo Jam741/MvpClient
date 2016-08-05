@@ -41,7 +41,12 @@ public interface LoginContract {
          * 登陆按钮解锁
          */
         void loginUnlock();
-        
+
+        /**
+         * 关闭activity
+         */
+        void finish();
+
     }
 
     interface Presenter extends BasePresenter {

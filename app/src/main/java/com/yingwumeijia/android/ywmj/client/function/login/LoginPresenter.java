@@ -37,7 +37,9 @@ public class LoginPresenter implements LoginContract.Presenter {
 
     @Override
     public void loginSuccessOperation(UserBean userBean) {
+        mLognView.showLoginSuccess();
         UserManager.saveUserInfo(userBean);
+        mLognView.finish();
         StartActivityManager.startMain(context);
     }
 

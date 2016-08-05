@@ -38,7 +38,7 @@ public interface ApiService {
      * @return
      */
     @POST("user/register")
-    Call<RegisterResultBean> register(@Query("phone") String phone,
+    Call<LoginResultBean> register(@Query("phone") String phone,
                                       @Query("password") String password,
                                       @Query("smsCode") String verifyCode);
 

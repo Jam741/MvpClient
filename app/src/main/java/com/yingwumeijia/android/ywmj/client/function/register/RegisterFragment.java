@@ -1,10 +1,13 @@
 package com.yingwumeijia.android.ywmj.client.function.register;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
+import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +22,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 /**
  * Created by Jam on 2016/8/4 10:46.
@@ -117,13 +121,40 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
     }
 
     @Override
+    public void lockSendSmsButton() {
+        Log.i("jam", "lockSendSmsButton");
+        btnSendSmsCode.setEnabled(false);
+        btnSendSmsCode.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_gradual_bg_round));
+        btnSendSmsCode.setBackgroundColor(Color.parseColor("#F7A3C0"));
+        btnSendSmsCode.setText("60s");
+        btnSendSmsCode.setTextColor(getResources().getColor(R.color.text_color_whide));
+    }
+
+    @Override
+    public void unlockSendSmsButton() {
+        btnSendSmsCode.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+        btnSendSmsCode.setEnabled(true);
+        btnSendSmsCode.setText("重新发出");
+    }
+
+    @Override
+    public void refreshSendSmsButtonText(String text) {
+        btnSendSmsCode.setText(text);
+    }
+
+    @Override
+    public void finish() {
+        ActivityCompat.finishAfterTransition(context);
+    }
+
+    @Override
     public void setPresener(RegisterContract.Presenter presenter) {
         mRegisterPresenter = presenter;
     }
 
     @Override
     public void showNetConnectError() {
-        showNetConnectError();
+        showBaseNetConnectError();
     }
 
     @Override
@@ -162,7 +193,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sendSmsCode:
-                mRegisterPresenter.sendSmsCode(ed_phone.getText().toString(), 2);
+                mRegisterPresenter.sendSmsCode(ed_phone.getText().toString(), Constant.PARAM_REGISTER);
                 break;
             case R.id.btn_checkAgreement:
                 StartActivityManager.startAgreementActivity(context);
@@ -173,4 +204,9 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
         }
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mRegisterPresenter.destory();
+    }
 }

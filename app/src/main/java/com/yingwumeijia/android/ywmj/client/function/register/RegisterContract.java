@@ -72,6 +72,14 @@ public interface RegisterContract {
 
         boolean returnAgreementStatus();
 
+        void lockSendSmsButton();
+
+        void unlockSendSmsButton();
+
+        void refreshSendSmsButtonText(String text);
+
+        void finish();
+
     }
 
     interface Presenter extends BasePresenter {
@@ -116,5 +124,9 @@ public interface RegisterContract {
          * @param smsCode
          */
         void register(String phone, String password, String smsCode);
+
+        void destory();
+
+
     }
 }

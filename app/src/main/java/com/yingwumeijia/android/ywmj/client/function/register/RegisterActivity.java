@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
@@ -16,7 +17,7 @@ import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
  * Created by Jam on 2016/8/2.
  * jamisonline.he@gmail.com
  */
-public class RegisterActivity extends BaseActivity implements View.OnClickListener{
+public class RegisterActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView topTitle;
     private TextView topLeft;
@@ -71,6 +72,8 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         topTitle = (TextView) findViewById(R.id.topTitle);
         topLeft = (TextView) findViewById(R.id.topLeft);
         topTitle.setText("注册新账号");
+        TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
+        topLeft.setOnClickListener(this);
     }
 
 
@@ -81,7 +84,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.topLeft:
                 ActivityCompat.finishAfterTransition(this);
                 break;

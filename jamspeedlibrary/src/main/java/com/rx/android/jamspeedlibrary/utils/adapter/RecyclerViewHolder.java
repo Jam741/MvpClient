@@ -121,10 +121,10 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
     }
 
 
-    public RecyclerViewHolder setImageURL(int viewId, String url, Activity activity) {
+    public RecyclerViewHolder setImageURL(int viewId, String url, Context context) {
         ImageView view = getView(viewId);
         Glide
-                .with(activity)
+                .with(context)
                 .load(Uri.parse(url))
                 .into(view);
 
@@ -255,7 +255,7 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         int widthNum = view.getWidth();
         int heightNum;
         ViewGroup.LayoutParams lp = view.getLayoutParams();
-        lp.width = ScreenUtils.getScreenWidth()/2;
+        lp.width = ScreenUtils.getScreenWidth() / 2;
         lp.height = widthNum * height / width;
         view.setLayoutParams(lp);
         return this;

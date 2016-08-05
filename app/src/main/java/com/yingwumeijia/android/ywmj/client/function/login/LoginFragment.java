@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.login;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
+import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -114,6 +115,11 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
     @Override
     public void loginUnlock() {
         btnLogin.setEnabled(true);
+    }
+
+    @Override
+    public void finish() {
+        ActivityCompat.finishAfterTransition(context);
     }
 
 

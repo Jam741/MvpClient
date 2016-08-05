@@ -27,49 +27,94 @@ import retrofit2.Response;
  */
 public class LoginRobot implements LoginDataProvider {
 
-    private  Response<LoginResultBean> mResponse;
+    private Response<LoginResultBean> mResponse;
     private LoginCallBack mLoginCallBack;
-    private int error_count =0;
+    private int error_count = 0;
 
-    //构造函数初始化
-    public LoginRobot(String phone, String password, String smsCOde, LoginCallBack loginCallBack) {
+    //构造函数初始化 登陆用
+    public LoginRobot(String phone, String password, String verifyCode, boolean islogin, LoginCallBack loginCallBack) {
         this.mLoginCallBack = loginCallBack;
-        login(phone,password,smsCOde);
+        login(phone, password, verifyCode);
+    }
+
+    //构造函数初始化 注册用
+    public LoginRobot(String phone, String password, String smsCode, LoginCallBack loginCallBack) {
+        this.mLoginCallBack = loginCallBack;
+        register(phone, password, smsCode);
     }
 
 
     /**
      * 创建登录机器人
+     *
+     * @param phone
+     * @param password
+     * @param verifyCode
+     * @param loginCallBack
+     */
+    public static void createLoginRobot(String phone, String password, String verifyCode, LoginCallBack loginCallBack) {
+        new LoginRobot(phone, password, verifyCode, true, loginCallBack);
+    }
+
+    /**
+     * 创建登录机器人 来注册新用户
+     *
      * @param phone
      * @param password
      * @param smsCode
      * @param loginCallBack
      */
-    public static void createLoginRobot(String phone,String password,String smsCode,LoginCallBack loginCallBack){
-        new LoginRobot(phone,password,smsCode,loginCallBack);
+    public static void createLoginRobotForRegister(String phone, String password, String smsCode, LoginCallBack loginCallBack) {
+        new LoginRobot(phone, password, smsCode, loginCallBack);
     }
 
+
     @Override
-    public void login(String phone, String password, String smsCode) {
+    public void register(String phone, String password, String smsCode) {
         MyApp
                 .getApiService()
-                .login(phone,password,smsCode)
+                .register(phone, password, smsCode)
                 .enqueue(new Callback<LoginResultBean>() {
                     @Override
                     public void onResponse(Call<LoginResultBean> call, Response<LoginResultBean> response) {
-                        if (response.body().getSucc()){
+                        if (response.body().getSucc()) {
                             //初始化Response
                             mResponse = response;
                             //获取融云Token
                             getToken();
-                        }else {
+                        } else {
                             mLoginCallBack.loginError(response.body().getMessage());
                         }
                     }
 
                     @Override
                     public void onFailure(Call<LoginResultBean> call, Throwable t) {
-                            mLoginCallBack.connectError();
+                        mLoginCallBack.connectError();
+                    }
+                });
+    }
+
+    @Override
+    public void login(String phone, String password, String verifyCode) {
+        MyApp
+                .getApiService()
+                .login(phone, password, verifyCode)
+                .enqueue(new Callback<LoginResultBean>() {
+                    @Override
+                    public void onResponse(Call<LoginResultBean> call, Response<LoginResultBean> response) {
+                        if (response.body().getSucc()) {
+                            //初始化Response
+                            mResponse = response;
+                            //获取融云Token
+                            getToken();
+                        } else {
+                            mLoginCallBack.loginError(response.body().getMessage());
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<LoginResultBean> call, Throwable t) {
+                        mLoginCallBack.connectError();
                     }
                 });
     }
@@ -82,10 +127,10 @@ public class LoginRobot implements LoginDataProvider {
                 .enqueue(new Callback<TokenResultBean>() {
                     @Override
                     public void onResponse(Call<TokenResultBean> call, Response<TokenResultBean> response) {
-                        if (response.body().getSucc()){
+                        if (response.body().getSucc()) {
                             //连接融云
                             connectRongIM(response.body().getData().getToken());
-                        }else {
+                        } else {
                             mLoginCallBack.loginError(response.body().getMessage());
                         }
                     }
@@ -141,9 +186,8 @@ public class LoginRobot implements LoginDataProvider {
                      *                         此时最好将本参数设置为 true，由 IMKit 将用户信息缓存到本地内存中。
                      * @see UserInfoProvider
                      */
-                    RongIM.setUserInfoProvider(new MyUserInfoProvider(),true);
+                    RongIM.setUserInfoProvider(new MyUserInfoProvider(), true);
                     RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
-
                     Log.d("LoginActivity", "--=======================-onSuccess : " + userid);
                     mLoginCallBack.loginSuccess(mResponse.body().getData());
 
