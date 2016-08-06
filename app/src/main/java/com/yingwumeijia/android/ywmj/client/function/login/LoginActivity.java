@@ -53,42 +53,42 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     }
 
-    public void switchFragment(int fragemntPosition) {
-        Fragment mCurrentFragment = null;
-        switch (fragemntPosition) {
-            case 0:
-                if (findpasswordFragment == null) {
-                    findpasswordFragment = FindpasswordFragment.newInstance();
-                }
-                if (mFindpasswordPresenter == null) {
-                    mFindpasswordPresenter = new FindPasswordPresenter(context, findpasswordFragment);
-                }
-                mCurrentFragment = findpasswordFragment;
-                break;
-            case 1:
-                if (loginFragment == null) {
-                    loginFragment = LoginFragment.newInstance();
-                }
-                if (mLoginPresenter == null) {
-                    mLoginPresenter = new LoginPresenter(context, loginFragment);
-                }
-                mCurrentFragment = loginFragment;
-                break;
-            case 2:
-                if (registerFragment == null) {
-                    registerFragment = RegisterFragment.newInstance();
-                }
-                if (mRegisterPresenter == null) {
-                    mRegisterPresenter = new RegisterPresenter(context, registerFragment);
-                }
-                mCurrentFragment = registerFragment;
-                break;
-        }
-
-        ActivityUtils.replaceFragmentToActivity(getSupportFragmentManager(),
-                mCurrentFragment,
-                R.id.contentFragment);
-    }
+//    public void switchFragment(int fragemntPosition) {
+//        Fragment mCurrentFragment = null;
+//        switch (fragemntPosition) {
+//            case 0:
+//                if (findpasswordFragment == null) {
+//                    findpasswordFragment = FindpasswordFragment.newInstance();
+//                }
+//                if (mFindpasswordPresenter == null) {
+//                    mFindpasswordPresenter = new FindPasswordPresenter(context, findpasswordFragment);
+//                }
+//                mCurrentFragment = findpasswordFragment;
+//                break;
+//            case 1:
+//                if (loginFragment == null) {
+//                    loginFragment = LoginFragment.newInstance();
+//                }
+//                if (mLoginPresenter == null) {
+//                    mLoginPresenter = new LoginPresenter(context, loginFragment);
+//                }
+//                mCurrentFragment = loginFragment;
+//                break;
+//            case 2:
+//                if (registerFragment == null) {
+//                    registerFragment = RegisterFragment.newInstance();
+//                }
+//                if (mRegisterPresenter == null) {
+//                    mRegisterPresenter = new RegisterPresenter(context, registerFragment);
+//                }
+//                mCurrentFragment = registerFragment;
+//                break;
+//        }
+//
+//        ActivityUtils.replaceFragmentToActivity(getSupportFragmentManager(),
+//                mCurrentFragment,
+//                R.id.contentFragment);
+//    }
 
     private void initFragment() {
         loginFragment =

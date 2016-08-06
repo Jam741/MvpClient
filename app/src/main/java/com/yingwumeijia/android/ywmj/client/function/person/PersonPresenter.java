@@ -1,6 +1,11 @@
 package com.yingwumeijia.android.ywmj.client.function.person;
 
 import android.content.Context;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
@@ -10,6 +15,8 @@ import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -57,6 +64,22 @@ public class PersonPresenter implements PersonContract.Presenter {
                 .getApiService()
                 .getCustomerInfo()
                 .enqueue(userInfoCallback);
+    }
+
+    @Override
+    public void bingViewPager(ViewPager viewPager, TabLayout tabLayout) {
+
+    }
+
+    @Override
+    public FragmentStatePagerAdapter createViewPagerAdapter(List<Fragment> fragments, List<String> tabs) {
+        return null;
+    }
+
+
+    @Override
+    public List<Fragment> createFragments() {
+        return null;
     }
 
     @Override

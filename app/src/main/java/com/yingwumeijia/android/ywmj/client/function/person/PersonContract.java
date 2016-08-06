@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.person;
 
 import android.os.IInterface;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -60,13 +61,17 @@ public interface PersonContract {
          */
         void loadingPersonData();
 
-        void bingViewPager(ViewPager viewPager);
 
-        FragmentStatePagerAdapter createViewPagerAdapter(FragmentManager fragmentManager,
-                                                         List<Fragment> fragments,
-                                                         List<String> tabs
-        );
+        void bingViewPager(ViewPager viewPager, TabLayout tabLayout);
 
+        FragmentStatePagerAdapter createViewPagerAdapter(List<Fragment> fragments,
+                                                         List<String> tabs);
+
+        /**
+         * 创建FragmentList
+         *
+         * @return
+         */
         List<Fragment> createFragments();
 
 
