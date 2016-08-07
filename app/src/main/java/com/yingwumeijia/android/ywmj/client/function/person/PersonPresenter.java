@@ -12,10 +12,12 @@ import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
+import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -68,18 +70,33 @@ public class PersonPresenter implements PersonContract.Presenter {
 
     @Override
     public void bingViewPager(ViewPager viewPager, TabLayout tabLayout) {
+        tabLayout.setupWithViewPager(viewPager);
+    }
 
+    @Override
+    public void bingPageAdapter(ViewPager viewPager) {
+        TabWithPagerAdapter tabWithPagerAdapter = (TabWithPagerAdapter) createViewPagerAdapter(createFragments(), createTabs());
+        viewPager.setAdapter(tabWithPagerAdapter);
     }
 
     @Override
     public FragmentStatePagerAdapter createViewPagerAdapter(List<Fragment> fragments, List<String> tabs) {
-        return null;
+        return new TabWithPagerAdapter(mView.getFragmentManager(), tabs, fragments);
     }
 
 
     @Override
     public List<Fragment> createFragments() {
-        return null;
+        List<Fragment> fragments = new ArrayList<>();
+        return fragments;
+    }
+
+    @Override
+    public List<String> createTabs() {
+        List<String> tabs = new ArrayList<>();
+        tabs.add("收藏");
+        tabs.add("设置");
+        return tabs;
     }
 
     @Override

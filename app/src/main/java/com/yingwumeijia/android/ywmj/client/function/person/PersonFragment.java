@@ -83,6 +83,8 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mPresenter.start();
+        mPresenter.bingPageAdapter(vpContent);
+        mPresenter.bingViewPager(vpContent, tabNav);
     }
 
     @Override

@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 
 import com.yingwumeijia.android.ywmj.client.BasePresenter;
 import com.yingwumeijia.android.ywmj.client.BaseView;
+import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 
 import java.util.List;
 
@@ -64,6 +65,8 @@ public interface PersonContract {
 
         void bingViewPager(ViewPager viewPager, TabLayout tabLayout);
 
+        void bingPageAdapter(ViewPager viewPager);
+
         FragmentStatePagerAdapter createViewPagerAdapter(List<Fragment> fragments,
                                                          List<String> tabs);
 
@@ -73,6 +76,13 @@ public interface PersonContract {
          * @return
          */
         List<Fragment> createFragments();
+
+        /**
+         * 创建Tabs
+         *
+         * @return
+         */
+        List<String> createTabs();
 
 
     }
