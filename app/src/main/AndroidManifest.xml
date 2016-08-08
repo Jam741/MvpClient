@@ -47,6 +47,11 @@
             android:name=".function.mainfunction.MainActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait" />
+        <!--个人页面-->
+        <activity
+            android:name=".function.person.PersonActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

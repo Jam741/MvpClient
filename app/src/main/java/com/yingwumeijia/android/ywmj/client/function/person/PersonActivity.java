@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 
 /**
@@ -32,6 +33,20 @@ public class PersonActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
 
         //init Fragment
+        PersonFragment personFragment =
+                (PersonFragment) getSupportFragmentManager().findFragmentById(R.id.contentFragment);
 
+        if (personFragment == null) {
+            //create fragment
+            personFragment = new PersonFragment();
+            ActivityUtils.addFragmentToActivity(
+                    getSupportFragmentManager(),
+                    personFragment,
+                    R.id.contentFragment
+            );
+        }
+
+        //create Presenter
+        mPersonPresenter = new PersonPresenter(context, personFragment);
     }
 }

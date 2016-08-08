@@ -124,7 +124,9 @@ public class CollectPresenter implements CollectContract.Presenter,
     public void start() {
         if (Constant.isLogin(context)) {
             createCollectListAdapter();
+            xRecyclerView = mCollectView.getRecyclerView();
             xRecyclerView.setLoadingListener(this);
+            xRecyclerView.addFootView(new LoadingMoreFooter(context,"已经全部加载完毕"));
             xRecyclerView.setAdapter(mListAdapter);
         }
     }
@@ -164,7 +166,7 @@ public class CollectPresenter implements CollectContract.Presenter,
         public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
             mCollectView.dismissProgressBar();
             if (response.body().getSucc()) {
-
+                mListAdapter.remove(currentPosition);
             } else {
                 mCollectView.showCancelFail(response.body().getMessage());
             }

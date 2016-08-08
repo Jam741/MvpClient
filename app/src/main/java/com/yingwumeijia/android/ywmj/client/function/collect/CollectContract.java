@@ -54,12 +54,6 @@ public interface CollectContract {
 
         XRecyclerView getRecyclerView();
 
-        void CreateCollectListAdapter();
-
-        void addCaseList(List<CaseBean> caseBeanList);
-
-        void refreshList(List<CaseBean> caseBeanList);
-
         interface OnCancelClickListener {
 
             void confirm();

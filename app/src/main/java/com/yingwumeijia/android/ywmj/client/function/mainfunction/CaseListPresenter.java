@@ -135,6 +135,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         mCaseListView.closeDrawerLayout();
         mCaseListView.refreshNavigationStatus(caseTypeEnum.getName(), navigationPosition);
         mCaseListView.caseListLoadRset();
+        isRefresh = true;
         loadCaseListDate();
     }
 
@@ -151,6 +152,9 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
                 .getCaseList(page_Num, Constant.PAGE_SIZE, stytle_id, hoseType_id, cost_id)
                 .enqueue(caseListCallback);
 
+        Log.d("jam", "==========================stytle_id===" + stytle_id);
+        Log.d("jam", "===========================hoseType_id==" + hoseType_id);
+        Log.d("jam", "=========================cost_id====" + cost_id);
     }
 
     @Override
@@ -219,6 +223,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
                     mCaseListView.caseListLoadMoreComplete();
                     if (response.body().getData() == null || response.body().getData().size() == 0) {
                         mCaseListView.caseListLoadNomore();
+                        page_Num =1;
                     } else {
                         addCaseData(response.body().getData());
                     }
@@ -265,6 +270,8 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         mType_set.put(KEY_HOUS_TYPE, data.getHouseType());
         mType_set.put(KEY_DECORATE_STYLE_TYPE, data.getDecorateStyleType());
         mType_set.put(KEY_COST_RANGE_TYPE, data.getCostRangeType());
+
+        mNavigationAdapter.refreshData(data.getDecorateStyleType());
     }
 
 }

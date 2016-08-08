@@ -23,6 +23,7 @@ import com.rx.android.jamspeedlibrary.view.xrecyclerview.ProgressStyle;
 import com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
+import com.yingwumeijia.android.ywmj.client.function.person.PersonActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 
@@ -58,7 +59,7 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
     RelativeLayout btnCost;
     @Bind(R.id.rv_case)
     XRecyclerView rvCase;
-//    @Bind(R.id.empty_layout)
+    //    @Bind(R.id.empty_layout)
 //    LinearLayout emptyLayout;
     @Bind(R.id.netError_layout)
     LinearLayout netErrorLayout;
@@ -224,10 +225,13 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_search:
+
                 break;
             case R.id.iv_message:
+
                 break;
             case R.id.iv_mine:
+                PersonActivity.start(context);
                 break;
             case R.id.btn_style:
                 mNavigationPosition = 0;
