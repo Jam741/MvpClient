@@ -2,8 +2,11 @@ package com.yingwumeijia.android.ywmj.client.function.search;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 
 /**
@@ -12,9 +15,37 @@ import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
  */
 public class SearchActivity extends BaseActivity {
 
+    private SearchContract.Presenter mPresenter;
+
     public static void start(Context context) {
         Intent starter = new Intent(context, SearchActivity.class);
         context.startActivity(starter);
+    }
+
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        //initFragment
+        SearchFragment searchFragment =
+                (SearchFragment) getSupportFragmentManager().findFragmentById(R.id.contentFragment);
+        if (searchFragment == null) {
+            //create fragment
+            searchFragment = SearchFragment.newInstance();
+            ActivityUtils.addFragmentToActivity(
+                    getSupportFragmentManager(),
+                    searchFragment,
+                    R.id.contentFragment
+            );
+        }
+
+        //create Presenter
+        if (mPresenter == null) {
+            mPresenter = new SearchPresenter(context, searchFragment);
+        }
+
+
     }
 
     @Override

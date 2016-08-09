@@ -21,6 +21,11 @@ public class TabWithPagerAdapter extends FragmentStatePagerAdapter {
         this.mFragments = mFragments;
     }
 
+    public TabWithPagerAdapter(FragmentManager fm, List<Fragment> mFragments) {
+        super(fm);
+        this.mFragments = mFragments;
+    }
+
     @Override
     public Fragment getItem(int position) {
         return mFragments.get(position);

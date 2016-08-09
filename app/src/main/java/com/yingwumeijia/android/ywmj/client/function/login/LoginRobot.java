@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.login;
 import android.net.Uri;
 import android.util.Log;
 
+import com.rx.android.jamspeedlibrary.utils.AppInfo;
 import com.rx.android.jamspeedlibrary.utils.LogUtil;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
@@ -11,6 +12,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.TokenResultBean;
 import com.yingwumeijia.android.ywmj.client.im.infoprovider.MyGroupInfoProvider;
 import com.yingwumeijia.android.ywmj.client.im.infoprovider.MyUserInfoProvider;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import io.rong.imkit.RongIM;
 import io.rong.imkit.model.GroupUserInfo;
@@ -96,6 +98,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void login(String phone, String password, String verifyCode) {
+        Constant.saveUserLoginInfo(phone, password, MyApp.appContext());
         MyApp
                 .getApiService()
                 .login(phone, password, verifyCode)

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_root"
+    style="@style/rootStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_whide"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbr_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionbar_height"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <com.flyco.tablayout.CommonTabLayout
+                        android:id="@+id/ctab_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/actionbar_height"
+                        app:tl_iconGravity="RIGHT"
+                        app:tl_iconMargin="10dp"
+                        app:tl_indicator_anim_enable="true"
+                        app:tl_indicator_color="@color/colorAccent"
+                        app:tl_indicator_height="2dp"
+                        app:tl_indicator_style="NORMAL"
+                        app:tl_tab_space_equal="true"
+                        app:tl_textSelectColor="@color/colorAccent"
+                        app:tl_textUnselectColor="@color/text_color_black"
+                        app:tl_textsize="@dimen/text_normal" />
+
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/web_progress_bar_height"
+            android:layout_gravity="center_horizontal" />
+
+        <com.yingwumeijia.android.ywmj.client.web.ParentViewOnViewPager
+            android:id="@+id/mVg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/preview_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <ImageButton
+                    android:id="@+id/btn_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:src="@mipmap/case_details_play_ico" />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/btn_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="45dp"
+                android:layout_marginRight="@dimen/vertical_margin"
+                android:background="@null"
+                android:src="@mipmap/details_pic_list_bt"
+                android:visibility="gone" />
+
+        </com.yingwumeijia.android.ywmj.client.web.ParentViewOnViewPager>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@mipmap/black_shadow"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sliding_title"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginLeft="19dp"
+            android:gravity="center_vertical"
+            android:text="细节图片"
+            android:textColor="@color/text_color_whide"
+            android:textSize="@dimen/text_title_lag"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sliding_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sliding_title"
+            android:scrollIndicators="right"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical"
+            tools:ignore="UnusedAttribute"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

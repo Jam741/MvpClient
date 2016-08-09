@@ -136,6 +136,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         mCaseListView.refreshNavigationStatus(caseTypeEnum.getName(), navigationPosition);
         mCaseListView.caseListLoadRset();
         isRefresh = true;
+        page_Num = 1;
         loadCaseListDate();
     }
 

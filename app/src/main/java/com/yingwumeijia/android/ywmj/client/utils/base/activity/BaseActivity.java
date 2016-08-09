@@ -7,6 +7,9 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.rx.android.jamspeedlibrary.utils.T;
+import com.yingwumeijia.android.ywmj.client.R;
+
 /**
  * Created by Jam on 2016/8/1.
  */
@@ -28,24 +31,29 @@ public abstract class BaseActivity extends AppCompatActivity {
     @LayoutRes
     int getLayoutId();
 
-    protected void showProgresDialog() {
+    protected void showBaseProgresDialog() {
         if (baseProgressDialog == null) {
             baseProgressDialog = new ProgressDialog(context);
         }
         baseProgressDialog.show();
     }
 
-    protected void dismisProgressDialog() {
+    protected void dismisBaseProgressDialog() {
         if (baseProgressDialog != null && baseProgressDialog.isShowing())
             baseProgressDialog.dismiss();
     }
 
 
-    protected void showProgresDialog(String message) {
+    protected void showBaseProgresDialog(String message) {
         if (baseProgressDialog == null) {
             baseProgressDialog = new ProgressDialog(context);
         }
         baseProgressDialog.setMessage(message);
         baseProgressDialog.show();
     }
+
+    protected void showBaseNetConnectError() {
+        T.showShort(context, R.string.net_connect_error);
+    }
+
 }

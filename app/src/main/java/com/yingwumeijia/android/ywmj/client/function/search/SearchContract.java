@@ -32,6 +32,7 @@ public interface SearchContract {
 
         void clearEdit();
 
+        String getKeyWords();
     }
 
     interface Presenter extends BasePresenter {
