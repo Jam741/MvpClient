@@ -66,55 +66,49 @@
             android:layout_height="@dimen/web_progress_bar_height"
             android:layout_gravity="center_horizontal" />
 
-        <com.yingwumeijia.android.ywmj.client.web.ParentViewOnViewPager
-            android:id="@+id/mVg"
+
+        <RelativeLayout
+            android:id="@+id/preview_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:visibility="gone">
 
-            <RelativeLayout
-                android:id="@+id/preview_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="gone">
-
-                <ImageView
-                    android:id="@+id/iv_preview"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:alpha="0.5"
-                    android:background="#000000" />
-
-                <ImageButton
-                    android:id="@+id/btn_play"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:background="@null"
-                    android:src="@mipmap/case_details_play_ico" />
-
-            </RelativeLayout>
-
-            <android.support.v4.view.ViewPager
-                android:id="@+id/vp_content"
+            <ImageView
+                android:id="@+id/iv_preview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:background="#000000" />
+
             <ImageButton
-                android:id="@+id/btn_menu"
+                android:id="@+id/btn_play"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|right"
-                android:layout_marginBottom="45dp"
-                android:layout_marginRight="@dimen/vertical_margin"
+                android:layout_centerInParent="true"
                 android:background="@null"
-                android:src="@mipmap/details_pic_list_bt"
-                android:visibility="gone" />
+                android:src="@mipmap/case_details_play_ico" />
 
-        </com.yingwumeijia.android.ywmj.client.web.ParentViewOnViewPager>
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:background="@null"
+            android:src="@mipmap/details_pic_list_bt"
+            android:visibility="gone" />
     </LinearLayout>
 
     <RelativeLayout

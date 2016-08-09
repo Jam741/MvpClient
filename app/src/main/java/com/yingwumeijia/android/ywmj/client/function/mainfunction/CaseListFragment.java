@@ -24,6 +24,7 @@ import com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.function.person.PersonActivity;
+import com.yingwumeijia.android.ywmj.client.function.search.SearchActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 
@@ -39,12 +40,6 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
 
     private CaseListContract.Presenter mPresenter;
     private View root;
-    @Bind(R.id.iv_search)
-    ImageView ivSearch;
-    @Bind(R.id.iv_message)
-    ImageView ivMessage;
-    @Bind(R.id.iv_mine)
-    ImageView ivMine;
     @Bind(R.id.tv_style)
     TextView tvStyle;
     @Bind(R.id.btn_style)
@@ -221,18 +216,9 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
         ButterKnife.unbind(this);
     }
 
-    @OnClick({R.id.iv_search, R.id.iv_message, R.id.iv_mine, R.id.btn_style, R.id.btn_hx, R.id.btn_time})
+    @OnClick({ R.id.btn_style, R.id.btn_hx, R.id.btn_time})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.iv_search:
-
-                break;
-            case R.id.iv_message:
-
-                break;
-            case R.id.iv_mine:
-                PersonActivity.start(context);
-                break;
             case R.id.btn_style:
                 mNavigationPosition = 0;
                 mPresenter.refreshNavigationData(0);

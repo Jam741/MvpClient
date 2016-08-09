@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.casedetails;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.flyco.tablayout.CommonTabLayout;
@@ -44,6 +45,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     //sliding menu
     private CommonRecyclerAdapter<String> mNavigationAdapter;
     private List<String> mNavData;
+    private RecyclerView mNacRecyclerView;
 
     public CaseDetailPresenter(CaseDetailContract.View mView, Context context) {
         this.mView = mView;
@@ -64,10 +66,18 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void createTabs() {
+        if (mTabEntities == null) {
+            mTabEntities = new ArrayList<>();
+        }
+        mTabEntities.clear();
         for (int i = 0; i < mTabsStrings.length - 1; i++) {
             mTabEntities.add(new TabEntity(mTabsStrings[i], R.mipmap.tab_bar_right_arrow, R.mipmap.tab_bar_right_arrow));
         }
         mTabEntities.add(new TabEntity(mTabsStrings[mTabsStrings.length - 1], R.mipmap.tab_bar_transation, R.mipmap.tab_bar_transation));
+    }
+
+    @Override
+    public void bindAdapterForTab() {
         mTabView.setTabData(mTabEntities);
     }
 
@@ -117,7 +127,11 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void start() {
+        mTabView = mView.getTabView();
+        mViewPager = mView.getViewPager();
+        mNacRecyclerView = mView.getNavRecyclerView();
         createTabs();
+        bindAdapterForTab();
     }
 
 

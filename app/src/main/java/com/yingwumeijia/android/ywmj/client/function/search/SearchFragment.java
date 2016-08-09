@@ -1,19 +1,25 @@
 package com.yingwumeijia.android.ywmj.client.function.search;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.rx.android.jamspeedlibrary.utils.LogUtil;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView;
 import com.yingwumeijia.android.ywmj.client.R;
@@ -67,11 +73,37 @@ public class SearchFragment extends BaseFragment implements SearchContract.View 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        edKeyWords.addTextChangedListener(searchTextWatch);
+
+        edKeyWords.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                //当actionId == XX_SEND 或者 XX_DONE时都触发
+                //或者event.getKeyCode == ENTER 且 event.getAction == ACTION_DOWN时也触发
+                //注意，这是一定要判断event != null。因为在某些输入法上会返回null。
+                if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_SEND || actionId == EditorInfo.IME_ACTION_DONE || (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
+                    //处理事件
+                    InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    if (imm.isActive()) {
+                        imm.hideSoftInputFromWindow(v.getApplicationWindowToken(), 0);
+                        LogUtil.getInstance().debug("jam", "===========hide=========");
+                    }
+                    mPresenter.search(getKeyWords());
+                }
+                return false;
+            }
+        });
     }
 
     @Override
     public void showSearchFail(String msg) {
         T.showShort(context, msg);
+    }
+
+    @Override
+    public void showKeywordsError() {
+        T.showShort(context, R.string.input_keywords_error);
     }
 
     @Override
@@ -108,7 +140,7 @@ public class SearchFragment extends BaseFragment implements SearchContract.View 
 
     @Override
     public String getKeyWords() {
-        return edKeyWords.getText().toString();
+        return edKeyWords.getText().toString().trim();
     }
 
     @Override

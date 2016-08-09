@@ -5,11 +5,15 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.CookieManager;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewFragment;
 import android.widget.FrameLayout;
 
+import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
+import com.yingwumeijia.android.ywmj.client.function.web.MyWebViewClient;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 
 /**
@@ -58,6 +62,8 @@ public class HtmlFragment extends BaseFragment {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        mWebView.setWebViewClient(new MyWebViewClient());
+        mWebView.setWebChromeClient(new MyWebChromeClient());
         mWebView.loadUrl(mUrl);
     }
 
@@ -81,6 +87,7 @@ public class HtmlFragment extends BaseFragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        mWebView.clearHistory();
         root.removeView(mWebView);
         mWebView.destroy();
     }

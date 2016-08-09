@@ -21,17 +21,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <!--闪屏页面-->
-        
-        <!--登陆-->
         <activity
-            android:name=".function.login.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            android:name=".function.splash.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <!--登陆-->
+        <activity
+            android:name=".function.login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+
         </activity>
         <!--找回密码-->
         <activity
@@ -63,6 +67,11 @@
         <activity
             android:name=".function.edit.EditPersionInfoActivity"
             android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity
+            android:name=".function.casedetails.CaseDetailActivity"
             android:screenOrientation="portrait" />
     </application>
 

@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.search;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
@@ -88,10 +89,20 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
     @Override
     public void search(String keyWords) {
         mKey_words = keyWords;
+        if (checkKeywords(keyWords)) return;
         MyApp
                 .getApiService()
                 .getSearchCaseList(mKey_words, page_num, Constant.PAGE_SIZE)
                 .enqueue(searchKeyWordsCallback);
+    }
+
+    @Override
+    public boolean checkKeywords(String keyWords) {
+        if (TextUtils.isEmpty(keyWords)) {
+            mView.showKeywordsError();
+            return false;
+        }
+        return true;
     }
 
     @Override

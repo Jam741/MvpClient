@@ -1,6 +1,8 @@
 package com.yingwumeijia.android.ywmj.client.function.splash;
 
+import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.ActivityCompat;
 
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
@@ -37,13 +39,14 @@ public class SplashPresenter implements SplashContract.Presenter {
                             loginCallBack
                     );
         } else {
-            start();
+            startMainActivity();
         }
     }
 
 
     @Override
     public void startMainActivity() {
+        ActivityCompat.finishAfterTransition((Activity) context);
         MainActivity.start(context);
     }
 
@@ -55,18 +58,18 @@ public class SplashPresenter implements SplashContract.Presenter {
     LoginDataProvider.LoginCallBack loginCallBack = new LoginDataProvider.LoginCallBack() {
         @Override
         public void loginSuccess(UserBean userBean) {
-            UserManager.saveUserInfo(userBean);
+            startMainActivity();
         }
 
         @Override
         public void loginError(String msg) {
-            start();
+            startMainActivity();
         }
 
         @Override
         public void connectError() {
             mView.showNetConnectError();
-            start();
+            startMainActivity();
         }
     };
 }

@@ -20,6 +20,8 @@ public interface SearchContract {
 
         void showSearchFail(String msg);
 
+        void showKeywordsError();
+
         void showEmptyLayout();
 
         void showListLayout();
@@ -49,6 +51,8 @@ public interface SearchContract {
         void listItemClickOperation(CaseBean caseBean);
 
         void search(String keyWords);
+
+        boolean checkKeywords(String keyWords);
     }
 
 }

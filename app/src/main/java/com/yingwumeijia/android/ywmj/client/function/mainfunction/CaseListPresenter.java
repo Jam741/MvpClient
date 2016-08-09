@@ -147,7 +147,6 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void loadCaseListDate() {
-        mCaseListView.showProgressBar();
         MyApp
                 .getApiService()
                 .getCaseList(page_Num, Constant.PAGE_SIZE, stytle_id, hoseType_id, cost_id)
@@ -160,7 +159,6 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void loadCaseTypeData() {
-        mCaseListView.showProgressBar();
         MyApp
                 .getApiService()
                 .getCaseTypeSet()
@@ -185,6 +183,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void start() {
+        mCaseListView.showProgressBar();
         createCaseListAdapter();
         createCaseTypeAdapter();
         bindCaseListAdapter();
@@ -224,7 +223,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
                     mCaseListView.caseListLoadMoreComplete();
                     if (response.body().getData() == null || response.body().getData().size() == 0) {
                         mCaseListView.caseListLoadNomore();
-                        page_Num =1;
+                        page_Num = 1;
                     } else {
                         addCaseData(response.body().getData());
                     }

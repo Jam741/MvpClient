@@ -1,8 +1,10 @@
 package com.yingwumeijia.android.ywmj.client.function.casedetails;
 
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
 
+import com.flyco.tablayout.CommonTabLayout;
 import com.yingwumeijia.android.ywmj.client.BasePresenter;
 import com.yingwumeijia.android.ywmj.client.BaseView;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
@@ -25,6 +27,8 @@ public interface CaseDetailContract {
 
         void createTabs();
 
+        void bindAdapterForTab();
+
         void createFragments(CaseDetailsBean caseDetailsBean);
 
         void loadDetailData(int caseId);
@@ -42,7 +46,7 @@ public interface CaseDetailContract {
 
         void showLoadDataFail(String msg);
 
-        void getViewPager();
+        ViewPager getViewPager();
 
         void showNavMenuButton();
 
@@ -56,6 +60,6 @@ public interface CaseDetailContract {
 
         RecyclerView getNavRecyclerView();
 
-        void bindAdapterForTab();
+        CommonTabLayout getTabView();
     }
 }

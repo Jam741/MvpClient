@@ -2,6 +2,8 @@ package com.yingwumeijia.android.ywmj.client.utils;
 
 import android.content.Context;
 
+import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
 import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 
 /**
@@ -36,7 +38,7 @@ public class StartActivityManager {
      * @param caseId
      */
     public static void startCaseDetailActivity(Context context, int caseId) {
-
+        CaseDetailActivity.start(context, caseId);
     }
 
 
@@ -46,7 +48,7 @@ public class StartActivityManager {
      * @param context
      */
     public static void startLoginActivity(Context context) {
-
+        LoginActivity.start(context);
     }
 
 
@@ -62,6 +64,15 @@ public class StartActivityManager {
                                                String portraitUrl,
                                                String showName,
                                                String showPhone) {
+
+    }
+
+    /**
+     * 跳转到聚合回话列表
+     *
+     * @param context
+     */
+    public static void startSubConversationListActivity(Context context) {
 
     }
 
