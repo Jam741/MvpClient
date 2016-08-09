@@ -12,6 +12,7 @@ public interface SettingContract {
 
     interface View extends BaseView<Presenter>{
 
+        
 
         void showLoginOutFail(String msg);
 

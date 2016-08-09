@@ -58,11 +58,13 @@ public class SplashPresenter implements SplashContract.Presenter {
     LoginDataProvider.LoginCallBack loginCallBack = new LoginDataProvider.LoginCallBack() {
         @Override
         public void loginSuccess(UserBean userBean) {
+            Constant.setLoginOut(context);
             startMainActivity();
         }
 
         @Override
         public void loginError(String msg) {
+            Constant.setLoginOut(context);
             startMainActivity();
         }
 

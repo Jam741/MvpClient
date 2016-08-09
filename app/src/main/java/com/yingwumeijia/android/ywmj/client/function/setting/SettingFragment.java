@@ -64,6 +64,7 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
         mPresenter.start();
     }
 
+
     @Override
     public void showLoginOutFail(String msg) {
         T.showShort(context,msg);

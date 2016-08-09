@@ -2,6 +2,7 @@ package com.yingwumeijia.android.ywmj.client.function;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewFragment;
 import android.widget.FrameLayout;
 
+import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebViewClient;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
@@ -30,6 +32,7 @@ public class HtmlFragment extends BaseFragment {
 
         Bundle args = new Bundle();
         args.putString("KET_URL", url);
+        Log.d("jam", "url:" + url);
 
         HtmlFragment fragment = new HtmlFragment();
         fragment.setArguments(args);
@@ -41,7 +44,10 @@ public class HtmlFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (root == null) {
             root = new FrameLayout(context);
+            root.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            root.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             mWebView = new WebView(context);
+            mWebView.setBackgroundColor(getResources().getColor(R.color.text_color_black));
             mWebView.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             root.addView(mWebView);
         }
@@ -59,6 +65,7 @@ public class HtmlFragment extends BaseFragment {
     }
 
     private void loadUrl() {
+
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
@@ -68,7 +75,7 @@ public class HtmlFragment extends BaseFragment {
     }
 
     private void getData() {
-        mUrl = getArguments().getString("KEY_URL");
+        mUrl = getArguments().getString("KET_URL");
     }
 
     @Override

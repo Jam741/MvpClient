@@ -125,6 +125,7 @@ public class SettingPresenter implements SettingContract.Presenter {
             mView.dismissProgressBar();
             if (response.body().getSucc()){
                 mView.hideLoginOutButton();
+                Constant.setLoginOut(context);
                 if (RongIM.getInstance()!=null)RongIM.getInstance().logout();
                 LoginActivity.start(context);
             }else {

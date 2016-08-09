@@ -39,6 +39,12 @@ public interface CaseDetailContract {
 
         void navItemSelected(int position);
 
+        /**
+         * 立即联系他们
+         * @param caseId
+         */
+        void conversationWithTeam(int caseId);
+
     }
 
     interface View extends BaseView<Presenter> {

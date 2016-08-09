@@ -1,15 +1,22 @@
 package com.yingwumeijia.android.ywmj.client.function.login;
 
+import android.content.Context;
+import android.hardware.input.InputManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +31,10 @@ import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
  * jamisonline.he@gmail.com
  */
 public class LoginFragment extends BaseFragment implements LoginContract.View,
-        View.OnClickListener {
+        View.OnClickListener, TextView.OnEditorActionListener {
 
     private TextInputEditText ed_phone;
-    private TextInputEditText ed_password;
+    private EditText ed_password;
     private Button btnLogin;
     private TextView btnFindPassword, btnRegister;
     private LoginContract.Presenter mPresenter;
@@ -46,7 +53,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
             //bind View
             ed_phone = (TextInputEditText) root.findViewById(R.id.ed_phone);
-            ed_password = (TextInputEditText) root.findViewById(R.id.ed_password);
+            ed_password = (EditText) root.findViewById(R.id.ed_password);
             btnLogin = (Button) root.findViewById(R.id.btn_login);
             btnFindPassword = (TextView) root.findViewById(R.id.btn_findPwd);
             btnRegister = (TextView) root.findViewById(R.id.btn_register);
@@ -55,7 +62,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
             btnLogin.setOnClickListener(this);
             btnRegister.setOnClickListener(this);
             btnFindPassword.setOnClickListener(this);
-
+            ed_password.setOnEditorActionListener(this);
             ed_phone.addTextChangedListener(phoneTextWatcher);
         }
         return root;
@@ -150,4 +157,19 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
         }
     };
+
+    @Override
+    public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+        Log.d("jam",""+i);
+        if (i == EditorInfo.IME_ACTION_GO) {
+                /*隐藏软键盘*/
+            InputMethodManager imm = (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            if (imm.isActive()) {
+                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(), 0);
+            }
+            mPresenter.login(ed_phone.getText().toString(), ed_password.getText().toString(), null);
+            return true;
+        }
+        return false;
+    }
 }

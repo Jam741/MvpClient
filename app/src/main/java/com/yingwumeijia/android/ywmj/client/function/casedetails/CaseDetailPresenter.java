@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.casedetails;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -17,6 +18,8 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
 import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginFragment;
+import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +39,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     //Page
     private List<Fragment> mFragments;
-    private ViewPager mViewPager;
+    private IndexViewPager mViewPager;
     private TabWithPagerAdapter mTabWithPagerAdapter;
     private ArrayList<CustomTabEntity> mTabEntities;
     private CommonTabLayout mTabView;
@@ -83,11 +86,14 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void createFragments(CaseDetailsBean caseDetailsBean) {
+        if (mFragments == null) mFragments = new ArrayList<>();
+        mFragments.clear();
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getPath_720()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getLayout()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getCost()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getMaterial()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getPlain()));
+        mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getTeam()));
     }
 
     @Override
@@ -126,10 +132,16 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     }
 
     @Override
+    public void conversationWithTeam(int caseId) {
+        //立即联系他们
+    }
+
+    @Override
     public void start() {
         mTabView = mView.getTabView();
-        mViewPager = mView.getViewPager();
+        mViewPager = (IndexViewPager) mView.getViewPager();
         mNacRecyclerView = mView.getNavRecyclerView();
+        mNacRecyclerView.setLayoutManager(new LinearLayoutManager(context));
         createTabs();
         bindAdapterForTab();
     }
@@ -142,6 +154,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             if (response.body().getSucc()) {
                 createNavAdapter(response.body().getData().getLayoutStrList());
                 createFragments(response.body().getData());
+                createPageAdapter();
                 bindAdapterForPager();
                 bindAdapterForNav();
             } else {

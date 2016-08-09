@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.HorizontalScrollView;
@@ -20,8 +21,10 @@ import android.widget.TextView;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.rx.android.jamspeedlibrary.utils.T;
+import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
+import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -44,7 +47,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     @Bind(R.id.hsv_nav)
     HorizontalScrollView hsvNav;
     @Bind(R.id.vp_content)
-    ViewPager vpContent;
+    IndexViewPager vpContent;
     @Bind(R.id.btn_menu)
     ImageButton btnMenu;
     @Bind(R.id.tv_sliding_title)
@@ -57,6 +60,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     DrawerLayout drawerRoot;
     private CaseDetailContract.Presenter mPresenter;
     private int mCaseId;
+    private int mCurrentPosition = 0;
 
     public static void start(Context context, int caseId) {
         Intent starter = new Intent(context, CaseDetailActivity.class);
@@ -70,8 +74,21 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
 
         ButterKnife.bind(this);
 
+        //initActionBar
+        initActionBar();
+
         //get data from intent
         getIntentData();
+
+        //lock sliding
+        drawerRoot.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+
+        //set listener
+        vpContent.addOnPageChangeListener(this);
+        vpContent.setOffscreenPageLimit(5);
+        vpContent.setScanScroll(false);
+        ctabNav.setOnTabSelectListener(this);
+
 
         if (mPresenter == null) {
             mPresenter = new CaseDetailPresenter(this, context);
@@ -79,6 +96,11 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         mPresenter.start();
         mPresenter.loadDetailData(mCaseId);
 
+    }
+
+    private void initActionBar() {
+        topTitle.setText("案例详情");
+        TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
     }
 
     private void getIntentData() {
@@ -175,8 +197,10 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
 
     @Override
     public void onPageSelected(int position) {
+        Log.d("jam", "psoiton:" + position);
         ctabNav.setCurrentTab(position);
         btnMenu.setVisibility(position == 1 ? View.VISIBLE : View.GONE);
+        vpContent.setScanScroll(position == 0? false : true);
         int scrollSize = hsvNav.getMaxScrollAmount();
         hsvNav.smoothScrollTo((scrollSize / 6) * (position), 0);
     }

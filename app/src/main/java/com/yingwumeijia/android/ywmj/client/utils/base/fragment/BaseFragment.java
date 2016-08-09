@@ -65,6 +65,19 @@ public abstract class BaseFragment extends Fragment {
         Log.d(TAG, "onViewCreated");
     }
 
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        Log.d(TAG, "onDestroyView");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy");
+    }
+
     protected void showBaseProgresDialog() {
         if (baseProgressDialog == null) {
             baseProgressDialog = new ProgressDialog(context);

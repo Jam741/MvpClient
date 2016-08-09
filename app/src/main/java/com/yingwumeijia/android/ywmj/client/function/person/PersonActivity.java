@@ -25,7 +25,7 @@ public class PersonActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.main_act;
+        return R.layout.person_act;
     }
 
     @Override

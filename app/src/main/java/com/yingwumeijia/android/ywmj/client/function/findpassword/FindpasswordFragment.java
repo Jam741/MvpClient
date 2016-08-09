@@ -1,5 +1,6 @@
 package com.yingwumeijia.android.ywmj.client.function.findpassword;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,10 +8,14 @@ import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
@@ -26,7 +31,8 @@ import butterknife.OnTextChanged;
  * Created by Jam on 2016/8/4 15:59.
  * Describe:
  */
-public class FindpasswordFragment extends BaseFragment implements FindPasswordContract.View {
+public class FindpasswordFragment extends BaseFragment implements FindPasswordContract.View ,
+        TextView.OnEditorActionListener{
 
     View root;
     @Bind(R.id.ed_phone)
@@ -197,5 +203,25 @@ public class FindpasswordFragment extends BaseFragment implements FindPasswordCo
     public void onDestroy() {
         super.onDestroy();
         mPresenter.destory();
+    }
+
+    @Override
+    public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+        if (i == EditorInfo.IME_ACTION_GO){
+
+            InputMethodManager imm =
+                    (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+
+            if (imm.isActive()){
+                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(),0);
+            }
+
+
+            mPresenter.findPassword(edPhone.getText().toString(),
+                    edSmsCode.getText().toString(),
+                    edPassword.getText().toString());
+            return true;
+        }
+        return false;
     }
 }

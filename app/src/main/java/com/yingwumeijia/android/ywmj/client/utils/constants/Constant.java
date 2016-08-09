@@ -160,9 +160,11 @@ public class Constant {
         SPUtils.put(context, "IMTOKEN", token);
     }
 
-
     public static String getIMToken(Context context) {
         return (String) SPUtils.get(context, "IMTOKEN", "");
     }
+
+
+
 
 }

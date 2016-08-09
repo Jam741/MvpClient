@@ -1,5 +1,6 @@
 package com.yingwumeijia.android.ywmj.client.function.register;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,12 +9,16 @@ import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.muzhi.mtools.utils.T;
@@ -29,7 +34,7 @@ import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
  * Describe:
  */
 public class RegisterFragment extends BaseFragment implements RegisterContract.View,
-        View.OnClickListener {
+        View.OnClickListener, EditText.OnEditorActionListener {
 
     private RegisterContract.Presenter mRegisterPresenter;
     private View root;
@@ -61,6 +66,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
             ed_phone.addTextChangedListener(phoneTextWatcher);
             btnSendSmsCode.setOnClickListener(this);
             btnRegister.setOnClickListener(this);
+            ed_password.setOnEditorActionListener(this);
 
         }
         return root;
@@ -215,5 +221,26 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
     public void onDestroy() {
         super.onDestroy();
         mRegisterPresenter.destory();
+    }
+
+    @Override
+    public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+        if (i == EditorInfo.IME_ACTION_GO) {
+
+            InputMethodManager imm =
+                    (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+
+            if (imm.isActive()){
+                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(),0);
+            }
+
+            mRegisterPresenter.register(
+                    ed_phone.getText().toString(),
+                    ed_password.getText().toString(),
+                    ed_smsCode.getText().toString()
+            );
+            return true;
+        }
+        return false;
     }
 }

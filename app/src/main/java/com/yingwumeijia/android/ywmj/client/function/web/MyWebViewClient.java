@@ -11,5 +11,22 @@ import android.webkit.WebViewClient;
  */
 public class MyWebViewClient extends WebViewClient {
 
+    private WebView mWebView;
+    private String mUrl;
+
+    public MyWebViewClient(WebView mWebView, String mUrl) {
+        this.mWebView = mWebView;
+        this.mUrl = mUrl;
+    }
+
+    @Override
+    public boolean shouldOverrideUrlLoading(WebView view, String url) {
+        view.loadUrl(url);
+        return true;
+    }
+
+    public MyWebViewClient() {
+    }
+
 
 }
