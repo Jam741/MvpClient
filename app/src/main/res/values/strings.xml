@@ -12,11 +12,12 @@
     <string name="login_sucess">登录成功</string>
     <string name="net_connect_error">网络异常,请检查网络设置</string>
     <string name="net_network_fail">数据加载失败,请重试</string>
-    <string name="hint_password">密码</string>
-    <string name="hint_phone">手机号</string>
-    <string name="hint_sms_code">验证码</string>
-    <string name="hint_new_password">新密码</string>
-    <string name="hint_old_password">旧密码</string>
+    <string name="hint_password">请输入8-20位数字或字母密码</string>
+    <string name="hint_password_for_had">请输入密码</string>
+    <string name="hint_phone">请输入手机号</string>
+    <string name="hint_sms_code">请输入验证码</string>
+    <string name="hint_new_password">确认新密码</string>
+    <string name="hint_old_password">输入旧密码</string>
     <string name="hint_confirm_password">确认密码</string>
     <string name="password_rule_text">8-20位数字或字母</string>
 
@@ -35,6 +36,7 @@
     <string name="dialog_clear_cache">确认清除缓存?</string>
     <string name="btn_confirm">确定</string>
     <string name="btn_cancel">取消</string>
+    <string name="dialog_title">提示</string>
 
     `
     <!--=====================-->

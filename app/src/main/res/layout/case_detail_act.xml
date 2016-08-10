@@ -9,20 +9,71 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
 
         <LinearLayout
-            style="@style/shadow"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/bg_whide"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <include layout="@layout/toolbr_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+
+                <TextView
+                    android:id="@+id/topTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextTitle"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/topLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/back_ico"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <TextView
+                    android:id="@+id/topRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@mipmap/case_details_share_ico"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="22dp"
+                    tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                <RadioButton
+                    android:id="@+id/topRight_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/topRight"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_collect_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="11dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -56,48 +107,13 @@
 
             </RelativeLayout>
 
-        </LinearLayout>
-
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/web_progress_bar_height"
-            android:layout_gravity="center_horizontal" />
-
-
-        <RelativeLayout
-            android:id="@+id/preview_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone">
-
-            <ImageView
-                android:id="@+id/iv_preview"
+            <com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager
+                android:id="@+id/vp_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:alpha="0.5"
-                android:background="#000000" />
 
-            <ImageButton
-                android:id="@+id/btn_play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@null"
-                android:src="@mipmap/case_details_play_ico" />
-
-        </RelativeLayout>
-
-        <com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager
-            android:id="@+id/vp_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+        </LinearLayout>
 
         <ImageButton
             android:id="@+id/btn_menu"
@@ -109,7 +125,8 @@
             android:background="@null"
             android:src="@mipmap/details_pic_list_bt"
             android:visibility="gone" />
-    </LinearLayout>
+    </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/right_drawer"

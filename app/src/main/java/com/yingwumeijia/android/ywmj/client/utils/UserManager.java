@@ -1,5 +1,8 @@
 package com.yingwumeijia.android.ywmj.client.utils;
 
+import android.app.Activity;
+import android.content.Context;
+
 import com.rx.android.jamspeedlibrary.utils.SPUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
@@ -52,6 +55,20 @@ public class UserManager {
         Constant.setLoginIn(MyApp.appContext());
         saveUserId(userBean.getId());
         // saveUserPhone(userBean.getPhone());
+    }
+
+    /**
+     * 执行用户相关操作的先决条件
+     *
+     * @param context
+     */
+    public static boolean userPrecondition(Context context) {
+        if (Constant.isLogin(context)) {
+            return true;
+        } else {
+            StartActivityManager.startLoginActivity(context);
+            return false;
+        }
     }
 
 }

@@ -39,6 +39,10 @@ public interface CaseDetailContract {
 
         void navItemSelected(int position);
 
+        void collect(int caseId);
+
+        void cancelCollect(int caseId);
+
         /**
          * 立即联系他们
          * @param caseId
@@ -67,5 +71,9 @@ public interface CaseDetailContract {
         RecyclerView getNavRecyclerView();
 
         CommonTabLayout getTabView();
+
+        void setCollected();
+
+        void setUnCollected();
     }
 }

@@ -137,6 +137,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         mCaseListView.caseListLoadRset();
         isRefresh = true;
         page_Num = 1;
+        mCaseListView.showProgressBar();
         loadCaseListDate();
     }
 
@@ -151,10 +152,6 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
                 .getApiService()
                 .getCaseList(page_Num, Constant.PAGE_SIZE, stytle_id, hoseType_id, cost_id)
                 .enqueue(caseListCallback);
-
-        Log.d("jam", "==========================stytle_id===" + stytle_id);
-        Log.d("jam", "===========================hoseType_id==" + hoseType_id);
-        Log.d("jam", "=========================cost_id====" + cost_id);
     }
 
     @Override

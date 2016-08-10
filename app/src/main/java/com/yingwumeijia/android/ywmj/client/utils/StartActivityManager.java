@@ -1,10 +1,16 @@
 package com.yingwumeijia.android.ywmj.client.utils;
 
+import android.app.Activity;
 import android.content.Context;
 
 import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
+import com.yingwumeijia.android.ywmj.client.function.edit.EditPersionInfoActivity;
+import com.yingwumeijia.android.ywmj.client.function.edit.PersonInfoActivity;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
 import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
+
+import io.rong.imkit.RongIM;
+import io.rong.imlib.model.Conversation;
 
 /**
  * Created by Jam on 2016/8/2.
@@ -64,6 +70,10 @@ public class StartActivityManager {
                                                String portraitUrl,
                                                String showName,
                                                String showPhone) {
+        PersonInfoActivity.start((Activity) context,
+                portraitUrl,
+                showName,
+                showPhone);
 
     }
 
@@ -73,6 +83,15 @@ public class StartActivityManager {
      * @param context
      */
     public static void startSubConversationListActivity(Context context) {
+        if (!UserManager.userPrecondition(context)) return;
+        if (RongIM.getInstance() != null) {
+            RongIM.getInstance().startSubConversationList(context, Conversation.ConversationType.GROUP);
+        }
+    }
+
+
+    public static void startConversation(Context context) {
+        if (!UserManager.userPrecondition(context)) return;
 
     }
 

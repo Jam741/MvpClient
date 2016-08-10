@@ -79,6 +79,27 @@
             android:name=".function.search.SearchActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
+
+        <!--=====================================IM===============================================-->
+
+        <!--聚合会话列表-->
+        <activity
+            android:name=".im.conversationlist.ConversationListSubActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.yingwumeijia.android.ywmj.client"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

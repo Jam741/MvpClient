@@ -14,9 +14,12 @@ import com.rx.android.jamspeedlibrary.utils.adapter.RecyclerViewHolder;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.TabEntity;
+import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
 import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
+import com.yingwumeijia.android.ywmj.client.function.HtmlOf720Fragment;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginFragment;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
@@ -88,7 +91,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     public void createFragments(CaseDetailsBean caseDetailsBean) {
         if (mFragments == null) mFragments = new ArrayList<>();
         mFragments.clear();
-        mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getPath_720()));
+        mFragments.add(HtmlOf720Fragment.newInstance(caseDetailsBean.getPath_720()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getLayout()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getCost()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getMaterial()));
@@ -98,6 +101,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void loadDetailData(int caseId) {
+        mView.showProgressBar();
         MyApp
                 .getApiService()
                 .getCaseDetail(caseId)
@@ -130,6 +134,23 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     public void navItemSelected(int position) {
         //send BordCost to Fragment
     }
+
+    @Override
+    public void collect(int caseId) {
+        MyApp
+                .getApiService()
+                .collectionCase(caseId)
+                .enqueue(collectCallbace);
+    }
+
+    @Override
+    public void cancelCollect(int caseId) {
+        MyApp
+                .getApiService()
+                .cancelCollection(caseId)
+                .enqueue(cancelCollectCallback);
+    }
+
 
     @Override
     public void conversationWithTeam(int caseId) {
@@ -165,6 +186,31 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         @Override
         public void onFailure(Call<CaseDetailsResultBean> call, Throwable t) {
             mView.dismissProgressBar();
+            mView.showNetConnectError();
+        }
+    };
+
+
+    Callback<BaseBean> collectCallbace = new Callback<BaseBean>() {
+        @Override
+        public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
+            mView.setCollected();
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean> call, Throwable t) {
+            mView.showNetConnectError();
+        }
+    };
+
+    Callback<BaseBean> cancelCollectCallback = new Callback<BaseBean>() {
+        @Override
+        public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
+            mView.setUnCollected();
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean> call, Throwable t) {
             mView.showNetConnectError();
         }
     };

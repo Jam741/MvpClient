@@ -12,6 +12,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewFragment;
 import android.widget.FrameLayout;
+import android.widget.ProgressBar;
 
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
@@ -27,6 +28,8 @@ public class HtmlFragment extends BaseFragment {
     private FrameLayout root;
     private WebView mWebView;
     private String mUrl;
+
+    private ProgressBar mProgressBar;
 
     public static HtmlFragment newInstance(String url) {
 
@@ -44,12 +47,14 @@ public class HtmlFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (root == null) {
             root = new FrameLayout(context);
-            root.setBackgroundColor(getResources().getColor(R.color.colorAccent));
             root.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             mWebView = new WebView(context);
-            mWebView.setBackgroundColor(getResources().getColor(R.color.text_color_black));
             mWebView.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             root.addView(mWebView);
+
+            mProgressBar = new ProgressBar(context);
+            mProgressBar.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            root.addView(mProgressBar);
         }
         return root;
     }
@@ -70,7 +75,7 @@ public class HtmlFragment extends BaseFragment {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         mWebView.setWebViewClient(new MyWebViewClient());
-        mWebView.setWebChromeClient(new MyWebChromeClient());
+        mWebView.setWebChromeClient(new MyWebChromeClient(mProgressBar));
         mWebView.loadUrl(mUrl);
     }
 

@@ -14,6 +14,7 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.function.person.PersonActivity;
 import com.yingwumeijia.android.ywmj.client.function.search.SearchActivity;
 import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 
 import java.util.Timer;
@@ -119,7 +120,7 @@ public class MainActivity extends BaseActivity {
                 SearchActivity.start(context);
                 break;
             case R.id.iv_message:
-
+                StartActivityManager.startSubConversationListActivity(this);
                 break;
             case R.id.iv_mine:
                 PersonActivity.start(context);

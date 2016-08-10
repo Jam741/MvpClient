@@ -12,9 +12,11 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -23,6 +25,7 @@ import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.share.SharePopupWindow;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
@@ -35,13 +38,15 @@ import butterknife.OnClick;
  * Describe:
  */
 public class CaseDetailActivity extends BaseActivity implements CaseDetailContract.View,
-        ViewPager.OnPageChangeListener, OnTabSelectListener {
+        ViewPager.OnPageChangeListener, OnTabSelectListener, CompoundButton.OnCheckedChangeListener {
 
 
     @Bind(R.id.topTitle)
     TextView topTitle;
     @Bind(R.id.topLeft)
     TextView topLeft;
+    @Bind(R.id.topRight_second)
+    RadioButton btnCollect;
     @Bind(R.id.ctab_nav)
     CommonTabLayout ctabNav;
     @Bind(R.id.hsv_nav)
@@ -84,6 +89,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         drawerRoot.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
         //set listener
+        btnCollect.setOnCheckedChangeListener(this);
         vpContent.addOnPageChangeListener(this);
         vpContent.setOffscreenPageLimit(5);
         vpContent.setScanScroll(false);
@@ -95,7 +101,6 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         }
         mPresenter.start();
         mPresenter.loadDetailData(mCaseId);
-
     }
 
     private void initActionBar() {
@@ -157,6 +162,16 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         return ctabNav;
     }
 
+    @Override
+    public void setCollected() {
+        btnCollect.setChecked(true);
+    }
+
+    @Override
+    public void setUnCollected() {
+        btnCollect.setChecked(false);
+    }
+
 
     @Override
     public void setPresener(CaseDetailContract.Presenter presenter) {
@@ -178,7 +193,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         dismisBaseProgressDialog();
     }
 
-    @OnClick({R.id.topLeft, R.id.btn_menu})
+    @OnClick({R.id.topLeft, R.id.btn_menu, R.id.topRight})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.topLeft:
@@ -186,6 +201,10 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 break;
             case R.id.btn_menu:
                 showDrawerLayout();
+                break;
+            case R.id.topRight:
+                SharePopupWindow sharePopupWindow = new SharePopupWindow(context);
+                sharePopupWindow.showPopupWindow();
                 break;
         }
     }
@@ -200,7 +219,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         Log.d("jam", "psoiton:" + position);
         ctabNav.setCurrentTab(position);
         btnMenu.setVisibility(position == 1 ? View.VISIBLE : View.GONE);
-        vpContent.setScanScroll(position == 0? false : true);
+        vpContent.setScanScroll(position == 0 ? false : true);
         int scrollSize = hsvNav.getMaxScrollAmount();
         hsvNav.smoothScrollTo((scrollSize / 6) * (position), 0);
     }
@@ -224,5 +243,14 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if (b) {
+
+        } else {
+
+        }
     }
 }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bg_whide"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/btn_shareToWeChat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/vertical_margin"
+            android:drawableTop="@mipmap/case_details_share_wechat_ic"
+            android:gravity="center"
+            android:paddingBottom="@dimen/vertical_margin"
+            android:paddingTop="@dimen/vertical_margin"
+            android:text="微信"
+            android:textColor="@color/text_color_less"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/btn_shareToFriends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/vertical_margin"
+            android:drawableTop="@mipmap/case_details_share_friends_ic"
+            android:gravity="center"
+            android:paddingBottom="@dimen/vertical_margin"
+            android:paddingTop="@dimen/vertical_margin"
+            android:text="朋友圈"
+            android:textColor="@color/text_color_less"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:id="@+id/btn_shareToWeibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="@dimen/vertical_margin"
+            android:drawableTop="@mipmap/case_details_share_weibo_ic"
+            android:gravity="center"
+            android:paddingBottom="@dimen/vertical_margin"
+            android:paddingTop="@dimen/vertical_margin"
+            android:text="微博"
+            android:textColor="@color/text_color_less"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:background="@color/divider_normal" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/text_color_black"
+        android:textSize="15sp" />
+
+</LinearLayout>

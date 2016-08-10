@@ -42,7 +42,7 @@ public abstract class BasePopupWindow implements BasePopup {
     protected Animator curAnimator;
 
     public BasePopupWindow(Activity context) {
-        initView(context, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        initView(context, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     }
 
     public BasePopupWindow(Activity context, int w, int h) {
