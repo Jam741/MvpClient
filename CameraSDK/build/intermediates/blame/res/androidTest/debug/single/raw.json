@@ -1,6 +1,10 @@
 [
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\tone_cuver_sample.acv",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\tone_cuver_sample.acv"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/raw/tone_cuver_sample.acv",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/raw/tone_cuver_sample.acv"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\tone_cuver_sample.acv",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\tone_cuver_sample.acv"
     }
 ]
