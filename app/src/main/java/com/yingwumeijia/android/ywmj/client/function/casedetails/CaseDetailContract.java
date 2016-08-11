@@ -75,5 +75,6 @@ public interface CaseDetailContract {
         void setCollected();
 
         void setUnCollected();
+
     }
 }

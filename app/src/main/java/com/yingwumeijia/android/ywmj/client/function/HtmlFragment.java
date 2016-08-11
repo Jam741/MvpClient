@@ -15,6 +15,7 @@ import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.web.JsIntelligencer;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebViewClient;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
@@ -76,6 +77,7 @@ public class HtmlFragment extends BaseFragment {
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         mWebView.setWebViewClient(new MyWebViewClient());
         mWebView.setWebChromeClient(new MyWebChromeClient(mProgressBar));
+        mWebView.addJavascriptInterface(new JsIntelligencer(context), "jsIntelligencer");
         mWebView.loadUrl(mUrl);
     }
 

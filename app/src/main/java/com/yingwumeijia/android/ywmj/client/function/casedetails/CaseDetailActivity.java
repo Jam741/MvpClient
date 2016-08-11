@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
@@ -25,8 +26,11 @@ import com.flyco.tablayout.listener.OnTabSelectListener;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 import com.yingwumeijia.android.ywmj.client.function.share.SharePopupWindow;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
 import butterknife.Bind;
@@ -46,7 +50,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     @Bind(R.id.topLeft)
     TextView topLeft;
     @Bind(R.id.topRight_second)
-    RadioButton btnCollect;
+    CheckBox btnCollect;
     @Bind(R.id.ctab_nav)
     CommonTabLayout ctabNav;
     @Bind(R.id.hsv_nav)
@@ -109,7 +113,8 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     }
 
     private void getIntentData() {
-        mCaseId = getIntent().getIntExtra("KEY_CASE_ID", 0);
+        Intent intent = getIntent();
+        mCaseId = intent.getIntExtra("KEY_CASE_ID", 0);
     }
 
     @Override
@@ -203,7 +208,14 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 showDrawerLayout();
                 break;
             case R.id.topRight:
-                SharePopupWindow sharePopupWindow = new SharePopupWindow(context);
+                ShareModel shareModel = new ShareModel("",
+                        null,
+                        "描述",
+                        getResources().getString(R.string.app_name),
+                        Constant.WX_APP_ID);
+                SharePopupWindow sharePopupWindow = new SharePopupWindow(
+                        context,
+                        shareModel);
                 sharePopupWindow.showPopupWindow();
                 break;
         }

@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.function.web;
 import android.app.Activity;
 import android.webkit.JavascriptInterface;
 
+import com.yingwumeijia.android.ywmj.client.function.HtmlActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 
 
@@ -21,7 +22,7 @@ public class JsIntelligencer {
 
     @JavascriptInterface
     public void startNewHtmlActivity(String title, String url) {
-//        HtmlActivity.start(activity, title, url);
+        HtmlActivity.start(activity, title, url);
     }
 
     @JavascriptInterface

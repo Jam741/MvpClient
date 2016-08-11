@@ -9,6 +9,8 @@ import android.view.View;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
+import com.rx.android.jamspeedlibrary.utils.LogUtil;
+import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.adapter.CommonRecyclerAdapter;
 import com.rx.android.jamspeedlibrary.utils.adapter.RecyclerViewHolder;
 import com.yingwumeijia.android.ywmj.client.MyApp;
@@ -18,10 +20,12 @@ import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.CreateConversationResult;
 import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
 import com.yingwumeijia.android.ywmj.client.function.HtmlOf720Fragment;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginFragment;
+import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
 import java.util.ArrayList;
@@ -155,6 +159,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     @Override
     public void conversationWithTeam(int caseId) {
         //立即联系他们
+
     }
 
     @Override
@@ -194,7 +199,32 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     Callback<BaseBean> collectCallbace = new Callback<BaseBean>() {
         @Override
         public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
-            mView.setCollected();
+            mView.dismissProgressBar();
+            if (response.body().getSucc()) {
+                mView.setCollected();
+            } else {
+                if (!UserManager.userPrecondition(context)) return;
+                mView.showLoadDataFail(response.body().getMessage());
+            }
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean> call, Throwable t) {
+            mView.dismissProgressBar();
+            mView.showNetConnectError();
+        }
+    };
+
+    Callback<BaseBean> cancelCollectCallback = new Callback<BaseBean>() {
+        @Override
+        public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
+            mView.dismissProgressBar();
+            if (response.body().getSucc()) {
+                mView.setUnCollected();
+            } else {
+                if (!UserManager.userPrecondition(context)) return;
+                mView.showLoadDataFail(response.body().getMessage());
+            }
         }
 
         @Override
@@ -203,14 +233,22 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         }
     };
 
-    Callback<BaseBean> cancelCollectCallback = new Callback<BaseBean>() {
+    Callback<CreateConversationResult> connectCallback = new Callback<CreateConversationResult>() {
         @Override
-        public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
-            mView.setUnCollected();
+        public void onResponse(Call<CreateConversationResult> call, Response<CreateConversationResult> response) {
+            mView.dismissProgressBar();
+            if (response.body().getSucc()) {
+                CreateConversationResult.GroupConversationBean conversationBean = response.body().getData();
+                String mCurrentSessionID = String.valueOf(conversationBean.getId());
+            } else {
+                if (!UserManager.userPrecondition(context)) return;
+                mView.showLoadDataFail(response.body().getMessage());
+            }
         }
 
         @Override
-        public void onFailure(Call<BaseBean> call, Throwable t) {
+        public void onFailure(Call<CreateConversationResult> call, Throwable t) {
+            mView.dismissProgressBar();
             mView.showNetConnectError();
         }
     };

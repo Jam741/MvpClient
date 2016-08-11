@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f6f6f6</color>
+    <color name="colorPrimaryDark">#D2D2D2</color>
+    <color name="colorAccent">#e53573</color>
+
+    <color name="actionBarColor">#fafafa</color>
+
+    <color name="windowBackground">#f6f6f6</color>
+
+    <color name="bg_whide">#FFFFFF</color>
+
+    <color name="button_color_start">#D5127A</color>
+    <color name="button_color_end">#f84498</color>
+
+    <color name="icon_color_start">#f450a6</color>
+    <color name="icon_color_end">#d3166e</color>
+
+    <color name="text_color_black">#282828</color>
+    <color name="text_color_less">#757575</color>
+    <color name="text_color_weak">#bdbdbd</color>
+    <color name="text_color_whide">#ffffff</color>
+
+    <color name="divider_accent">#e6e6e6</color>
+    <color name="divider_normal">#d2d2d2</color>
+    <color name="im_backage_color">#F8F8F8</color>
+</resources>

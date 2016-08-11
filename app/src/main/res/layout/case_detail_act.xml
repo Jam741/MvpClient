@@ -55,7 +55,7 @@
                     android:paddingRight="22dp"
                     tools:ignore="RelativeOverlap,RtlSymmetry" />
 
-                <RadioButton
+                <CheckBox
                     android:id="@+id/topRight_second"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"

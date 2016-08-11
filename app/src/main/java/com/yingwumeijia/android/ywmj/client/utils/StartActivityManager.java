@@ -3,6 +3,7 @@ package com.yingwumeijia.android.ywmj.client.utils;
 import android.app.Activity;
 import android.content.Context;
 
+import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
 import com.yingwumeijia.android.ywmj.client.function.edit.EditPersionInfoActivity;
 import com.yingwumeijia.android.ywmj.client.function.edit.PersonInfoActivity;
@@ -41,7 +42,6 @@ public class StartActivityManager {
      * 跳转到案例详情页面
      *
      * @param context
-     * @param caseId
      */
     public static void startCaseDetailActivity(Context context, int caseId) {
         CaseDetailActivity.start(context, caseId);

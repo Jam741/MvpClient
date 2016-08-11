@@ -26,6 +26,7 @@ import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
@@ -244,7 +245,11 @@ public class ConversationActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.btn_lookBack:
-                StartActivityManager.startCaseDetailActivity(ConversationActivity.this, caseInfoBean.getId());
+                CaseBean caseBean = new CaseBean();
+                caseBean.setCaseCover(caseInfoBean.getCaseCover());
+                caseBean.setCaseId(caseInfoBean.getId());
+                caseBean.setCaseName(caseInfoBean.getCaseName());
+                StartActivityManager.startCaseDetailActivity(ConversationActivity.this, caseBean.getCaseId());
                 break;
         }
     }

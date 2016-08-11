@@ -2,12 +2,14 @@ package com.yingwumeijia.android.ywmj.client.data.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.io.Serializable;
+
 /**
  * Created by Jam on 16/6/15 上午10:30.
  * Describe:
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CaseBean {
+public class CaseBean implements Serializable {
     /**
      * caseCover : http://o8nljewkg.bkt.clouddn.com/o_1amdfpmii1rn61vmptcb16k248k1r.jpg
      * caseId : 1062

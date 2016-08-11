@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit.iml" filepath="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jamspeedlibrary/jamspeedlibrary.iml" filepath="$PROJECT_DIR$/jamspeedlibrary/jamspeedlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/popuwindowlibrary/popuwindowlibrary.iml" filepath="$PROJECT_DIR$/popuwindowlibrary/popuwindowlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/worker/worker.iml" filepath="$PROJECT_DIR$/worker/worker.iml" />
     </modules>
   </component>
 </project>

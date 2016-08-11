@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/jamspeedlibrary" />
+            <option value="$PROJECT_DIR$/popuwindowlibrary" />
+            <option value="$PROJECT_DIR$/worker" />
           </set>
         </option>
         <option name="myModules">
@@ -22,6 +24,8 @@
             <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/jamspeedlibrary" />
+            <option value="$PROJECT_DIR$/popuwindowlibrary" />
+            <option value="$PROJECT_DIR$/worker" />
           </set>
         </option>
       </GradleProjectSettings>

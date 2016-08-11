@@ -164,7 +164,9 @@ public class Constant {
         return (String) SPUtils.get(context, "IMTOKEN", "");
     }
 
-
-
+    //微信授权KEY
+    public static String WX_APP_ID = "wxa57345f69f5a674d";
+    //微博授权KEY
+    public static String WB_APP_KEY = "2293291411";
 
 }
