@@ -186,9 +186,8 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         msg.description = mShareModel.getmDescription();
         //这里替换一张自己工程里的图片资源
         Log.d("jam", "share_wx__" + mShareModel.getmShareUrl());
-        File file = Glide.getPhotoCacheDir(mContext, mShareModel.getmShareImg());
-        Bitmap thumb = BitmapFactory.decodeFile(file.getPath());
-        msg.thumbData = bmpToByteArray(thumb, true);
+        Bitmap thumb = BitmapFactory.decodeFile(mShareModel.getmShareImg());
+//        msg.thumbData = bmpToByteArray(thumb, true);
         SendMessageToWX.Req req = new SendMessageToWX.Req();
         req.transaction = String.valueOf(System.currentTimeMillis());
         req.message = msg;
@@ -266,8 +265,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
 
     private ImageObject getImageObj() {
         ImageObject imageObject = new ImageObject();
-        File file = Glide.getPhotoCacheDir(mContext, mShareModel.getmShareImg());
-        Bitmap thumb = BitmapFactory.decodeFile(file.getPath());
+        Bitmap thumb = BitmapFactory.decodeFile(mShareModel.getmShareImg());
         imageObject.setImageObject(thumb);
         return imageObject;
     }

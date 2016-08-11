@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.search;
 
 import android.content.Context;
+import android.support.v7.widget.LinearLayoutManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
@@ -37,13 +38,13 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
     private String mKey_words = null;
 
     private CommonRecyclerAdapter<CaseBean> mAdapter;
-    private final XRecyclerView mXRecyclerView;
+    private XRecyclerView mXRecyclerView;
 
     public SearchPresenter(Context context, SearchContract.View mView) {
         this.context = context;
         this.mView = mView;
         this.mView.setPresener(this);
-        this.mXRecyclerView = (XRecyclerView) mView.getRecyclerView();
+
     }
 
     @Override
@@ -89,7 +90,8 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
     @Override
     public void search(String keyWords) {
         mKey_words = keyWords;
-        if (checkKeywords(keyWords)) return;
+        if (!checkKeywords(keyWords)) return;
+        mView.showProgressBar();
         MyApp
                 .getApiService()
                 .getSearchCaseList(mKey_words, page_num, Constant.PAGE_SIZE)
@@ -107,8 +109,11 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
 
     @Override
     public void start() {
+        this.mXRecyclerView = (XRecyclerView) mView.getRecyclerView();
+        mXRecyclerView.setLayoutManager(new LinearLayoutManager(context));
         mXRecyclerView.setLoadingListener(this);
         createListAdapter();
+        bindAdapterWithList();
     }
 
     @Override
@@ -134,6 +139,11 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
                     mXRecyclerView.refreshComplete();
                     mXRecyclerView.reset();
                     refrshData(response.body().getData());
+                    if (response.body().getData().size()==0){
+                        mView.showEmptyLayout();
+                    }else {
+                        mView.showListLayout();
+                    }
                 } else {
                     mXRecyclerView.loadMoreComplete();
                     if (response.body().getData() == null || response.body().getData().size() == 0) {

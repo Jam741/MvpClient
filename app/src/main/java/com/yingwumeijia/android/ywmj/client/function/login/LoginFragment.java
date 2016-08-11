@@ -126,7 +126,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public void finish() {
-        ActivityCompat.finishAfterTransition(context);
+        ActivityCompat.finishAfterTransition(getActivity());
     }
 
 

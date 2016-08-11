@@ -1,6 +1,8 @@
 package com.yingwumeijia.android.ywmj.client.function.casedetails;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -21,11 +23,16 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CreateConversationResult;
+import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
 import com.yingwumeijia.android.ywmj.client.function.HtmlOf720Fragment;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginFragment;
+import com.yingwumeijia.android.ywmj.client.function.share.SharePopupWindow;
+import com.yingwumeijia.android.ywmj.client.im.conversationlist.ConversationActivity;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
 import java.util.ArrayList;
@@ -52,6 +59,9 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     private CommonTabLayout mTabView;
     private final String[] mTabsStrings = {"   720全景", "   细节图片", "   项目造价", "   材料品牌", "   平面布置", "   团队简介"};
 
+    //share
+    private SharePopupWindow sharePopupWindow;
+
     //sliding menu
     private CommonRecyclerAdapter<String> mNavigationAdapter;
     private List<String> mNavData;
@@ -63,6 +73,13 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         this.mView.setPresener(this);
     }
 
+
+    @Override
+    public void undateVisitNum(int caseId) {
+        MyApp.getApiService()
+                .upDateVisitNum(caseId)
+                .enqueue(updateVisitCallback);
+    }
 
     @Override
     public void bindAdapterForPager() {
@@ -95,7 +112,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     public void createFragments(CaseDetailsBean caseDetailsBean) {
         if (mFragments == null) mFragments = new ArrayList<>();
         mFragments.clear();
-        mFragments.add(HtmlOf720Fragment.newInstance(caseDetailsBean.getPath_720()));
+        mFragments.add(HtmlOf720Fragment.newInstance(caseDetailsBean.getPath_720(), caseDetailsBean.getPreviewOf720()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getLayout()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getCost()));
         mFragments.add(HtmlFragment.newInstance(caseDetailsBean.getMaterial()));
@@ -137,6 +154,9 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     @Override
     public void navItemSelected(int position) {
         //send BordCost to Fragment
+        Intent intent = new Intent(Constant.ACTION_SCROLL_NAV);
+        intent.putExtra("POSITION", position);
+        context.sendBroadcast(intent);
     }
 
     @Override
@@ -157,9 +177,25 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
 
     @Override
-    public void conversationWithTeam(int caseId) {
+    public void connectWithTeam(int caseId) {
         //立即联系他们
+        MyApp
+                .getApiService()
+                .createGroupConversation(caseId)
+                .enqueue(connectCallback);
 
+    }
+
+    @Override
+    public void launchShareSDK() {
+        if (sharePopupWindow == null)
+            sharePopupWindow = new SharePopupWindow((Activity) context, createShareModel());
+        sharePopupWindow.showPopupWindow();
+    }
+
+    @Override
+    public ShareModel createShareModel() {
+        return null;
     }
 
     @Override
@@ -171,6 +207,19 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         createTabs();
         bindAdapterForTab();
     }
+
+
+    Callback<BaseBean> updateVisitCallback = new Callback<BaseBean>() {
+        @Override
+        public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
+
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean> call, Throwable t) {
+
+        }
+    };
 
 
     Callback<CaseDetailsResultBean> caseDataCallback = new Callback<CaseDetailsResultBean>() {
@@ -240,6 +289,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             if (response.body().getSucc()) {
                 CreateConversationResult.GroupConversationBean conversationBean = response.body().getData();
                 String mCurrentSessionID = String.valueOf(conversationBean.getId());
+                StartActivityManager.startConversation(context, mCurrentSessionID, "title");
             } else {
                 if (!UserManager.userPrecondition(context)) return;
                 mView.showLoadDataFail(response.body().getMessage());

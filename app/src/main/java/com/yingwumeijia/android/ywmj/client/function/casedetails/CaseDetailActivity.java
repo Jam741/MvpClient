@@ -104,6 +104,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
             mPresenter = new CaseDetailPresenter(this, context);
         }
         mPresenter.start();
+        mPresenter.undateVisitNum(mCaseId);
         mPresenter.loadDetailData(mCaseId);
     }
 
@@ -198,7 +199,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         dismisBaseProgressDialog();
     }
 
-    @OnClick({R.id.topLeft, R.id.btn_menu, R.id.topRight})
+    @OnClick({R.id.topLeft, R.id.btn_menu, R.id.topRight, R.id.btn_connectTeam})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.topLeft:
@@ -217,6 +218,9 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                         context,
                         shareModel);
                 sharePopupWindow.showPopupWindow();
+                break;
+            case R.id.btn_connectTeam:
+                mPresenter.connectWithTeam(mCaseId);
                 break;
         }
     }

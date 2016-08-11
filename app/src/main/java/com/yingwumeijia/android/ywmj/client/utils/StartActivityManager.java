@@ -90,9 +90,11 @@ public class StartActivityManager {
     }
 
 
-    public static void startConversation(Context context) {
+    public static void startConversation(Context context,String sessionId,String title) {
         if (!UserManager.userPrecondition(context)) return;
-
+        if (RongIM.getInstance()!=null){
+            RongIM.getInstance().startConversation(context, Conversation.ConversationType.GROUP,sessionId,title);
+        }
     }
 
 }

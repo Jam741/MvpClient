@@ -9,9 +9,11 @@ import android.widget.TextView;
 
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -44,6 +46,7 @@ public class HtmlActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ButterKnife.bind(this);
 
         //get intent data
         getIntentData();
@@ -60,6 +63,12 @@ public class HtmlActivity extends BaseActivity {
                 (HtmlFragment) getSupportFragmentManager().findFragmentById(R.id.contentFragment);
         if (htmlFragment == null) {
             htmlFragment = HtmlFragment.newInstance(mUrl);
+
+            ActivityUtils.addFragmentToActivity(
+                    getSupportFragmentManager(),
+                    htmlFragment,
+                    R.id.contentFragment
+            );
         }
     }
 
@@ -77,5 +86,11 @@ public class HtmlActivity extends BaseActivity {
     @OnClick(R.id.topLeft)
     public void onClick() {
         ActivityCompat.finishAfterTransition(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
     }
 }

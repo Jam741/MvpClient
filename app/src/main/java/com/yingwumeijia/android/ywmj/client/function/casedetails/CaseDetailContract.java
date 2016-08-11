@@ -9,6 +9,7 @@ import com.yingwumeijia.android.ywmj.client.BasePresenter;
 import com.yingwumeijia.android.ywmj.client.BaseView;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 
 import java.util.List;
 
@@ -20,6 +21,10 @@ public interface CaseDetailContract {
 
     interface Presenter extends BasePresenter {
 
+        /**
+         * 更新访问数
+         */
+        void undateVisitNum(int caseId);
 
         void bindAdapterForPager();
 
@@ -47,7 +52,11 @@ public interface CaseDetailContract {
          * 立即联系他们
          * @param caseId
          */
-        void conversationWithTeam(int caseId);
+        void connectWithTeam(int caseId);
+
+        void launchShareSDK();
+
+        ShareModel createShareModel();
 
     }
 

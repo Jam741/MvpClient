@@ -169,4 +169,7 @@ public class Constant {
     //微博授权KEY
     public static String WB_APP_KEY = "2293291411";
 
+
+    public static String ACTION_SCROLL_NAV ="com.ywmj.client.scroll";
+
 }

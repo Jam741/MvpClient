@@ -73,6 +73,8 @@ public class SearchFragment extends BaseFragment implements SearchContract.View 
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        mPresenter.start();
+
         edKeyWords.addTextChangedListener(searchTextWatch);
 
         edKeyWords.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -87,7 +89,6 @@ public class SearchFragment extends BaseFragment implements SearchContract.View 
                     InputMethodManager imm = (InputMethodManager) v.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                     if (imm.isActive()) {
                         imm.hideSoftInputFromWindow(v.getApplicationWindowToken(), 0);
-                        LogUtil.getInstance().debug("jam", "===========hide=========");
                     }
                     mPresenter.search(getKeyWords());
                 }

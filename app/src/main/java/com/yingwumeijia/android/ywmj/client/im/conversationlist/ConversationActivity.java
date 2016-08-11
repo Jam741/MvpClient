@@ -106,14 +106,10 @@ public class ConversationActivity extends AppCompatActivity {
     private static final String KEY_AVAILABLE = "KEY_AVAILABLE";
     private static final String KEY_TEAM_PHONE = "KEY_TEAM_PHONE";
 
-    public static void start(Activity activity, String taegerId, String title, GroupResultBean.GroupConversationBean.CaseInfoBean caseInfoBean, String teamPhone, boolean available) {
+    public static void start(Activity activity, String taegerId) {
         Intent intent = new Intent(activity, ConversationActivity.class);
         Bundle bundle = new Bundle();
         bundle.putString(KEY_TARGET_ID, taegerId);
-        bundle.putString(KEY_TITLE, title);
-        bundle.putSerializable(KEY_CASE_INFO, caseInfoBean);
-        bundle.putString(KEY_TEAM_PHONE, teamPhone);
-        bundle.putBoolean(KEY_AVAILABLE, available);
         intent.putExtra("bundle", bundle);
         activity.startActivity(intent);
     }
@@ -124,6 +120,9 @@ public class ConversationActivity extends AppCompatActivity {
         setContentView(R.layout.conversation_act);
         ButterKnife.bind(this);
         context = this;
+
+        getIntentData();
+
         initData();
         initActionBar();
         if (caseInfoBean != null) {
@@ -408,5 +407,9 @@ public class ConversationActivity extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    public void getIntentData() {
+
     }
 }

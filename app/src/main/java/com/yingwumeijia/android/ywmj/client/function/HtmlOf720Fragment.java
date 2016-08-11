@@ -1,7 +1,9 @@
 package com.yingwumeijia.android.ywmj.client.function;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,7 +16,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
+import com.bumptech.glide.Glide;
 import com.rx.android.jamspeedlibrary.utils.NetUtils;
+import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebViewClient;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
@@ -28,16 +32,20 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
     private FrameLayout root;
     private WebView mWebView;
     private String mUrl;
+    private String mPreviewImg;
 
     private ProgressBar mProgressBar;
 
     /*preview*/
     FrameLayout previewLayout;
+    ImageView bgImage;
+    ImageView playButton;
 
-    public static HtmlOf720Fragment newInstance(String url) {
+    public static HtmlOf720Fragment newInstance(String url,String previewImg) {
 
         Bundle args = new Bundle();
         args.putString("KET_URL", url);
+        args.putString("KEY_PREVIEW",previewImg);
         Log.d("jam", "url:" + url);
 
         HtmlOf720Fragment fragment = new HtmlOf720Fragment();
@@ -56,12 +64,15 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             root.addView(mWebView);
 
             mProgressBar = new ProgressBar(context);
-            mProgressBar.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            mProgressBar.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
             root.addView(mProgressBar);
 
             previewLayout = new FrameLayout(context);
             previewLayout.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            ImageView playButton = new ImageView(context);
+            bgImage = new ImageView(context);
+            bgImage.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            bgImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            playButton = new ImageView(context);
             playButton.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
             previewLayout.addView(playButton);
             root.addView(previewLayout);
@@ -85,6 +96,8 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             hidePreviewLayout();
             loadUrl();
         } else {
+            playButton.setOnClickListener(this);
+            Glide.with(context).load(mPreviewImg).into(bgImage);
             showPreviewLayout();
         }
     }
@@ -98,6 +111,30 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
         mWebView.setWebViewClient(new MyWebViewClient());
         mWebView.setWebChromeClient(new MyWebChromeClient(mProgressBar));
+    }
+
+    /**
+     * 是否加载URL对话框
+     */
+    private void showPlayDialog() {
+        AlertDialog dialog = new AlertDialog.Builder(context)
+                .setTitle(R.string.dialog_title)
+                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                })
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        hidePreviewLayout();
+                        loadUrl();
+                    }
+                })
+                .setMessage("当前非WIFI网络,继续查看将耗费手机流量")
+                .show();
+
     }
 
     /**
@@ -121,6 +158,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
      */
     private void getData() {
         mUrl = getArguments().getString("KET_URL");
+        mPreviewImg = getArguments().getString("KEY_PREVIEW");
     }
 
     @Override
@@ -147,8 +185,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (mWebView != null) {
-            loadUrl();
-            hidePreviewLayout();
+            showPlayDialog();
         }
     }
 }
