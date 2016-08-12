@@ -91,7 +91,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
     @Override
     public void registerSuccess(UserBean userBean) {
-        UserManager.saveUserInfo(userBean);
+        Constant.setLoginIn(context);
         mRegisterView.finish();
         StartActivityManager.startMain(context);
     }
@@ -105,7 +105,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
         if (!checkPassword(password)) return;
         if (!checkAgreementBox(mRegisterView.returnAgreementStatus())) return;
         mRegisterView.showProgressBar();
-        LoginRobot.createLoginRobotForRegister(phone, password, smsCode, loginCallBack);
+        LoginRobot.createLoginRobotForRegister(context, phone, password, smsCode, loginCallBack);
     }
 
     @Override
@@ -176,6 +176,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
         }
     };
+
 
     /**
      * 短信验证码倒数计时

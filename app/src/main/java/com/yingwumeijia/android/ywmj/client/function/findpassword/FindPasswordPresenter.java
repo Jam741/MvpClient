@@ -9,6 +9,8 @@ import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginRobot;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import retrofit2.Call;
@@ -74,10 +76,14 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
         if (!checkInputSmsCode(smsCode)) return;
         if (!checkInputPassword(password)) return;
         mFindPasswordView.showProgressBar();
-        MyApp
-                .getApiService()
-                .getBackPassword(phone, password, smsCode)
-                .enqueue(findPasswordCallback);
+
+        LoginRobot.createLoginRobotForFindPassword(
+                context,
+                phone,
+                smsCode,
+                password,
+                loginCallBack
+        );
     }
 
     @Override
@@ -93,25 +99,28 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
 
     }
 
+
     /**
-     * 找回密码回调
+     * 登陆&注册&找回密码的回调
      */
-    Callback<FindPwdResultBean> findPasswordCallback = new Callback<FindPwdResultBean>() {
+    LoginDataProvider.LoginCallBack loginCallBack = new LoginDataProvider.LoginCallBack() {
         @Override
-        public void onResponse(Call<FindPwdResultBean> call, Response<FindPwdResultBean> response) {
+        public void loginSuccess(UserBean userBean) {
             mFindPasswordView.dismissProgressBar();
-            if (response.body().getSucc()) {
-                mFindPasswordView.showFindPasswordSuccess();
-                findSuccessOperation(response.body().getData());
-            } else {
-                mFindPasswordView.showFindPasswordError(response.body().getMessage());
-            }
+            mFindPasswordView.showFindPasswordSuccess();
+            findSuccessOperation(userBean);
         }
 
         @Override
-        public void onFailure(Call<FindPwdResultBean> call, Throwable t) {
+        public void loginError(String msg) {
             mFindPasswordView.dismissProgressBar();
-            mFindPasswordView.showNetConnectError();
+            mFindPasswordView.showFindPasswordError(msg);
+        }
+
+        @Override
+        public void connectError() {
+            mFindPasswordView.dismissProgressBar();
+
         }
     };
 

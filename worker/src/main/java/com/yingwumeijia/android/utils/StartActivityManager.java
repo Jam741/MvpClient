@@ -3,12 +3,10 @@ package com.yingwumeijia.android.utils;
 import android.app.Activity;
 import android.content.Context;
 
-import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
-import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
-import com.yingwumeijia.android.ywmj.client.function.edit.EditPersionInfoActivity;
-import com.yingwumeijia.android.ywmj.client.function.edit.PersonInfoActivity;
-import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
-import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
+import com.yingwumeijia.android.MainActivity;
+import com.yingwumeijia.android.funcation.casedetails.CaseDetailActivity;
+import com.yingwumeijia.android.funcation.edit.PersonInfoActivity;
+import com.yingwumeijia.android.funcation.login.LoginActivity;
 
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.Conversation;
@@ -90,9 +88,11 @@ public class StartActivityManager {
     }
 
 
-    public static void startConversation(Context context) {
+    public static void startConversation(Context context,String sessionId,String title) {
         if (!UserManager.userPrecondition(context)) return;
-
+        if (RongIM.getInstance()!=null){
+            RongIM.getInstance().startConversation(context, Conversation.ConversationType.GROUP,sessionId,title);
+        }
     }
 
 }

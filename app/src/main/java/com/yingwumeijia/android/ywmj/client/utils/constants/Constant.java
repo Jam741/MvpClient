@@ -19,14 +19,15 @@ public class Constant {
 //    public static final String BASE_URL = "http://192.168.28.193:8082/";
 
     //sever
-//    public static final String BASE_URL = "http://192.168.28.15:8182/";
+//    public static final String BASE_URL = "http://192.168.28.16:8182/";
     //陈驰
-//    public static final String BASE_URL = "http://192.168.28.114:8182/";
+    public static final String BASE_URL = "http://192.168.28.114:8182/";
     //test
 //    public static final String BASE_URL = "http://192.168.28.15:8182/";
     // 阿里云服务器
-    public static final String BASE_URL = "http://139.196.233.188:8182/";
-    public static final String BASE_QINIU_URL = "http://o8nljewkg.bkt.clo      n  hghghuddn.com/";
+//    public static final String BASE_URL = "http://139.196.233.188:8182/";
+    public static final String BASE_QINIU_URL = "http://o8nljewkg.bkt.clouddn.com/";
+
 
 
     /*-----------------------------Internet status-------------------------*/

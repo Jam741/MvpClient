@@ -6,6 +6,7 @@ import com.rx.android.jamspeedlibrary.utils.LogUtil;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.UserInfo;
@@ -23,39 +24,39 @@ public class MyUserInfoProvider implements RongIM.UserInfoProvider {
         return findUserById(s);
     }
 
-    private UserInfo findUserById(final String userId) {
+    private UserInfo findUserById(final String imUid) {
         MyApp
                 .getApiService()
-                .getMemberInfo(userId)
-                .enqueue(new Callback<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>>() {
+                .getMemberInfo(imUid)
+                .enqueue(new Callback<BaseBean<UserBean>>() {
                     @Override
-                    public void onResponse(Call<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>> call, retrofit2.Response<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>> response) {
+                    public void onResponse(Call<BaseBean<UserBean>> call, retrofit2.Response<BaseBean<UserBean>> response) {
                         if (response.body().getSucc()) {
                             String showName = response.body().getData().getShowName();
-                            String type = response.body().getData().getUserTypeEnum();
-                            if (type.equals("CUSTOMER")) {
-                                // Nothing to do
-                            } else if (type.equals("EMPLOYEE")) {
-                                showName = showName + "-" + response.body().getData().getUserDetailTypeEnum();
-                            } else if (type.equals("MANAGER")) {
-                                showName = showName + "-" + "美家客服";
+                            String userType = response.body().getData().getUserType();
+                            if (userType.equals("c")) {
+                                showName = showName + "-" + "客户";
+                            } else if (userType.equals("e")) {
+                                showName = showName + "-" + response.body().getData().getUserTitle();
+                            } else if (userType.equals("m")) {
+                                showName = showName + "-" + response.body().getData().getUserTitle();
                             }
                             UserInfo userInfo = new UserInfo(
-                                    userId,
+                                    imUid,
                                     showName,
-                                    Uri.parse(response.body().getData().getHeadImage())
+                                    Uri.parse(response.body().getData().getShowHead())
                             );
                             LogUtil.getInstance().debug("findimid", "----------------------------------------------------findUserById:" + userInfo.getUserId() + userInfo.getName() + userInfo.getPortraitUri());
                             RongIM.getInstance().refreshUserInfoCache(userInfo);
-                        }else {
-                            LogUtil.getInstance().debug("findimid", "---------------------------error-------------------------findUserById:" +userId);
+                        } else {
+                            LogUtil.getInstance().debug("findimid", "---------------------------error-------------------------findUserById:" + imUid);
 
                         }
                     }
 
                     @Override
-                    public void onFailure(Call<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>> call, Throwable t) {
-                        LogUtil.getInstance().debug("findimid", "---------------------------error----e---------------------findUserById:" +userId);
+                    public void onFailure(Call<BaseBean<UserBean>> call, Throwable t) {
+                        LogUtil.getInstance().debug("findimid", "---------------------------error----e---------------------findUserById:" + imUid);
                     }
                 });
         return null;

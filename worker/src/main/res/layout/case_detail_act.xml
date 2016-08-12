@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_root"
+    style="@style/rootStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+
+                <TextView
+                    android:id="@+id/topTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextTitle"
+                    tools:text="Title" />
+
+                <TextView
+                    android:id="@+id/topLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/back_ico"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    tools:ignore="RtlSymmetry" />
+
+
+                <TextView
+                    android:id="@+id/topRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@mipmap/case_details_share_ico"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="22dp"
+                    tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+                <CheckBox
+                    android:id="@+id/topRight_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/topRight"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/btn_collect_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="11dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorAccent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height">
+
+
+                <HorizontalScrollView
+                    android:id="@+id/hsv_nav"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionbar_height"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <com.flyco.tablayout.CommonTabLayout
+                        android:id="@+id/ctab_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/actionbar_height"
+                        app:tl_iconGravity="RIGHT"
+                        app:tl_iconMargin="10dp"
+                        app:tl_indicator_anim_enable="true"
+                        app:tl_indicator_color="@color/colorAccent"
+                        app:tl_indicator_height="2dp"
+                        app:tl_indicator_style="NORMAL"
+                        app:tl_tab_space_equal="true"
+                        app:tl_textSelectColor="@color/colorAccent"
+                        app:tl_textUnselectColor="@color/text_color_black"
+                        app:tl_textsize="@dimen/text_normal" />
+
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <com.yingwumeijia.android.utils.view.IndexViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="45dp"
+            android:layout_marginRight="@dimen/vertical_margin"
+            android:background="@null"
+            android:src="@mipmap/details_pic_list_bt"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/btn_connectTeam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="立即联系他们"
+            android:textColor="@color/text_color_whide"
+            android:textSize="@dimen/text_title_medium" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/right_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@mipmap/black_shadow"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sliding_title"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginLeft="19dp"
+            android:gravity="center_vertical"
+            android:text="细节图片"
+            android:textColor="@color/text_color_whide"
+            android:textSize="@dimen/text_title_lag"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sliding_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sliding_title"
+            android:scrollIndicators="right"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/colorAccent"
+            android:scrollbars="vertical"
+            tools:ignore="UnusedAttribute"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

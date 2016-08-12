@@ -16,6 +16,7 @@ import io.rong.imkit.RongIM;
 import io.rong.imkit.widget.provider.CameraInputProvider;
 import io.rong.imkit.widget.provider.ImageInputProvider;
 import io.rong.imkit.widget.provider.InputProvider;
+import io.rong.imkit.widget.provider.LocationInputProvider;
 import io.rong.imlib.model.Conversation;
 import timber.log.Timber;
 
@@ -129,14 +130,14 @@ public class MyApp extends StarterApplication{
 //                DemoContext.init(this);
 //            }
             //扩展功能自定义
-            InputProvider.ExtendProvider[] provider = {
-                    new ImageInputProvider(RongContext.getInstance()),//图片
-                    new CameraInputProvider(RongContext.getInstance()),//相机
+//            InputProvider.ExtendProvider[] provider = {
+//                    new ImageInputProvider(RongContext.getInstance()),//图片
+//                    new CameraInputProvider(RongContext.getInstance()),//相机
 //                    new LocationInputProvider(RongContext.getInstance()),//地理位置
-//                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
-//                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
-            };
-            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
+////                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
+////                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
+//            };
+//            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
             RongIM.setConnectionStatusListener(new MyConnectionStatusListener());
         }
     }

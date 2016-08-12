@@ -5,4 +5,5 @@ package com.yingwumeijia.android.ywmj.client.data.bean;
  * Describe:
  */
 public class TokenResultBean extends BaseBean<TokenBean> {
+
 }

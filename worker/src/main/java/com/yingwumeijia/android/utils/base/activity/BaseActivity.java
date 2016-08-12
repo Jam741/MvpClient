@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.rx.android.jamspeedlibrary.utils.T;
-import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.R;
 
 /**
  * Created by Jam on 2016/8/1.

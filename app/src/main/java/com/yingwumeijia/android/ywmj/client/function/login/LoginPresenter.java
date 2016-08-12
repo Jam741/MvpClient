@@ -49,7 +49,7 @@ public class LoginPresenter implements LoginContract.Presenter {
         if (!checkPhone(phone)) return;
         if (!checkPassword(password)) return;
         mLognView.showProgressBar();
-        LoginRobot.createLoginRobot(phone, password, safetyCode, new LoginDataProvider.LoginCallBack() {
+        LoginRobot.createLoginRobot(context,phone, password, new LoginDataProvider.LoginCallBack() {
             @Override
             public void loginSuccess(UserBean userBean) {
                 mLognView.dismissProgressBar();

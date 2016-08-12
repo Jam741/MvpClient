@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.rx.android.jamspeedlibrary.utils.T;
-import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.R;
 
 /**
  * Created by Jam on 2016/8/2.

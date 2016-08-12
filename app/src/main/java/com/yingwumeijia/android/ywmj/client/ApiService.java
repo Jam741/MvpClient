@@ -7,6 +7,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CaseListResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseTypeResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CreateConversationResult;
 import com.yingwumeijia.android.ywmj.client.data.bean.CustomResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.CustomerResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
@@ -16,6 +17,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
@@ -39,9 +41,21 @@ public interface ApiService {
      * @return
      */
     @POST("user/register")
-    Call<LoginResultBean> register(@Query("phone") String phone,
+    Call<RegisterResultBean> register(@Query("phone") String phone,
                                       @Query("password") String password,
                                       @Query("smsCode") String verifyCode);
+
+
+    /**
+     * 确认开通
+     *
+     * @param phone
+     * @param token
+     * @return
+     */
+    @POST("user/confirm")
+    Call<BaseBean> confirm(@Query("phone") String phone,
+                           @Query("token") String token);
 
     /**
      * 发送验证码
@@ -101,7 +115,7 @@ public interface ApiService {
      * @return
      */
     @GET("customer/getCustomerInfo")
-    Call<BaseBean<UserBean>> getCustomerInfo();
+    Call<CustomerResultBean> getCustomerInfo();
 
     /**
      * 修改昵称
@@ -278,6 +292,6 @@ public interface ApiService {
 
 
     @GET("im/sessionMember/{memberId}")
-    Call<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>> getMemberInfo(@Path("memberId") String memberId);
+    Call<BaseBean<UserBean>> getMemberInfo(@Path("memberId") String memberId);
 
 }

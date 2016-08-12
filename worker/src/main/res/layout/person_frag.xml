@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mine_top_height"
+        android:background="@mipmap/user_bg">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/user_bg_shadow" />
+
+
+        <TextView
+            android:id="@+id/top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/actionbar_height"
+            android:drawableLeft="@mipmap/white_arrow"
+            android:paddingLeft="22dp"
+            android:paddingRight="@dimen/vertical_margin"
+            tools:ignore="RtlHardcoded" />
+
+        <RelativeLayout
+            android:id="@+id/btn_ed_person"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="23dp">
+
+            <RelativeLayout
+                android:id="@+id/portrait_layout"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:background="@drawable/portrait_border"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/mine_user_ywmj_circle"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/login_out_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/portrait_layout"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:text="享受完美体验？"
+                    android:textColor="@color/text_color_whide"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/btn_login"
+                    android:layout_width="102dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/btn_bg_stroke_whide"
+                    android:gravity="center"
+                    android:text="立即登陆"
+                    android:textColor="@color/text_color_whide"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_in_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/portrait_layout"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+
+                <TextView
+                    android:id="@+id/tv_nike_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_whide"
+                    android:textSize="@dimen/text_title_lag"
+                    tools:text="Name" />
+
+                <TextView
+                    android:id="@+id/tv_collect_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_whide"
+                    android:textSize="15sp"
+                    tools:text="0个收藏" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/mine_top_height"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_nav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            app:tabBackground="@color/bg_whide"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/text_color_black"></android.support.design.widget.TabLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_normal" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

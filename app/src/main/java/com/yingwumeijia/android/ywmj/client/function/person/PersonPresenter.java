@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.CustomerResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectFragment;
@@ -125,18 +126,18 @@ public class PersonPresenter implements PersonContract.Presenter {
     /**
      * 用户数据回调
      */
-    Callback<BaseBean<UserBean>> userInfoCallback = new Callback<BaseBean<UserBean>>() {
+    Callback<CustomerResultBean> userInfoCallback = new Callback<CustomerResultBean>() {
         @Override
-        public void onResponse(Call<BaseBean<UserBean>> call, Response<BaseBean<UserBean>> response) {
+        public void onResponse(Call<CustomerResultBean> call, Response<CustomerResultBean> response) {
             mView.dismissProgressBar();
             if (response.body().getSucc()) {
-                UserBean userBean = response.body().getData();
+                UserBean userBean = response.body().getData().getCustomerDto();
                 showName = userBean.getNickName();
-                portraitUrl = userBean.getHeadImage();
-                showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getPhone());
+                portraitUrl = userBean.getShowHead();
+                showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
                 mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
                 mView.setUserPortrait(portraitUrl);
-                mView.showCollectCount(userBean.getCaseNum() + "个收藏");
+                mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
             } else {
                 mView.showLoadingFail(response.body().getMessage());
                 mView.showNetConnectError();
@@ -144,7 +145,7 @@ public class PersonPresenter implements PersonContract.Presenter {
         }
 
         @Override
-        public void onFailure(Call<BaseBean<UserBean>> call, Throwable t) {
+        public void onFailure(Call<CustomerResultBean> call, Throwable t) {
             mView.dismissProgressBar();
             mView.showNetConnectError();
         }

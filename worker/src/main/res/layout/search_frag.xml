@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/bg_whide"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            tools:ignore="HardcodedText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/horizontal_margin"
+            android:paddingRight="@dimen/horizontal_margin"
+            android:text="取消"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_title_medium" />
+
+        <EditText
+            android:id="@+id/ed_key_words"
+            tools:ignore="HardcodedText,RtlSymmetry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/btn_cancel"
+            android:background="@drawable/btn_bg_stroke_gray"
+            android:drawableLeft="@mipmap/search_box_ico"
+            android:drawablePadding="8dp"
+            android:hint="请输入案例标题关键字"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:textColor="@color/text_color_black"
+            android:textColorHint="@color/text_color_weak"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal" />
+
+
+        <ImageView
+            android:id="@+id/btn_clear_edit"
+            tools:ignore="ContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_toLeftOf="@id/btn_cancel"
+            android:padding="@dimen/vertical_margin"
+            android:src="@mipmap/delete_ico" />
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/divider_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="@color/colorAccent" />-->
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView
+            android:id="@+id/rv_case"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:visibility="gone">
+
+
+            <ImageView
+                tools:ignore="ContentDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@mipmap/search_no_result_ico" />
+
+            <TextView
+                tools:ignore="HardcodedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="抱歉，没有匹配的案例"
+                android:textColor="@color/text_color_weak"
+                android:textSize="@dimen/text_title_medium" />
+
+            <TextView
+                tools:ignore="HardcodedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="请选择其他类型或搜索"
+                android:textColor="@color/text_color_weak"
+                android:textSize="@dimen/text_title_medium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

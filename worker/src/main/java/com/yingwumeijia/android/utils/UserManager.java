@@ -4,9 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.rx.android.jamspeedlibrary.utils.SPUtils;
-import com.yingwumeijia.android.ywmj.client.MyApp;
-import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
-import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
+import com.yingwumeijia.android.WorkerApp;
+import com.yingwumeijia.android.data.bean.UserBean;
+import com.yingwumeijia.android.utils.constants.Constant;
 
 /**
  * Created by Jam on 2016/8/2.
@@ -18,41 +18,41 @@ public class UserManager {
     private static final int EMPTY_INTEGER = 0;
 
     public static void saveRongIMToken(String token) {
-        SPUtils.put(MyApp.appContext(), "rong_im_token", token);
+        SPUtils.put(WorkerApp.appContext(), "rong_im_token", token);
     }
 
     public static void getRongIMToken() {
-        SPUtils.get(MyApp.appContext(), "rong_im_token", EMPTY_STRING);
+        SPUtils.get(WorkerApp.appContext(), "rong_im_token", EMPTY_STRING);
     }
 
     public static void saveUserPhone(String phone) {
         if (phone != null)
-            SPUtils.put(MyApp.appContext(), "user_phone", phone);
+            SPUtils.put(WorkerApp.appContext(), "user_phone", phone);
     }
 
     public static void getUserPhone() {
-        SPUtils.get(MyApp.appContext(), "user_phone", EMPTY_STRING);
+        SPUtils.get(WorkerApp.appContext(), "user_phone", EMPTY_STRING);
     }
 
     public static void saveUserPassword(String password) {
-        SPUtils.put(MyApp.appContext(), "user_password", password);
+        SPUtils.put(WorkerApp.appContext(), "user_password", password);
     }
 
     public static void geUserPassword() {
-        SPUtils.get(MyApp.appContext(), "user_password", EMPTY_STRING);
+        SPUtils.get(WorkerApp.appContext(), "user_password", EMPTY_STRING);
     }
 
     public static void saveUserId(int userId) {
-        SPUtils.put(MyApp.appContext(), "user_id", userId);
+        SPUtils.put(WorkerApp.appContext(), "user_id", userId);
     }
 
     public static void getUserId() {
-        SPUtils.get(MyApp.appContext(), "user_id", EMPTY_INTEGER);
+        SPUtils.get(WorkerApp.appContext(), "user_id", EMPTY_INTEGER);
     }
 
 
     public static void saveUserInfo(UserBean userBean) {
-        Constant.setLoginIn(MyApp.appContext());
+        Constant.setLoginIn(WorkerApp.appContext());
         saveUserId(userBean.getId());
         // saveUserPhone(userBean.getPhone());
     }

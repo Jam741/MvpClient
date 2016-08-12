@@ -33,9 +33,9 @@ public class SplashPresenter implements SplashContract.Presenter {
         if (Constant.isLogin(context)) {
             LoginRobot
                     .createLoginRobot(
+                            context,
                             Constant.getUserPhone(context),
                             Constant.getUserPassword(context),
-                            null,
                             loginCallBack
                     );
         } else {

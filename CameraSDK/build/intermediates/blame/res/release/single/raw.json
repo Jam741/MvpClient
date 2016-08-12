@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\raw\\tone_cuver_sample.acv",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\res\\raw\\tone_cuver_sample.acv"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\raw\\tone_cuver_sample.acv",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\raw\\tone_cuver_sample.acv"
     },
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/release/raw/tone_cuver_sample.acv",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/res/raw/tone_cuver_sample.acv"
+        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\raw\\tone_cuver_sample.acv",
+        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\res\\raw\\tone_cuver_sample.acv"
+    },
+    {
+        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\raw\\tone_cuver_sample.acv",
+        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\res\\raw\\tone_cuver_sample.acv"
     }
 ]

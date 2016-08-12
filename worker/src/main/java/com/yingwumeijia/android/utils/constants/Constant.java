@@ -54,9 +54,8 @@ public class Constant {
     public static final String NET_WORK_RECEIVER_ACTION = "com.ywmj.receiver.networkreceiver";
     public static final String NET_TYPE = "net_type1";
 
-    public static void setLoginIn(Context context, String header) {
+    public static void setLoginIn(Context context) {
         setLoginInfo(LOGIN_IN, context);
-        saveHeader(header, context);
     }
 
     public static void setLoginOut(Context context) {
@@ -150,4 +149,12 @@ public class Constant {
         return (String) SPUtils.get(context, "IMTOKEN", "");
     }
 
+
+    //微信授权KEY
+    public static String WX_APP_ID = "wxa57345f69f5a674d";
+    //微博授权KEY
+    public static String WB_APP_KEY = "2293291411";
+
+
+    public static String ACTION_SCROLL_NAV ="com.ywmj.client.scroll";
 }

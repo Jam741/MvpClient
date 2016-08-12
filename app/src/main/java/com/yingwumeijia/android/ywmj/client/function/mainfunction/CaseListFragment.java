@@ -197,7 +197,7 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
 
     @Override
     public void showNetConnectError() {
-        showNetConnectError();
+        showBaseNetConnectError();
     }
 
     @Override

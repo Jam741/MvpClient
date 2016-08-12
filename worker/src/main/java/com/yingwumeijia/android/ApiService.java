@@ -1,15 +1,16 @@
 package com.yingwumeijia.android;
 
-import com.yingwumeijia.android.worker.model.bean.BaseBean;
-import com.yingwumeijia.android.worker.model.bean.CaseDetailsResultBean;
-import com.yingwumeijia.android.worker.model.bean.CaseListResultBean;
-import com.yingwumeijia.android.worker.model.bean.CaseTypeResultBean;
-import com.yingwumeijia.android.worker.model.bean.CustomResultBean;
-import com.yingwumeijia.android.worker.model.bean.FindPwdResultBean;
-import com.yingwumeijia.android.worker.model.bean.GroupResultBean;
-import com.yingwumeijia.android.worker.model.bean.LoginResultBean;
-import com.yingwumeijia.android.worker.model.bean.RegisterResultBean;
-import com.yingwumeijia.android.worker.model.bean.TokenResultBean;
+import com.yingwumeijia.android.data.bean.BaseBean;
+import com.yingwumeijia.android.data.bean.CaseDetailsResultBean;
+import com.yingwumeijia.android.data.bean.CaseListResultBean;
+import com.yingwumeijia.android.data.bean.CaseTypeResultBean;
+import com.yingwumeijia.android.data.bean.CustomerResultBean;
+import com.yingwumeijia.android.data.bean.FindPwdResultBean;
+import com.yingwumeijia.android.data.bean.GroupResultBean;
+import com.yingwumeijia.android.data.bean.LoginResultBean;
+import com.yingwumeijia.android.data.bean.RegisterResultBean;
+import com.yingwumeijia.android.data.bean.TokenResultBean;
+import com.yingwumeijia.android.data.bean.UserBean;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -50,7 +51,6 @@ public interface ApiService {
     @POST("user/login")
     Call<LoginResultBean> login(@Query("phone") String phone,
                                 @Query("password") String password,
-                                @Query("smsCode") String smsCode,
                                 @Query("verifyCode") String verifyCode);
 
 
@@ -104,7 +104,7 @@ public interface ApiService {
      * @return
      */
     @GET("employee/getEmployeeInfo")
-    Call<CustomResultBean> getCustomerInfo();
+    Call<CustomerResultBean> getCustomerInfo();
 
     /**
      * 修改昵称
@@ -253,5 +253,5 @@ public interface ApiService {
 
 
     @GET("im/sessionMember/{memberId}")
-    Call<BaseBean<GroupResultBean.GroupConversationBean.MembersBean>> getMemberInfo(@Path("memberId") String memberId);
+    Call<BaseBean<UserBean>> getMemberInfo(@Path("memberId") String memberId);
 }

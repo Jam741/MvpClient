@@ -132,7 +132,7 @@
 
                 <data
                     android:host="com.yingwumeijia.android.ywmj.client"
-                    android:pathPrefix="/subconversationlist"
+                    android:pathPrefix="/conversation/"
                     android:scheme="rong" />
             </intent-filter>
         </activity>

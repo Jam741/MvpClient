@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="396dp"
+    android:layout_marginTop="@dimen/vertical_margin"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:background="@color/bg_whide"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            tools:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/iv_icon"
+            android:background="@color/bg_whide">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/home_list_title_ico"
+                android:drawablePadding="10dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap,RtlSymmetry"
+                tools:text="北欧风" />
+
+            <TextView
+                android:id="@+id/tv_collect_count"
+                android:layout_width="71dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/btn_bg_stock"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_small"
+                tools:text="收藏12" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

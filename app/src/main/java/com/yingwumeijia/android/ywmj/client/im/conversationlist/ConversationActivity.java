@@ -68,7 +68,11 @@ public class ConversationActivity extends AppCompatActivity {
     ImageView ivCaseImg;
 
     private Activity context;
-    private String title;
+
+    /**
+     * 会话title
+     */
+    private String mTitle;
 
     /**
      * 案例信息
@@ -85,34 +89,17 @@ public class ConversationActivity extends AppCompatActivity {
      */
     private boolean available;
 
-    /**
-     * 目标 Id
-     */
 
     /**
      * 刚刚创建完讨论组后获得讨论组的id 为targetIds，需要根据 为targetIds 获取 targetId
      */
-    private String targetId;
+    private String mTargetId;
 
     /**
      * 会话类型
      */
     private Conversation.ConversationType mConversationType;
 
-
-    private static final String KEY_TARGET_ID = "KEY_TARGET_ID";
-    private static final String KEY_TITLE = "KEY_TITLE";
-    private static final String KEY_CASE_INFO = "KEY_CASE_INFO";
-    private static final String KEY_AVAILABLE = "KEY_AVAILABLE";
-    private static final String KEY_TEAM_PHONE = "KEY_TEAM_PHONE";
-
-    public static void start(Activity activity, String taegerId) {
-        Intent intent = new Intent(activity, ConversationActivity.class);
-        Bundle bundle = new Bundle();
-        bundle.putString(KEY_TARGET_ID, taegerId);
-        intent.putExtra("bundle", bundle);
-        activity.startActivity(intent);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -123,39 +110,20 @@ public class ConversationActivity extends AppCompatActivity {
 
         getIntentData();
 
-        initData();
         initActionBar();
-        if (caseInfoBean != null) {
-            initCaseInfo();
-        } else {
-            caseLayout.setVisibility(View.GONE);
-        }
 
+        isReconnect(getIntent());
 
+        enterFragment(Conversation.ConversationType.GROUP, mTargetId);
+
+        report();
     }
 
-    private void initData() {
-        Bundle bundle = getIntent().getBundleExtra("bundle");
-        if (bundle == null) {
-            isReconnect(getIntent());
-            getSessionInfo();
-            return;
-        }
-        targetId = bundle.getString(KEY_TARGET_ID);
-        title = bundle.getString(KEY_TITLE);
-        caseInfoBean = (GroupResultBean.GroupConversationBean.CaseInfoBean) bundle.getSerializable(KEY_CASE_INFO);
-        available = bundle.getBoolean(KEY_AVAILABLE, true);
-        teamPhone = bundle.getString(KEY_TEAM_PHONE);
-        enterFragment(Conversation.ConversationType.GROUP, targetId);
-    }
 
     /**
+     * 获取会话案例信息
      */
-    private void getSessionInfo() {
-        Uri uri = getIntent().getData();
-        targetId = uri.getQueryParameter("targetId");
-        mConversationType = Conversation.ConversationType.valueOf(getIntent().getData().getLastPathSegment().toUpperCase(Locale.getDefault()));
-
+    private void getSessionCaseInfo(String targetId) {
         MyApp
                 .getApiService()
                 .getConversionInfo(targetId)
@@ -163,7 +131,7 @@ public class ConversationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<GroupResultBean> call, Response<GroupResultBean> response) {
                         if (response.body().getSucc()) {
-                            title = response.body().getData().getName();
+                            mTitle = response.body().getData().getName();
                             caseInfoBean = response.body().getData().getCaseInfo();
                             available = response.body().getData().isAvailable();
                             teamPhone = response.body().getData().getTeamPhone();
@@ -217,7 +185,7 @@ public class ConversationActivity extends AppCompatActivity {
 
 
     private void initActionBar() {
-        topTitle.setText(title);
+        topTitle.setText(mTitle);
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
         TextViewUtils.setDrawableToLeft(context, topRight, R.mipmap.im_detail_call_ico);
 
@@ -256,6 +224,11 @@ public class ConversationActivity extends AppCompatActivity {
     public static final int request_code_call_phone = 001;
 
 
+    /**
+     * 拨打电话提示
+     *
+     * @param teamPhone
+     */
     private void call(final String teamPhone) {
         AlertDialog dialog = new AlertDialog.Builder(context)
                 .setTitle(R.string.dialog_title)
@@ -275,6 +248,9 @@ public class ConversationActivity extends AppCompatActivity {
                 .show();
     }
 
+    /**
+     * 检查权限
+     */
     private void checkPermession() {
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             //申请WRITE_EXTERNAL_STORAGE权限
@@ -284,6 +260,9 @@ public class ConversationActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 拨打电话
+     */
     private void callTeamPhone() {
         if (TextUtils.isEmpty(teamPhone)) {
             T.showShort(context, "没有电话号码");
@@ -302,6 +281,12 @@ public class ConversationActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 拨打电话权限回调
+     *
+     * @param requestCode
+     * @param grantResults
+     */
     private void doNext(int requestCode, int[] grantResults) {
         if (requestCode == request_code_call_phone) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -325,7 +310,7 @@ public class ConversationActivity extends AppCompatActivity {
         ConversationFragment fragment = (ConversationFragment) getSupportFragmentManager().findFragmentById(R.id.conversation);
 
         Uri uri = Uri.parse("rong://" + getApplicationInfo().packageName).buildUpon()
-                .appendPath("conversation").appendPath(Conversation.ConversationType.GROUP.getName().toLowerCase())
+                .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
 
         fragment.setUri(uri);
@@ -337,7 +322,7 @@ public class ConversationActivity extends AppCompatActivity {
     private void report() {
         MyApp
                 .getApiService()
-                .report(targetId)
+                .report(mTargetId)
                 .enqueue(new Callback<BaseBean>() {
                     @Override
                     public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
@@ -362,17 +347,31 @@ public class ConversationActivity extends AppCompatActivity {
      */
     private void isReconnect(Intent intent) {
 
-        LogUtil.getInstance().debug("isReconnect");
+
         String token = null;
 
-        if (!Constant.getIMToken(context).equals("")) {
+        if (!TextUtils.isEmpty(Constant.getIMToken(MyApp.appContext()))) {
+
             token = Constant.getIMToken(context);
         }
 
-
         //push或通知过来
         if (intent != null && intent.getData() != null && intent.getData().getScheme().equals("rong")) {
-            reconnect(token);
+
+            //通过intent.getData().getQueryParameter("push") 为true，判断是否是push消息
+            if (intent.getData().getQueryParameter("push") != null
+                    && intent.getData().getQueryParameter("push").equals("true")) {
+
+                reconnect(token);
+            } else {
+                //程序切到后台，收到消息后点击进入,会执行这里
+                if (RongIM.getInstance() == null || RongIM.getInstance().getRongIMClient() == null) {
+
+                    reconnect(token);
+                } else {
+                    enterFragment(mConversationType, mTargetId);
+                }
+            }
         }
     }
 
@@ -398,7 +397,7 @@ public class ConversationActivity extends AppCompatActivity {
                 @Override
                 public void onSuccess(String s) {
                     LogUtil.getInstance().debug("onSuccess");
-                    enterFragment(mConversationType, targetId);
+                    enterFragment(mConversationType, mTargetId);
                 }
 
                 @Override
@@ -410,6 +409,10 @@ public class ConversationActivity extends AppCompatActivity {
     }
 
     public void getIntentData() {
+        Uri uri = getIntent().getData();
+        mTargetId = uri.getQueryParameter("targetId");
+        mTitle = uri.getQueryParameter("title");
+        mConversationType = Conversation.ConversationType.valueOf(getIntent().getData().getLastPathSegment().toUpperCase(Locale.getDefault()));
 
     }
 }

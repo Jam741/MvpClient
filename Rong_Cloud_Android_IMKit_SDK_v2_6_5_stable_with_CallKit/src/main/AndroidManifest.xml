@@ -142,14 +142,14 @@
         <!--<meta-data-->
         <!--android:name="RONG_CLOUD_APP_KEY"-->
         <!--android:value="x18ywvqf87m3c" />-->
-        <!--release-->
-        <!--<meta-data-->
-        <!--android:name="RONG_CLOUD_APP_KEY"-->
-        <!--android:value="sfci50a7cve6i" />-->
-        <!--ali-->
+        <!--dev-->
         <meta-data
             android:name="RONG_CLOUD_APP_KEY"
-            android:value="y745wfm84k0ov" />
+            android:value="sfci50a7cve6i" />
+        <!--ali-->
+        <!--<meta-data-->
+        <!--android:name="RONG_CLOUD_APP_KEY"-->
+        <!--android:value="y745wfm84k0ov" />-->
 
         <service
             android:name="io.rong.imlib.ipc.RongService"

@@ -122,7 +122,7 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
             private int id;
             private String caseName;
             private String caseCover;
-            private String status;
+            private int status;
 
             public int getId() {
                 return id;
@@ -148,11 +148,11 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
                 this.caseCover = caseCover;
             }
 
-            public String getStatus() {
+            public int getStatus() {
                 return status;
             }
 
-            public void setStatus(String status) {
+            public void setStatus(int status) {
                 this.status = status;
             }
         }
