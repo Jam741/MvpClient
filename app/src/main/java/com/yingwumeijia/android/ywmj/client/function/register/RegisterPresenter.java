@@ -91,7 +91,6 @@ public class RegisterPresenter implements RegisterContract.Presenter {
 
     @Override
     public void registerSuccess(UserBean userBean) {
-        Constant.setLoginIn(context);
         mRegisterView.finish();
         StartActivityManager.startMain(context);
     }

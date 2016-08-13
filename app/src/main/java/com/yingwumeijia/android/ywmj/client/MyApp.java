@@ -11,6 +11,7 @@ import com.yingwumeijia.android.ywmj.client.im.listener.MyConnectionStatusListen
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.RetrofitBuilder;
 
+import io.rong.common.WakeLockUtils;
 import io.rong.imkit.RongContext;
 import io.rong.imkit.RongIM;
 import io.rong.imkit.widget.provider.CameraInputProvider;
@@ -40,8 +41,13 @@ public class MyApp extends StarterApplication{
         super.onCreate();
 
         //createRetrofit;
-        new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL).build();
-
+        if (BuildConfig.DEBUG) {
+            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
+        }else if (BuildConfig.FLAVOR.equals("ywmjtest")){
+            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
+        }else {
+            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
+        }
         //init loger of Timber
         initTimber();
 
@@ -112,6 +118,9 @@ public class MyApp extends StarterApplication{
      * 初始化融云
      */
     private void initRongClound() {
+
+
+
         /**
          *
          * OnCreate 会被多个进程重入，这段保护代码，确保只有您需要使用 RongIM 的进程和 Push 进程执行了 init。

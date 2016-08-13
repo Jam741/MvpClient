@@ -30,12 +30,6 @@ import butterknife.OnClick;
  */
 public class MainActivity extends BaseActivity {
 
-    @Bind(R.id.iv_search)
-    ImageView ivSearch;
-    @Bind(R.id.iv_message)
-    ImageView ivMessage;
-    @Bind(R.id.iv_mine)
-    ImageView ivMine;
 
     private CaseListContract.Presenter mCaseListPresenter;
 
@@ -111,20 +105,5 @@ public class MainActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
-    }
-
-    @OnClick({R.id.iv_search, R.id.iv_message, R.id.iv_mine})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.iv_search:
-                SearchActivity.start(context);
-                break;
-            case R.id.iv_message:
-                StartActivityManager.startSubConversationListActivity(this);
-                break;
-            case R.id.iv_mine:
-                PersonActivity.start(context);
-                break;
-        }
     }
 }

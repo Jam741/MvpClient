@@ -54,8 +54,8 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
     RelativeLayout btnCost;
     @Bind(R.id.rv_case)
     XRecyclerView rvCase;
-    //    @Bind(R.id.empty_layout)
-//    LinearLayout emptyLayout;
+    @Bind(R.id.empty_layout)
+    LinearLayout emptyLayout;
     @Bind(R.id.netError_layout)
     LinearLayout netErrorLayout;
     @Bind(R.id.tv_sliding_title)
@@ -119,13 +119,34 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
     public void refreshNavigationStatus(String showText, int navigationPosition) {
         switch (navigationPosition) {
             case 0:
-                tvStyle.setText(showText);
+                if (showText.equals("全部")) {
+                    tvStyle.setTextColor(getResources().getColor(R.color.text_color_black));
+                    tvStyle.setText(R.string.case_list_nav_style);
+                } else {
+                    tvStyle.setTextColor(getResources().getColor(R.color.colorAccent));
+                    tvStyle.setText(showText);
+
+                }
                 break;
             case 1:
-                tvHx.setText(showText);
+                if (showText.equals("全部")) {
+                    tvHx.setTextColor(getResources().getColor(R.color.text_color_black));
+                    tvHx.setText(R.string.case_list_nav_fx);
+                } else {
+                    tvHx.setTextColor(getResources().getColor(R.color.colorAccent));
+                    tvHx.setText(showText);
+                }
+
                 break;
             case 2:
-                tvCost.setText(showText);
+                if (showText.equals("全部")) {
+                    tvCost.setTextColor(getResources().getColor(R.color.text_color_black));
+                    tvCost.setText(R.string.case_list_nav_time);
+                } else {
+                    tvCost.setTextColor(getResources().getColor(R.color.colorAccent));
+                    tvCost.setText(showText);
+
+                }
                 break;
         }
     }
@@ -137,7 +158,7 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
 
     @Override
     public void showEmptyLayout(boolean isEmpty) {
-
+            emptyLayout.setVisibility(isEmpty==true?View.VISIBLE:View.GONE);
     }
 
     @Override
@@ -216,20 +237,32 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
         ButterKnife.unbind(this);
     }
 
-    @OnClick({ R.id.btn_style, R.id.btn_hx, R.id.btn_time})
+    @OnClick({R.id.btn_style, R.id.btn_hx, R.id.btn_time, R.id.iv_search, R.id.iv_message, R.id.iv_mine})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_style:
+                tvSlidingTitle.setText(getResources().getString(R.string.case_list_nav_style) + "筛选");
                 mNavigationPosition = 0;
                 mPresenter.refreshNavigationData(0);
                 break;
             case R.id.btn_hx:
+                tvSlidingTitle.setText(getResources().getString(R.string.case_list_nav_fx) + "筛选");
                 mNavigationPosition = 1;
                 mPresenter.refreshNavigationData(1);
                 break;
             case R.id.btn_time:
+                tvSlidingTitle.setText(getResources().getString(R.string.case_list_nav_time) + "筛选");
                 mNavigationPosition = 2;
                 mPresenter.refreshNavigationData(2);
+                break;
+            case R.id.iv_search:
+                SearchActivity.start(context);
+                break;
+            case R.id.iv_message:
+                StartActivityManager.startSubConversationListActivity(context);
+                break;
+            case R.id.iv_mine:
+                PersonActivity.start(context);
                 break;
         }
     }

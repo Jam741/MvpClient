@@ -1,26 +1,34 @@
 [
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

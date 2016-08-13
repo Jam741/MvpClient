@@ -60,7 +60,7 @@ public class FindPasswordActivity extends BaseActivity implements View.OnClickLi
     private void setUpActionBar() {
         TextView topTitle = (TextView) findViewById(R.id.topTitle);
         TextView topLeft = (TextView) findViewById(R.id.topLeft);
-        topTitle.setText("注册新账号");
+        topTitle.setText("找回密码");
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
         topLeft.setOnClickListener(this);
     }

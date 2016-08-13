@@ -58,8 +58,8 @@ public class SplashPresenter implements SplashContract.Presenter {
     LoginDataProvider.LoginCallBack loginCallBack = new LoginDataProvider.LoginCallBack() {
         @Override
         public void loginSuccess(UserBean userBean) {
-            Constant.setLoginOut(context);
-            startMainActivity();
+            Constant.setLoginIn(context);
+            MainActivity.start(context);
         }
 
         @Override
@@ -71,7 +71,7 @@ public class SplashPresenter implements SplashContract.Presenter {
         @Override
         public void connectError() {
             mView.showNetConnectError();
-            startMainActivity();
+            MainActivity.start(context);
         }
     };
 }

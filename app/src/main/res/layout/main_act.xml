@@ -6,59 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/actionbar_height"
-        android:background="@color/actionBarColor"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:src="@mipmap/home_ywmj_logo"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:id="@+id/iv_search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/vertical_margin"
-            android:padding="5dp"
-            android:src="@mipmap/search_ico"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-        <ImageView
-            android:id="@+id/iv_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/vertical_margin"
-            android:padding="5dp"
-            android:src="@mipmap/message_ico"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-        <ImageView
-            android:id="@+id/iv_mine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/vertical_margin"
-            android:padding="5dp"
-            android:src="@mipmap/mine_ico"
-            tools:ignore="ContentDescription,RtlHardcoded" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/divider_height"
-        android:background="@color/colorAccent" />
 
     <FrameLayout
         android:id="@+id/contentFragment"

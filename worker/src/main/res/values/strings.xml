@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Worker</string>
+    <string name="app_name">鹦鹉美家商家</string>
     <!--========================================Error==================================-->
     <string name="input_phone_error">手机号码错误，请重新输入</string>
     <string name="input_password_error">密码错误，请重新输入</string>

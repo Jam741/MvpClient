@@ -11,6 +11,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginRobot;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import retrofit2.Call;
@@ -38,27 +39,32 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
     }
 
 
+
     @Override
     public boolean checkInputPhone(String phone) {
         if (PhoneNumberUtils.isMobile(phone)) return true;
+        mFindPasswordView.showInputPhoneError();
         return false;
     }
 
     @Override
     public boolean checkInputSmsCode(String smsCode) {
         if (Constant.smsCodeRuleOk(smsCode)) return true;
+        mFindPasswordView.showInputSmsCodeError();
         return false;
     }
 
     @Override
     public boolean checkInputPassword(String password) {
         if (Constant.passwordRuleOk(password)) return true;
+        mFindPasswordView.showInputPasswordError();
         return false;
     }
 
     @Override
     public void sendSmsCode(String phone) {
         if (!checkInputPhone(phone)) return;
+        mFindPasswordView.showProgressBar();
         MyApp
                 .getApiService()
                 .sendSmsCode(phone, Constant.PARAM_FIND)
@@ -68,6 +74,7 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
     @Override
     public void findSuccessOperation(UserBean userBean) {
         mFindPasswordView.finish();
+        StartActivityManager.startMain(context);
     }
 
     @Override

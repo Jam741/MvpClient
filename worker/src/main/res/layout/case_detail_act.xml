@@ -107,7 +107,7 @@
 
             </RelativeLayout>
 
-            <com.yingwumeijia.android.utils.view.IndexViewPager
+            <com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager
                 android:id="@+id/vp_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -122,7 +122,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="bottom|right"
-            android:layout_marginBottom="45dp"
+            android:layout_marginBottom="@dimen/vertical_margin"
             android:layout_marginRight="@dimen/vertical_margin"
             android:background="@null"
             android:src="@mipmap/details_pic_list_bt"
@@ -138,7 +138,8 @@
             android:gravity="center"
             android:text="立即联系他们"
             android:textColor="@color/text_color_whide"
-            android:textSize="@dimen/text_title_medium" />
+            android:textSize="@dimen/text_title_medium"
+            android:visibility="gone" />
 
     </RelativeLayout>
 

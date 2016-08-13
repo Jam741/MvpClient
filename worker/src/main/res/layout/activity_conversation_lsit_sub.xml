@@ -4,7 +4,53 @@
     style="@style/rootStyle"
     android:layout_height="match_parent">
 
-    <include layout="@layout/toolbr_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/actionBarColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textAppearance="@style/TextTitle" />
+
+        <TextView
+            android:id="@+id/topLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/home_ywmj_logo"
+            android:gravity="center_vertical"
+            android:paddingLeft="22dp" />
+
+        <TextView
+            android:id="@+id/topRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@mipmap/mine_ico"
+            android:gravity="center_vertical"
+            android:paddingRight="22dp" />
+
+        <TextView
+            android:id="@+id/topRight_second"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/topRight"
+            android:drawableLeft="@mipmap/yezhe_case_ico"
+            android:gravity="center_vertical"
+            android:paddingRight="22dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent" />
+    </RelativeLayout>
 
     <fragment
         android:id="@+id/subconversationlist"

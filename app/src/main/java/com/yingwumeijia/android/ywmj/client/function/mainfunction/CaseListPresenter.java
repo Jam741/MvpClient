@@ -52,9 +52,6 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
     private static final String KEY_DECORATE_STYLE_TYPE = "KEY_DECORATE_STYLE_TYPE";
 
     private Map<String, List<CaseTypeEnum>> mType_set;
-    private List<CaseTypeEnum> hostType_List = new ArrayList<>();
-    private List<CaseTypeEnum> costRange_List = new ArrayList<>();
-    private List<CaseTypeEnum> decorateStyle_List = new ArrayList<>();
 
     public CaseListPresenter(Context context, CaseListContract.View mCaseListView) {
         this.context = context;
@@ -63,7 +60,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
     }
 
     @Override
-    public CommonRecyclerAdapter<CaseBean> createCaseTypeAdapter() {
+    public CommonRecyclerAdapter<CaseBean> createCaseListAdapter() {
         mCaseListAdapter = new CommonRecyclerAdapter<CaseBean>(null, context, R.layout.item_case_list) {
             @Override
             public void convert(RecyclerViewHolder holder, final CaseBean caseBean, int position) {
@@ -84,11 +81,12 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
     }
 
     @Override
-    public CaseTypeAdapter createCaseListAdapter() {
+    public CaseTypeAdapter createCaseTypeAdapter() {
         mNavigationAdapter = new CaseTypeAdapter(context);
         mNavigationAdapter.setOnMyItemClickLisenter(new CaseTypeAdapter.OnMyItemClickLisenter() {
             @Override
             public void itemClick(CaseTypeEnum caseTypeEnum, int positon) {
+                mNavigationAdapter.setSelectedPosition(positon);
                 caseTypeListItemSelected(caseTypeEnum, mCaseListView.getNavigationPosition());
             }
         });
@@ -164,6 +162,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void refreshNavigationData(int navigationPosition) {
+        if (mType_set==null|mType_set.size()==0)return;
         switch (mCaseListView.getNavigationPosition()) {
             case 0:
                 mNavigationAdapter.refreshData(mType_set.get(KEY_DECORATE_STYLE_TYPE));
@@ -216,6 +215,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
                     mCaseListView.caseListRefreshComplete();
                     mCaseListView.caseListLoadRset();
                     refreshCaseData(response.body().getData());
+                    mCaseListView.showEmptyLayout(response.body().getData().size() == 0);
                 } else {
                     mCaseListView.caseListLoadMoreComplete();
                     if (response.body().getData() == null || response.body().getData().size() == 0) {
@@ -267,6 +267,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         mType_set.put(KEY_HOUS_TYPE, data.getHouseType());
         mType_set.put(KEY_DECORATE_STYLE_TYPE, data.getDecorateStyleType());
         mType_set.put(KEY_COST_RANGE_TYPE, data.getCostRangeType());
+
 
         mNavigationAdapter.refreshData(data.getDecorateStyleType());
     }

@@ -42,6 +42,8 @@ public class LoginRobot implements LoginDataProvider {
     private int error_count = 0;
     private Context mContext;
     private STATUS mCurrentStatus = STATUS.LOGIN;
+    private String mPhone;
+    private String mPassword;
 
     enum STATUS {
         LOGIN,
@@ -54,6 +56,8 @@ public class LoginRobot implements LoginDataProvider {
         this.mLoginCallBack = loginCallBack;
         this.mContext = context;
         this.mCurrentStatus = STATUS.LOGIN;
+        this.mPhone = phone;
+        this.mPassword = password;
         login(phone, password, null);
     }
 
@@ -62,6 +66,8 @@ public class LoginRobot implements LoginDataProvider {
         this.mLoginCallBack = loginCallBack;
         this.mContext = context;
         this.mCurrentStatus = STATUS.REGISTER;
+        this.mPhone = phone;
+        this.mPassword = password;
         register(phone, password, smsCode);
     }
 
@@ -70,6 +76,8 @@ public class LoginRobot implements LoginDataProvider {
         this.mLoginCallBack = loginCallBack;
         this.mContext = context;
         this.mCurrentStatus = STATUS.FINDPASSWORD;
+        this.mPhone = phone;
+        this.mPassword = password;
         findPassword(phone, smsCode, password);
     }
 
@@ -105,7 +113,6 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void register(final String phone, String password, String smsCode) {
-        Constant.saveUserLoginInfo(phone, password, mContext);
         MyApp
                 .getApiService()
                 .register(phone, password, smsCode)
@@ -196,7 +203,6 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void login(String phone, String password, String verifyCode) {
-        Constant.saveUserLoginInfo(phone, password, mContext);
         MyApp
                 .getApiService()
                 .login(phone, password, verifyCode)
@@ -317,6 +323,7 @@ public class LoginRobot implements LoginDataProvider {
                     RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
                     Log.d("LoginActivity", "--=======================-onSuccess : " + userid);
                     Constant.setLoginIn(mContext);
+                    Constant.saveUserLoginInfo(mPhone, mPassword, mContext);
                     if (mCurrentStatus == STATUS.LOGIN) {
                         mLoginCallBack.loginSuccess(mResponse.body().getData());
                     } else if (mCurrentStatus == STATUS.REGISTER) {

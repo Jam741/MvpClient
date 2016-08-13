@@ -120,7 +120,7 @@ public interface CaseListContract {
          *
          * @return
          */
-        CaseTypeAdapter createCaseListAdapter();
+        RecyclerView.Adapter createCaseListAdapter();
 
         /**
          * 刷新列表数据

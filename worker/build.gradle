@@ -1,21 +1,51 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'ywmj_worker'
+            keyPassword 'jia5201314'
+            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/worker/worker.jks')
+            storePassword 'jia5201314'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
-        applicationId "com.yingwumeijia.android"
+        applicationId "com.yingwumeijia.android.worker"
         minSdkVersion 15
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.1.2"
+        multiDexEnabled true
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors {
+        ywmjtest{}
+        ywmj{ }
+        aliclound {}
+        xiaomi {}
+        qihu360 {}
+        wandoujia {}
+        baidu {}
+        yingyongbao {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    lintOptions{
+        abortOnError false
     }
 }
 

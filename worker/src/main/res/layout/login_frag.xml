@@ -131,20 +131,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/vertical_margin"
                 android:padding="5dp"
+                android:layout_alignParentRight="true"
                 android:text="忘记密码?"
                 android:textSize="@dimen/text_small"
                 tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/btn_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="@dimen/vertical_margin"
-                android:padding="5dp"
-                android:text="注册新账号"
-                android:textSize="@dimen/text_small"
-                tools:ignore="HardcodedText,RtlHardcoded" />
 
         </RelativeLayout>
     </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.fasterxml.jackson.databind.type.TypeBindings;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseTypeEnum;
 
@@ -22,19 +23,19 @@ public class CaseTypeAdapter extends RecyclerView.Adapter<CaseTypeAdapter.ViewHo
     private final List<CaseTypeEnum> mCaseTypeEnumList = new ArrayList<>();
     private final Context mContext;
     private OnMyItemClickLisenter onMyItemClickLisenter;
-    private int selectedPosition;
-
-    public int getSelectedPosition() {
-        return selectedPosition;
-    }
 
     public void setSelectedPosition(int selectedPosition) {
-        this.selectedPosition = selectedPosition;
+        for (int i = 0; i < mCaseTypeEnumList.size(); i++) {
+            CaseTypeEnum type = mCaseTypeEnumList.get(i);
+            if (i == selectedPosition) {
+                type.setSelected(true);
+            } else {
+                type.setSelected(false);
+            }
+        }
+        notifyDataSetChanged();
     }
 
-    public OnMyItemClickLisenter getOnMyItemClickLisenter() {
-        return onMyItemClickLisenter;
-    }
 
     public void setOnMyItemClickLisenter(OnMyItemClickLisenter onMyItemClickLisenter) {
         this.onMyItemClickLisenter = onMyItemClickLisenter;
@@ -46,6 +47,11 @@ public class CaseTypeAdapter extends RecyclerView.Adapter<CaseTypeAdapter.ViewHo
 
     public CaseTypeAdapter(Context context) {
         this.mContext = context;
+    }
+
+    public CaseTypeAdapter(Context context, List<CaseTypeEnum> caseTypeEnumList) {
+        this.mContext = context;
+        this.mCaseTypeEnumList.addAll(caseTypeEnumList);
     }
 
     public void refreshData(List<CaseTypeEnum> mCaseTypeEnumList) {
@@ -63,10 +69,13 @@ public class CaseTypeAdapter extends RecyclerView.Adapter<CaseTypeAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        if (position == selectedPosition) {
-            holder.tv_type.setText(mCaseTypeEnumList.get(position).getName());
+        CaseTypeEnum caseTypeEnum = mCaseTypeEnumList.get(position);
+        if (caseTypeEnum.isSelected()) {
+            holder.tv_type.setTextColor(mContext.getResources().getColor(R.color.colorAccent));
+            holder.tv_type.setText(caseTypeEnum.getName());
         } else {
-            holder.tv_type.setText(mCaseTypeEnumList.get(position).getName());
+            holder.tv_type.setTextColor(mContext.getResources().getColor(R.color.text_color_whide));
+            holder.tv_type.setText(caseTypeEnum.getName());
         }
 
         holder.tv_type.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +87,7 @@ public class CaseTypeAdapter extends RecyclerView.Adapter<CaseTypeAdapter.ViewHo
             }
         });
     }
+
 
     @Override
     public int getItemCount() {

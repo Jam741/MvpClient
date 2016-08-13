@@ -145,7 +145,7 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
 
     @Override
     public void setUserPortrait(String userPortrait) {
-        GlideUtils.loadPortraitImage(
+        GlideUtils.loadCriclePortraitImage(
                 context,
                 ivPortrait,
                 userPortrait

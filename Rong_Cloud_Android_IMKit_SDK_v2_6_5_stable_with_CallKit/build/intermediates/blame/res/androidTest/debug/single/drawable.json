@@ -1,530 +1,706 @@
 [
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_smiley.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_smiley.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_admin_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_admin_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_yes_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_yes_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_camera.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_camera.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_hangup_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_hangup_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_input.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_btn_input.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_selector_grid_camera_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_selector_grid_camera_mask.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_video.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_video.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_item_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_item_list_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_an_voice_receive.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ed_public_service_search_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ed_public_service_search_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_sp_grid_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_sp_grid_mask.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_phone.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_phone.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_corner_location_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_corner_location_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_checkbox.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_checkbox.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_public_service_enter_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_progress_sending_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_progress_sending_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_btn_send.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_extend.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_extend.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_an_voice_sent.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_an_voice_sent.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_corner_voice_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_corner_voice_style.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_item_top_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_item_top_list_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_public_service_unfollow_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_btn_public_service_unfollow_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_menu.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_bg_menu.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_editinput.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_bg_editinput.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_text.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_text.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_btn_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_btn_voice.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_voice.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_location.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_location.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_corner_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_corner_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_vedio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_vedio_answer_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_switch_btn.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_switch_btn.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_bg_item.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_bg_item.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
     },
     {
-        "merged": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_star_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_star_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_audio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_audio_answer_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_mute_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_mute_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_speaker_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_speaker_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_picture.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_picture.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_camera_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_camera_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_no_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_sel_picsel_toolbar_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_sel_picsel_toolbar_send.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_sel_picsel_toolbar_back.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_sel_picsel_toolbar_back.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_ic_keyboard.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/res/merged/androidTest/debug/drawable/rc_voip_float_bg.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit/build/intermediates/bundles/debug/res/drawable/rc_voip_float_bg.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     }
 ]

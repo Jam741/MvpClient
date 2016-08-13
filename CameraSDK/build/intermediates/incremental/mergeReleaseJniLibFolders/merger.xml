@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\Project\MVP\Client\CameraSDK\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="E:\Project\MVP\Client\CameraSDK\build-types\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build-types/release/jniLibs"/></dataSet></merger>

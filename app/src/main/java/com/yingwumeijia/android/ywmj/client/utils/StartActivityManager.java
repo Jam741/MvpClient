@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
+import com.yingwumeijia.android.ywmj.client.function.HtmlActivity;
 import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
 import com.yingwumeijia.android.ywmj.client.function.edit.EditPersionInfoActivity;
 import com.yingwumeijia.android.ywmj.client.function.edit.PersonInfoActivity;
@@ -35,7 +36,7 @@ public class StartActivityManager {
      * @param context
      */
     public static void startAgreementActivity(Context context) {
-
+        HtmlActivity.start(context, "用户服务协议", "http://139.196.233.188:8082/consoleMobile/template/userAgreement.html");
     }
 
     /**
