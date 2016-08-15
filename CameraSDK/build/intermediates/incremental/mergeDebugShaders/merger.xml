@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build-types/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Project\MVP\Client\CameraSDK\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\Project\MVP\Client\CameraSDK\build-types\debug\shaders"/></dataSet></merger>

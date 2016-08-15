@@ -29,6 +29,7 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 import com.yingwumeijia.android.ywmj.client.function.share.SharePopupWindow;
+import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
@@ -263,10 +264,11 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
 
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+        if (!UserManager.userPrecondition(context)) return;
         if (b) {
-
+            mPresenter.collect(mCaseId);
         } else {
-
+            mPresenter.cancelCollect(mCaseId);
         }
     }
 }

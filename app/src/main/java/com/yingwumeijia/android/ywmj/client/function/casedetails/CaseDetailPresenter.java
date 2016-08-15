@@ -252,7 +252,6 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             if (response.body().getSucc()) {
                 mView.setCollected();
             } else {
-                if (!UserManager.userPrecondition(context)) return;
                 mView.showLoadDataFail(response.body().getMessage());
             }
         }
@@ -271,7 +270,6 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             if (response.body().getSucc()) {
                 mView.setUnCollected();
             } else {
-                if (!UserManager.userPrecondition(context)) return;
                 mView.showLoadDataFail(response.body().getMessage());
             }
         }

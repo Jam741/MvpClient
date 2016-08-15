@@ -1,5 +1,6 @@
 package com.yingwumeijia.android.ywmj.client.function.person;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -16,6 +17,7 @@ import android.widget.TextView;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
 
 import butterknife.Bind;

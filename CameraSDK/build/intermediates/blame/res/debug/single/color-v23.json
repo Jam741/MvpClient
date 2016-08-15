@@ -1,18 +1,6 @@
 [
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/E:\\Users\\jiaminghe\\Desktop\\MvpClient\\MvpClient\\E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
     }
 ]

@@ -42,7 +42,7 @@ public class MyApp extends StarterApplication{
 
         //createRetrofit;
         if (BuildConfig.DEBUG) {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
+            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_CHENCHI).build();
         }else if (BuildConfig.FLAVOR.equals("ywmjtest")){
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
         }else {

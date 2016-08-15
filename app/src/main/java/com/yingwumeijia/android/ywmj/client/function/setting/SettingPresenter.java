@@ -1,5 +1,6 @@
 package com.yingwumeijia.android.ywmj.client.function.setting;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -10,7 +11,10 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.function.aboutus.AboutUsActivity;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
+import com.yingwumeijia.android.ywmj.client.function.setpassword.SetPwdActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
+import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import io.rong.imkit.RongIM;
@@ -82,7 +86,8 @@ public class SettingPresenter implements SettingContract.Presenter {
 
     @Override
     public void startSetPassword() {
-
+        if (!UserManager.userPrecondition(context)) return;
+        SetPwdActivity.start((Activity) context);
     }
 
     @Override
@@ -93,7 +98,7 @@ public class SettingPresenter implements SettingContract.Presenter {
     @Override
     public String getCacheSize() {
         try {
-            return  "当前缓存 " + DataCleanManager.getCacheSize(context.getCacheDir());
+            return "当前缓存 " + DataCleanManager.getCacheSize(context.getCacheDir());
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -110,9 +115,9 @@ public class SettingPresenter implements SettingContract.Presenter {
 
     @Override
     public void start() {
-        if (Constant.isLogin(context)){
+        if (Constant.isLogin(context)) {
             mView.showLoginOutButton();
-        }else {
+        } else {
             mView.hideLoginOutButton();
         }
         mView.showCurrentCache(getCacheSize());
@@ -123,12 +128,12 @@ public class SettingPresenter implements SettingContract.Presenter {
         @Override
         public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
             mView.dismissProgressBar();
-            if (response.body().getSucc()){
+            if (response.body().getSucc()) {
                 mView.hideLoginOutButton();
                 Constant.setLoginOut(context);
-                if (RongIM.getInstance()!=null)RongIM.getInstance().logout();
+                if (RongIM.getInstance() != null) RongIM.getInstance().logout();
                 LoginActivity.start(context);
-            }else {
+            } else {
                 mView.showLoginOutFail(response.body().getMessage());
             }
 

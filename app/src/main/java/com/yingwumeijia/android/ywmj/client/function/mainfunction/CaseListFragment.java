@@ -26,6 +26,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.function.person.PersonActivity;
 import com.yingwumeijia.android.ywmj.client.function.search.SearchActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
+import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 
 import butterknife.Bind;
@@ -158,7 +159,7 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
 
     @Override
     public void showEmptyLayout(boolean isEmpty) {
-            emptyLayout.setVisibility(isEmpty==true?View.VISIBLE:View.GONE);
+        emptyLayout.setVisibility(isEmpty == true ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -262,6 +263,7 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
                 StartActivityManager.startSubConversationListActivity(context);
                 break;
             case R.id.iv_mine:
+                if (!UserManager.userPrecondition(context))return;
                 PersonActivity.start(context);
                 break;
         }

@@ -18,8 +18,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取机型信息权限 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 录音 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <!-- 录音 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -55,7 +57,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="io.rong.imkit.activity.PicturePagerActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- new voip config start -->
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+ <!-- new voip config start -->
         <activity
             android:name="io.rong.imkit.MultiVideoCallActivity"
             android:launchMode="singleTop"
@@ -102,7 +105,8 @@
                 <action android:name="io.rong.intent.action.SDK_INIT" />
                 <action android:name="io.rong.intent.action.SDK_CONNECTED" />
             </intent-filter>
-        </receiver> <!-- new voip config end -->
+        </receiver>
+ <!-- new voip config end -->
         <!-- 必选： SDK 核心功能 -->
         <service
             android:name="io.rong.push.core.PushRegistrationService"
@@ -132,7 +136,8 @@
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
             </intent-filter>
-        </receiver> <!-- 必选： SDK 核心功能 -->
+        </receiver>
+ <!-- 必选： SDK 核心功能 -->
         <!-- end -->
         <!-- imlib config begin -->
         <!-- test -->
@@ -142,7 +147,8 @@
         <!-- dev -->
         <meta-data
             android:name="RONG_CLOUD_APP_KEY"
-            android:value="sfci50a7cve6i" /> <!-- ali -->
+            android:value="sfci50a7cve6i" />
+ <!-- ali -->
         <!-- <meta-data -->
         <!-- android:name="RONG_CLOUD_APP_KEY" -->
         <!-- android:value="y745wfm84k0ov" /> -->

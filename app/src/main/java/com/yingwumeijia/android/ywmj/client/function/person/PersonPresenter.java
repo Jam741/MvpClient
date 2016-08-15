@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.person;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -113,6 +114,13 @@ public class PersonPresenter implements PersonContract.Presenter {
     }
 
     @Override
+    public void sendLoginStateBroadcast(boolean isLogin) {
+        Intent intent = new Intent(Constant.ACTION_NOT_LOGIN);
+        intent.putExtra(Constant.KEY_LOGIN, isLogin);
+        context.sendBroadcast(intent);
+    }
+
+    @Override
     public void start() {
         if (Constant.isLogin(context)) {
             mView.showLoginInLayout();
@@ -131,13 +139,19 @@ public class PersonPresenter implements PersonContract.Presenter {
         public void onResponse(Call<CustomerResultBean> call, Response<CustomerResultBean> response) {
             mView.dismissProgressBar();
             if (response.body().getSucc()) {
-                UserBean userBean = response.body().getData().getCustomerDto();
-                showName = userBean.getNickName();
-                portraitUrl = userBean.getShowHead();
-                showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
-                mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
-                mView.setUserPortrait(portraitUrl);
-                mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
+                if (response.body().getStateCode() == Constant.NOT_LOGIN_STATECODE) {
+                    mView.showNotloginLayout();
+                    sendLoginStateBroadcast(false);
+                } else {
+                    UserBean userBean = response.body().getData().getCustomerDto();
+                    showName = userBean.getNickName();
+                    portraitUrl = userBean.getShowHead();
+                    showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
+                    mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
+                    mView.setUserPortrait(portraitUrl);
+                    mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
+                }
+
             } else {
                 mView.showLoadingFail(response.body().getMessage());
                 mView.showNetConnectError();

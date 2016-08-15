@@ -23,11 +23,10 @@ public class Constant {
     //陈驰
     public static final String BASE_URL_CHENCHI = "http://192.168.28.114:8182/";
     //test
-    public static final String BASE_URL_TEST= "http://192.168.28.15:8182/";
+    public static final String BASE_URL_TEST = "http://192.168.28.15:8182/";
     // 阿里云服务器
     public static final String BASE_URL_RELEASE = "http://139.196.233.188:8182/";
     public static final String BASE_QINIU_URL = "http://o8nljewkg.bkt.clouddn.com/";
-
 
 
     /*-----------------------------Internet status-------------------------*/
@@ -46,6 +45,7 @@ public class Constant {
     /*-----------------------------parma------------------------------------*/
     public static final int PARAM_REGISTER = 1;
     public static final int PARAM_FIND = 2;
+    public static final int NOT_LOGIN_STATECODE = 312;
 
 
     /*---------------------------user login info----------------------------*/
@@ -171,6 +171,8 @@ public class Constant {
     public static String WB_APP_KEY = "2293291411";
 
 
-    public static String ACTION_SCROLL_NAV ="com.ywmj.client.scroll";
+    public static String ACTION_SCROLL_NAV = "com.ywmj.client.scroll";
+
+    public static String ACTION_NOT_LOGIN = "com.ywmj.client.notlogin";
 
 }

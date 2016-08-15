@@ -1,6 +1,9 @@
 package com.yingwumeijia.android.ywmj.client.function.setting;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
@@ -13,6 +16,7 @@ import android.widget.TextView;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -39,10 +43,12 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
     TextView btnLoginOut;
     private SettingContract.Presenter mPresenter;
 
+    boolean isLogin;
+
     public static SettingFragment newInstance() {
-        
+
         Bundle args = new Bundle();
-        
+
         SettingFragment fragment = new SettingFragment();
         fragment.setArguments(args);
         return fragment;
@@ -51,8 +57,8 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if(root == null){
-         root =inflater.inflate(R.layout.setting_frag, container, false);
+        if (root == null) {
+            root = inflater.inflate(R.layout.setting_frag, container, false);
             ButterKnife.bind(this, root);
         }
         return root;
@@ -67,7 +73,7 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
 
     @Override
     public void showLoginOutFail(String msg) {
-        T.showShort(context,msg);
+        T.showShort(context, msg);
     }
 
     @Override
@@ -87,7 +93,7 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
 
     @Override
     public void showClearCacheDialog() {
-        AlertDialog builder  = new AlertDialog.Builder(context)
+        AlertDialog builder = new AlertDialog.Builder(context)
                 .setMessage(R.string.dialog_clear_cache)
                 .setPositiveButton(R.string.btn_confirm, new DialogInterface.OnClickListener() {
                     @Override
@@ -121,7 +127,7 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
 
     @Override
     public void dismissProgressBar() {
-dismisBaseProgressDialog();
+        dismisBaseProgressDialog();
     }
 
     @Override
@@ -148,6 +154,19 @@ dismisBaseProgressDialog();
             case R.id.btn_login_out:
                 mPresenter.loginOut();
                 break;
+        }
+    }
+
+
+    class MyBroadCastRceive extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            isLogin = intent.getBooleanExtra(Constant.KEY_LOGIN, false);
+            if (isLogin)
+                showLoginOutButton();
+            else
+                hideLoginOutButton();
         }
     }
 }
