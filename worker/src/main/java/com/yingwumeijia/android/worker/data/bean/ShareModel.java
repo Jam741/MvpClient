@@ -1,5 +1,8 @@
 package com.yingwumeijia.android.worker.data.bean;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+
 /**
  * Created by Jam on 2016/8/11 11:38.
  * Describe:
@@ -8,7 +11,7 @@ public class ShareModel {
 
     private String mShareUrl;
 
-    private String mShareImg;
+    private Bitmap mShareImg;
 
     private String mDescription;
 
@@ -17,12 +20,11 @@ public class ShareModel {
     private String WX_APP_ID;
 
 
-    public ShareModel(String mShareUrl, String mShareImg, String mDescription, String mShareTitle, String WX_APP_ID) {
+    public ShareModel(String mShareUrl, Bitmap mShareImg, String mDescription, String mShareTitle) {
         this.mShareUrl = mShareUrl;
         this.mShareImg = mShareImg;
         this.mDescription = mDescription;
         this.mShareTitle = mShareTitle;
-        this.WX_APP_ID = WX_APP_ID;
     }
 
     public String getmShareUrl() {
@@ -33,11 +35,11 @@ public class ShareModel {
         this.mShareUrl = mShareUrl;
     }
 
-    public String getmShareImg() {
+    public Bitmap getmShareImg() {
         return mShareImg;
     }
 
-    public void setmShareImg(String mShareImg) {
+    public void setmShareImg(Bitmap mShareImg) {
         this.mShareImg = mShareImg;
     }
 

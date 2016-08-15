@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.collect;
 
 import android.content.Context;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
 import com.rx.android.jamspeedlibrary.utils.LogUtil;
@@ -125,8 +126,9 @@ public class CollectPresenter implements CollectContract.Presenter,
         if (Constant.isLogin(context)) {
             createCollectListAdapter();
             xRecyclerView = mCollectView.getRecyclerView();
+            xRecyclerView.setLayoutManager(new LinearLayoutManager(context));
             xRecyclerView.setLoadingListener(this);
-            xRecyclerView.addFootView(new LoadingMoreFooter(context,"已经全部加载完毕"));
+            xRecyclerView.addFootView(new LoadingMoreFooter(context, "已经全部加载完毕"));
             xRecyclerView.setAdapter(mListAdapter);
         }
     }
@@ -141,6 +143,10 @@ public class CollectPresenter implements CollectContract.Presenter,
                     mCollectView.refreshComplete();
                     mCollectView.loadRset();
                     refreshData(response.body().getData());
+                    if (response.body().getData() == null || response.body().getData().size() == 0)
+                        mCollectView.showEmptyLayout();
+                    else
+                        mCollectView.hideEmptyLayout();
                 } else {
                     mCollectView.loadMoreComplete();
                     if (response.body().getData() == null || response.body().getData().size() == 0) {

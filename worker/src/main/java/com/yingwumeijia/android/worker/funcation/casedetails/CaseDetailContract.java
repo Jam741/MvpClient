@@ -55,6 +55,8 @@ public interface CaseDetailContract {
 
         void launchShareSDK();
 
+        void getShareData(int caseId);
+
         ShareModel createShareModel();
 
     }

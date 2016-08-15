@@ -50,11 +50,14 @@ public interface CaseDetailContract {
 
         /**
          * 立即联系他们
+         *
          * @param caseId
          */
         void connectWithTeam(int caseId);
 
         void launchShareSDK();
+
+        void getShareData(int caseId);
 
         ShareModel createShareModel();
 
@@ -84,6 +87,13 @@ public interface CaseDetailContract {
         void setCollected();
 
         void setUnCollected();
+
+        /**
+         * 显示是否有过会话
+         *
+         * @param isContact
+         */
+        void showIsContact(boolean isContact);
 
     }
 }

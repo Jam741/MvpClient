@@ -40,9 +40,6 @@ public interface CollectContract {
 
         void showEmptyLayout();
 
-        void showListLayout();
-
-        void showGetListFail(String msg);
 
         void loadMoreComplete();
 
@@ -51,6 +48,8 @@ public interface CollectContract {
         void loadNoMore();
 
         void loadRset();
+
+        void hideEmptyLayout();
 
         XRecyclerView getRecyclerView();
 

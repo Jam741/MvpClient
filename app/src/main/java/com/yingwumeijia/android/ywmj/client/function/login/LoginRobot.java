@@ -265,13 +265,15 @@ public class LoginRobot implements LoginDataProvider {
         @Override
         public void onResponse(Call<FindPwdResultBean> call, Response<FindPwdResultBean> response) {
             if (response.body().getSucc()) {
-
+                getToken();
             } else {
+                mLoginCallBack.loginError(response.body().getMessage());
             }
         }
 
         @Override
         public void onFailure(Call<FindPwdResultBean> call, Throwable t) {
+            mLoginCallBack.connectError();
         }
     };
 

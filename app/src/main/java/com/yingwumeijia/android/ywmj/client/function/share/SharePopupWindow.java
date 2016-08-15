@@ -39,6 +39,7 @@ import com.tencent.mm.sdk.modelmsg.WXMediaMessage;
 import com.tencent.mm.sdk.modelmsg.WXWebpageObject;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -167,9 +168,9 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
     private void registerToWx() {
         if (iwxapi == null) {
             /*通过WXAPIFactory工程获取IWXAPI实例*/
-            iwxapi = WXAPIFactory.createWXAPI(mContext, mShareModel.getWX_APP_ID(), true);
+            iwxapi = WXAPIFactory.createWXAPI(mContext, Constant.WX_APP_ID, true);
             /*将应用的appID注册到微信*/
-            iwxapi.registerApp(mShareModel.getWX_APP_ID());
+            iwxapi.registerApp(Constant.WX_APP_ID);
         }
     }
 
@@ -186,8 +187,8 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         msg.description = mShareModel.getmDescription();
         //这里替换一张自己工程里的图片资源
         Log.d("jam", "share_wx__" + mShareModel.getmShareUrl());
-        Bitmap thumb = BitmapFactory.decodeFile(mShareModel.getmShareImg());
-//        msg.thumbData = bmpToByteArray(thumb, true);
+//        msg.setThumbImage(compressImage(mShareModel.getmShareImg()));
+        msg.thumbData = bmpToByteArray(mShareModel.getmShareImg(), true);
         SendMessageToWX.Req req = new SendMessageToWX.Req();
         req.transaction = String.valueOf(System.currentTimeMillis());
         req.message = msg;
@@ -215,26 +216,6 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         return result;
     }
 
-    /**
-     * 质量压缩方法
-     *
-     * @param image
-     * @return
-     */
-    private Bitmap compressImage(Bitmap image) {
-
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.JPEG, 100, baos);//质量压缩方法，这里100表示不压缩，把压缩后的数据存放到baos中
-        int options = 100;
-        while (baos.toByteArray().length / 1024 > 32) {  //循环判断如果压缩后图片是否大于32kb,大于继续压缩
-            baos.reset();//重置baos即清空baos
-            image.compress(Bitmap.CompressFormat.JPEG, options, baos);//这里压缩options%，把压缩后的数据存放到baos中
-            options -= 1;//每次都减少1
-        }
-        ByteArrayInputStream isBm = new ByteArrayInputStream(baos.toByteArray());//把压缩后的数据baos存放到ByteArrayInputStream中
-        Bitmap bitmap = BitmapFactory.decodeStream(isBm, null, null);//把ByteArrayInputStream数据生成图片
-        return bitmap;
-    }
 
     /**
      * 发送消息到微博
@@ -265,8 +246,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
 
     private ImageObject getImageObj() {
         ImageObject imageObject = new ImageObject();
-        Bitmap thumb = BitmapFactory.decodeFile(mShareModel.getmShareImg());
-        imageObject.setImageObject(thumb);
+        imageObject.setImageObject(mShareModel.getmShareImg());
         return imageObject;
     }
 
@@ -292,5 +272,6 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
                 break;
         }
     }
+
 
 }

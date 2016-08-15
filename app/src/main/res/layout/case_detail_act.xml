@@ -13,10 +13,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/btn_connectTeam"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="立即联系他们"
+            android:textColor="@color/text_color_whide"
+            android:textSize="@dimen/text_title_medium" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@id/btn_connectTeam"
             android:orientation="vertical">
 
 
@@ -127,18 +138,6 @@
             android:background="@null"
             android:src="@mipmap/details_pic_list_bt"
             android:visibility="gone" />
-
-
-        <TextView
-            android:id="@+id/btn_connectTeam"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/actionbar_height"
-            android:layout_alignParentBottom="true"
-            android:background="@color/colorAccent"
-            android:gravity="center"
-            android:text="立即联系他们"
-            android:textColor="@color/text_color_whide"
-            android:textSize="@dimen/text_title_medium" />
 
     </RelativeLayout>
 

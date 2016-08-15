@@ -2,5 +2,9 @@
     {
         "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\tone_cuver_sample.acv",
         "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\tone_cuver_sample.acv"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\tone_cuver_sample.acv",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\raw\\tone_cuver_sample.acv"
     }
 ]

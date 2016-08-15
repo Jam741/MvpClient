@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.view.xrecyclerview.XRecyclerView;
@@ -26,6 +27,8 @@ public class CollectFragment extends BaseFragment implements CollectContract.Vie
     private View root;
     @Bind(R.id.rv_collect)
     XRecyclerView rvCollect;
+    @Bind(R.id.empty_layout)
+    LinearLayout emptyLayout;
 
     public static CollectFragment newInstance() {
 
@@ -79,18 +82,9 @@ public class CollectFragment extends BaseFragment implements CollectContract.Vie
 
     @Override
     public void showEmptyLayout() {
-
+        emptyLayout.setVisibility(View.VISIBLE);
     }
 
-    @Override
-    public void showListLayout() {
-
-    }
-
-    @Override
-    public void showGetListFail(String msg) {
-        T.showShort(context, msg);
-    }
 
     @Override
     public void loadMoreComplete() {
@@ -110,6 +104,11 @@ public class CollectFragment extends BaseFragment implements CollectContract.Vie
     @Override
     public void loadRset() {
         rvCollect.reset();
+    }
+
+    @Override
+    public void hideEmptyLayout() {
+        emptyLayout.setVisibility(View.GONE);
     }
 
     @Override

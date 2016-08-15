@@ -1,12 +1,19 @@
 package com.yingwumeijia.android.worker.funcation.casedetails;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.rx.android.jamspeedlibrary.utils.adapter.CommonRecyclerAdapter;
@@ -18,10 +25,12 @@ import com.yingwumeijia.android.worker.data.bean.BaseBean;
 import com.yingwumeijia.android.worker.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.worker.data.bean.CaseDetailsResultBean;
 import com.yingwumeijia.android.worker.data.bean.CreateConversationResult;
+import com.yingwumeijia.android.worker.data.bean.ShareBean;
 import com.yingwumeijia.android.worker.data.bean.ShareModel;
 import com.yingwumeijia.android.worker.funcation.HtmlFragment;
 import com.yingwumeijia.android.worker.funcation.HtmlOf720Fragment;
 import com.yingwumeijia.android.worker.funcation.TabWithPagerAdapter;
+import com.yingwumeijia.android.worker.funcation.share.SharePopupWindow;
 import com.yingwumeijia.android.worker.utils.StartActivityManager;
 import com.yingwumeijia.android.worker.utils.UserManager;
 import com.yingwumeijia.android.worker.utils.constants.Constant;
@@ -52,7 +61,11 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     private final String[] mTabsStrings = {"   720全景", "   细节图片", "   项目造价", "   材料品牌", "   平面布置", "   团队简介"};
 
     //share
-//    private SharePopupWindow sharePopupWindow;
+    private SharePopupWindow sharePopupWindow;
+    private ShareBean shareBean;
+    private ShareModel shareModel;
+    private Bitmap shareBitmap;
+
 
     //sliding menu
     private CommonRecyclerAdapter<String> mNavigationAdapter;
@@ -180,14 +193,30 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void launchShareSDK() {
-//        if (sharePopupWindow == null)
-//            sharePopupWindow = new SharePopupWindow((Activity) context, createShareModel());
-//        sharePopupWindow.showPopupWindow();
+        if (shareBean == null) return;
+        if (shareBitmap == null) return;
+        if (sharePopupWindow == null)
+            sharePopupWindow = new SharePopupWindow((Activity) context, createShareModel());
+        sharePopupWindow.showPopupWindow();
+    }
+    @Override
+    public void getShareData(int caseId) {
+        WorkerApp
+                .getApiService()
+                .getShareData(caseId)
+                .enqueue(getShareCallback);
     }
 
     @Override
     public ShareModel createShareModel() {
-        return null;
+        if (shareModel == null) {
+            shareModel = new ShareModel(
+                    shareBean.getUrl(),
+                    shareBitmap,
+                    shareBean.getDesignConcept(),
+                    shareBean.getCaseName());
+        }
+        return shareModel;
     }
 
     @Override
@@ -292,6 +321,30 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         public void onFailure(Call<CreateConversationResult> call, Throwable t) {
             mView.dismissProgressBar();
             mView.showNetConnectError();
+        }
+    };
+
+
+    Callback<BaseBean<ShareBean>> getShareCallback = new Callback<BaseBean<ShareBean>>() {
+        @Override
+        public void onResponse(Call<BaseBean<ShareBean>> call, Response<BaseBean<ShareBean>> response) {
+            if (response.body().getSucc()) {
+                Log.d("jam", "===================================================share");
+                Glide.with(context).load(response.body().getData().getCover()).asBitmap().into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                        shareBitmap = resource;
+                    }
+                });
+
+
+                shareBean = response.body().getData();
+            }
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean<ShareBean>> call, Throwable t) {
+
         }
     };
 }

@@ -2,6 +2,7 @@ package com.yingwumeijia.android.ywmj.client.function.casedetails;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -68,6 +69,8 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     RelativeLayout rightDrawer;
     @Bind(R.id.drawer_root)
     DrawerLayout drawerRoot;
+    @Bind(R.id.btn_connectTeam)
+    TextView btnConnectTeam;
     private CaseDetailContract.Presenter mPresenter;
     private int mCaseId;
     private int mCurrentPosition = 0;
@@ -105,6 +108,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
             mPresenter = new CaseDetailPresenter(this, context);
         }
         mPresenter.start();
+        mPresenter.getShareData(mCaseId);
         mPresenter.undateVisitNum(mCaseId);
         mPresenter.loadDetailData(mCaseId);
     }
@@ -179,6 +183,12 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         btnCollect.setChecked(false);
     }
 
+    @Override
+    public void showIsContact(boolean isContact) {
+        if (isContact) btnConnectTeam.setText("回到聊天");
+        else btnConnectTeam.setText("立即联系他们");
+    }
+
 
     @Override
     public void setPresener(CaseDetailContract.Presenter presenter) {
@@ -210,15 +220,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 showDrawerLayout();
                 break;
             case R.id.topRight:
-                ShareModel shareModel = new ShareModel("",
-                        null,
-                        "描述",
-                        getResources().getString(R.string.app_name),
-                        Constant.WX_APP_ID);
-                SharePopupWindow sharePopupWindow = new SharePopupWindow(
-                        context,
-                        shareModel);
-                sharePopupWindow.showPopupWindow();
+                mPresenter.launchShareSDK();
                 break;
             case R.id.btn_connectTeam:
                 mPresenter.connectWithTeam(mCaseId);

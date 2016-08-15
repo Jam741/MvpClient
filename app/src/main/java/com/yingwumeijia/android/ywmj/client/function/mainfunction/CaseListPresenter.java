@@ -162,7 +162,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void refreshNavigationData(int navigationPosition) {
-        if (mType_set==null|mType_set.size()==0)return;
+        if (mType_set==null||mType_set.size()==0)return;
         switch (mCaseListView.getNavigationPosition()) {
             case 0:
                 mNavigationAdapter.refreshData(mType_set.get(KEY_DECORATE_STYLE_TYPE));

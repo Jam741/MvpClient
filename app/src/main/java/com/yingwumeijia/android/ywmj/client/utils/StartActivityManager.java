@@ -2,6 +2,7 @@ package com.yingwumeijia.android.ywmj.client.utils;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.function.HtmlActivity;
@@ -91,10 +92,10 @@ public class StartActivityManager {
     }
 
 
-    public static void startConversation(Context context,String sessionId,String title) {
+    public static void startConversation(Context context, String sessionId, String title) {
         if (!UserManager.userPrecondition(context)) return;
-        if (RongIM.getInstance()!=null){
-            RongIM.getInstance().startConversation(context, Conversation.ConversationType.GROUP,sessionId,title);
+        if (RongIM.getInstance() != null) {
+            RongIM.getInstance().startConversation(context, Conversation.ConversationType.GROUP, sessionId, title);
         }
     }
 

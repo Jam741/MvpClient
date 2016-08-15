@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'ywmj_cliect'
             keyPassword 'jia5201314'
-            storeFile file('E:/Project/MVP/Client/app/cliect.jks')
+            storeFile file('D:/MyProject/MvpClient/app/cliect.jks')
             storePassword 'jia5201314'
 //            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/app/cliect.jks')
         }

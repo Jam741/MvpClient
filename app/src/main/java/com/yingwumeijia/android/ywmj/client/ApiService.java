@@ -12,6 +12,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.ShareBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.TokenResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 
@@ -192,6 +193,14 @@ public interface ApiService {
     @GET("case/app/detail/urls/{caseId}")
     Call<CaseDetailsResultBean> getCaseDetail(@Path("caseId") int caseId);
 
+
+    /**
+     * 获取分享信息
+     * @param caseId
+     * @return
+     */
+    @GET("case/app/share/{caseId}")
+    Call<BaseBean<ShareBean>> getShareData(@Path("caseId")int caseId);
 
     /**
      * 搜索案例

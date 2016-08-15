@@ -13,6 +13,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -364,8 +365,10 @@ public class ConversationActivity extends AppCompatActivity {
 
                 reconnect(token);
             } else {
+                Log.d("jam", "no push");
                 //程序切到后台，收到消息后点击进入,会执行这里
                 if (RongIM.getInstance() == null || RongIM.getInstance().getRongIMClient() == null) {
+                    Log.d("jam", "n  reconnect");
 
                     reconnect(token);
                 } else {

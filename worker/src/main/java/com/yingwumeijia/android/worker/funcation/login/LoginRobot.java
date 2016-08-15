@@ -24,7 +24,7 @@ import retrofit2.Response;
  * Created by Jam on 2016/8/3 15:47.
  * Describe:
  */
-public class LoginRobot implements LoginDataProvider {
+public class  LoginRobot implements LoginDataProvider {
 
     private Response<LoginResultBean> mResponse;
     private Response<RegisterResultBean> mRegisterResponse;
@@ -145,13 +145,15 @@ public class LoginRobot implements LoginDataProvider {
         @Override
         public void onResponse(Call<FindPwdResultBean> call, Response<FindPwdResultBean> response) {
             if (response.body().getSucc()) {
-
+                getToken();
             } else {
+                mLoginCallBack.loginError(response.body().getMessage());
             }
         }
 
         @Override
         public void onFailure(Call<FindPwdResultBean> call, Throwable t) {
+            mLoginCallBack.connectError();
         }
     };
 

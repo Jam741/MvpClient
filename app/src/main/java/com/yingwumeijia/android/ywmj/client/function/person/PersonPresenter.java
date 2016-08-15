@@ -144,7 +144,7 @@ public class PersonPresenter implements PersonContract.Presenter {
                     sendLoginStateBroadcast(false);
                 } else {
                     UserBean userBean = response.body().getData().getCustomerDto();
-                    showName = userBean.getNickName();
+                    showName = userBean.getShowName();
                     portraitUrl = userBean.getShowHead();
                     showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
                     mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);

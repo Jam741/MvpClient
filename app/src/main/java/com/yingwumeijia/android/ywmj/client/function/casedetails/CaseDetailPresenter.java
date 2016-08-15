@@ -3,12 +3,22 @@ package com.yingwumeijia.android.ywmj.client.function.casedetails;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.GlideDrawable;
+import com.bumptech.glide.request.Request;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.rx.android.jamspeedlibrary.utils.LogUtil;
@@ -23,6 +33,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseDetailsResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CreateConversationResult;
+import com.yingwumeijia.android.ywmj.client.data.bean.ShareBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
 import com.yingwumeijia.android.ywmj.client.function.HtmlOf720Fragment;
@@ -33,8 +44,14 @@ import com.yingwumeijia.android.ywmj.client.im.conversationlist.ConversationActi
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
+import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -61,6 +78,9 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     //share
     private SharePopupWindow sharePopupWindow;
+    private ShareBean shareBean;
+    private ShareModel shareModel;
+    private Bitmap shareBitmap;
 
     //sliding menu
     private CommonRecyclerAdapter<String> mNavigationAdapter;
@@ -93,6 +113,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void createTabs() {
+
         if (mTabEntities == null) {
             mTabEntities = new ArrayList<>();
         }
@@ -188,14 +209,31 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void launchShareSDK() {
+        if (shareBean == null) return;
+        if (shareBitmap == null) return;
         if (sharePopupWindow == null)
             sharePopupWindow = new SharePopupWindow((Activity) context, createShareModel());
         sharePopupWindow.showPopupWindow();
     }
 
     @Override
+    public void getShareData(int caseId) {
+        MyApp
+                .getApiService()
+                .getShareData(caseId)
+                .enqueue(getShareCallback);
+    }
+
+    @Override
     public ShareModel createShareModel() {
-        return null;
+        if (shareModel == null) {
+            shareModel = new ShareModel(
+                    shareBean.getUrl(),
+                    shareBitmap,
+                    shareBean.getDesignConcept(),
+                    shareBean.getCaseName());
+        }
+        return shareModel;
     }
 
     @Override
@@ -232,6 +270,9 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                 createPageAdapter();
                 bindAdapterForPager();
                 bindAdapterForNav();
+                mView.showIsContact(response.body().getData().isContact());
+                if (response.body().getData().isCollected()) mView.setCollected();
+                else mView.setUnCollected();
             } else {
                 mView.showLoadDataFail(response.body().getMessage());
             }
@@ -300,4 +341,29 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             mView.showNetConnectError();
         }
     };
+
+
+    Callback<BaseBean<ShareBean>> getShareCallback = new Callback<BaseBean<ShareBean>>() {
+        @Override
+        public void onResponse(Call<BaseBean<ShareBean>> call, Response<BaseBean<ShareBean>> response) {
+            if (response.body().getSucc()) {
+                Log.d("jam", "===================================================share");
+                Glide.with(context).load(response.body().getData().getCover()).asBitmap().into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                        shareBitmap = resource;
+                    }
+                });
+
+
+                shareBean = response.body().getData();
+            }
+        }
+
+        @Override
+        public void onFailure(Call<BaseBean<ShareBean>> call, Throwable t) {
+
+        }
+    };
+
 }

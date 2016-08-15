@@ -205,15 +205,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 showDrawerLayout();
                 break;
             case R.id.topRight:
-                ShareModel shareModel = new ShareModel("",
-                        null,
-                        "描述",
-                        getResources().getString(R.string.app_name),
-                        Constant.WX_APP_ID);
-//                SharePopupWindow sharePopupWindow = new SharePopupWindow(
-//                        context,
-//                        shareModel);
-//                sharePopupWindow.showPopupWindow();
+                mPresenter.launchShareSDK();
                 break;
             case R.id.btn_connectTeam:
                 mPresenter.connectWithTeam(mCaseId);
@@ -260,9 +252,9 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if (b) {
-
+            mPresenter.collect(mCaseId);
         } else {
-
+            mPresenter.cancelCollect(mCaseId);
         }
     }
 }

@@ -33,6 +33,24 @@ public class CaseDetailsBean {
     private String sizeOf720;
     private String previewOf720;
     private ArrayList<String> layoutStrList;
+    private boolean isContact;
+    private boolean isCollected;
+
+    public boolean isContact() {
+        return isContact;
+    }
+
+    public void setContact(boolean contact) {
+        isContact = contact;
+    }
+
+    public boolean isCollected() {
+        return isCollected;
+    }
+
+    public void setCollected(boolean collected) {
+        isCollected = collected;
+    }
 
     public String getSizeOf720() {
         return sizeOf720;

@@ -134,7 +134,10 @@ public class SettingPresenter implements SettingContract.Presenter {
                 if (RongIM.getInstance() != null) RongIM.getInstance().logout();
                 LoginActivity.start(context);
             } else {
+                Constant.setLoginOut(context);
                 mView.showLoginOutFail(response.body().getMessage());
+                if (RongIM.getInstance() != null) RongIM.getInstance().logout();
+                LoginActivity.start(context);
             }
 
         }

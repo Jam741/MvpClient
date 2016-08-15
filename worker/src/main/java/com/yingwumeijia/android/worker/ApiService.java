@@ -9,6 +9,7 @@ import com.yingwumeijia.android.worker.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.worker.data.bean.GroupResultBean;
 import com.yingwumeijia.android.worker.data.bean.LoginResultBean;
 import com.yingwumeijia.android.worker.data.bean.RegisterResultBean;
+import com.yingwumeijia.android.worker.data.bean.ShareBean;
 import com.yingwumeijia.android.worker.data.bean.TokenResultBean;
 import com.yingwumeijia.android.worker.data.bean.UserBean;
 
@@ -139,6 +140,15 @@ public interface ApiService {
                                          @Query("style") int style,
                                          @Query("houseType") int houseType,
                                          @Query("cost") int cost);
+
+    /**
+     * 获取分享信息
+     *
+     * @param caseId
+     * @return
+     */
+    @GET("case/employee/share/{caseId}")
+    Call<BaseBean<ShareBean>> getShareData(@Path("caseId") int caseId);
 
 
     /**

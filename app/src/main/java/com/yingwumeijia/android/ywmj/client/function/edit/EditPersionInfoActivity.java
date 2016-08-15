@@ -25,6 +25,7 @@ import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -80,9 +81,17 @@ public class EditPersionInfoActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
         initData();
         initActionBar();
         initView();
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
     }
 
     private void initView() {
@@ -127,6 +136,7 @@ public class EditPersionInfoActivity extends BaseActivity {
         mCurrentType = (EDIT_TYPE) getIntent().getSerializableExtra(KEY_TYPE);
         mInputString = getIntent().getStringExtra(KEY_INPUT_TEXT);
         edInput.setText(mInputString);
+        edInput.setSelection(mInputString.length());
         switch (mCurrentType) {
             case NICKNAME:
                 mTitle = "更改昵称";
@@ -136,6 +146,7 @@ public class EditPersionInfoActivity extends BaseActivity {
             case MOB:
                 mTitle = "更改手机号";
                 edInput.setInputType(InputType.TYPE_CLASS_PHONE);
+                edInput.setFilters(new InputFilter[]{new InputFilter.LengthFilter(11)});
                 break;
         }
     }
