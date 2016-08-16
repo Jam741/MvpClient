@@ -32,6 +32,11 @@
         <activity
             android:name=".function.splash.SplashActivity"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <!--登陆-->
@@ -57,13 +62,6 @@
             android:name=".function.mainfunction.MainActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait" >
-
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <!--个人页面-->
@@ -101,6 +99,10 @@
             android:name=".function.HtmlActivity"
             android:launchMode="standard"
             android:screenOrientation="portrait" />
+
+        <!--设置密码页面-->
+        <activity android:name=".function.setpassword.SetPwdActivity"
+            android:screenOrientation="portrait"/>
 
         <!--=====================================IM===============================================-->
 

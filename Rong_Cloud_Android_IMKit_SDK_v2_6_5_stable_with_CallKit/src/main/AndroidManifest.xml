@@ -143,9 +143,9 @@
         <!--android:name="RONG_CLOUD_APP_KEY"-->
         <!--android:value="x18ywvqf87m3c" />-->
         <!--dev-->
-        <meta-data
-            android:name="RONG_CLOUD_APP_KEY"
-            android:value="sfci50a7cve6i" />
+        <!--<meta-data-->
+            <!--android:name="RONG_CLOUD_APP_KEY"-->
+            <!--android:value="sfci50a7cve6i" />-->
         <!--ali-->
         <!--<meta-data-->
         <!--android:name="RONG_CLOUD_APP_KEY"-->

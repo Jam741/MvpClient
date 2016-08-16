@@ -3,7 +3,6 @@ package com.yingwumeijia.android.ywmj.client.data.bean;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * Created by Jam on 16/7/18 下午6:15.
@@ -16,22 +15,24 @@ public class CreateConversationResult extends BaseBean<CreateConversationResult.
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class GroupConversationBean implements Serializable {
 
+
         /**
-         * id : 53
-         * userId : 33
-         * caseId : 24
+         * id : 7
+         * userId : 26
+         * userType : c
+         * caseId : 1055
          * companyId : 1
-         * name : 测试案例20160727002-本案实施团队
-         * callTotal : 0
+         * name : iiii-本案实施团队
+         * callTotal : 6
          * warning : false
          * available : true
-         * createTime : 1469764172384
-         * updateTime : 1469764172384
-         * members : [{"userId":33,"userJoinType":1},{"userId":9,"userJoinType":2},{"userId":29,"userJoinType":3},{"userId":30,"userJoinType":3},{"userId":31,"userJoinType":3}]
+         * createTime : 1471255626000
+         * updateTime : 1471255626000
          */
 
         private int id;
         private int userId;
+        private String userType;
         private int caseId;
         private int companyId;
         private String name;
@@ -40,12 +41,6 @@ public class CreateConversationResult extends BaseBean<CreateConversationResult.
         private boolean available;
         private long createTime;
         private long updateTime;
-        /**
-         * userId : 33
-         * userJoinType : 1
-         */
-
-        private List<MembersBean> members;
 
         public int getId() {
             return id;
@@ -61,6 +56,14 @@ public class CreateConversationResult extends BaseBean<CreateConversationResult.
 
         public void setUserId(int userId) {
             this.userId = userId;
+        }
+
+        public String getUserType() {
+            return userType;
+        }
+
+        public void setUserType(String userType) {
+            this.userType = userType;
         }
 
         public int getCaseId() {
@@ -125,35 +128,6 @@ public class CreateConversationResult extends BaseBean<CreateConversationResult.
 
         public void setUpdateTime(long updateTime) {
             this.updateTime = updateTime;
-        }
-
-        public List<MembersBean> getMembers() {
-            return members;
-        }
-
-        public void setMembers(List<MembersBean> members) {
-            this.members = members;
-        }
-
-        public static class MembersBean {
-            private int userId;
-            private int userJoinType;
-
-            public int getUserId() {
-                return userId;
-            }
-
-            public void setUserId(int userId) {
-                this.userId = userId;
-            }
-
-            public int getUserJoinType() {
-                return userJoinType;
-            }
-
-            public void setUserJoinType(int userJoinType) {
-                this.userJoinType = userJoinType;
-            }
         }
     }
 }

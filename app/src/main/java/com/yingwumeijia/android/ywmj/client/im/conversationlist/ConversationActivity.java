@@ -107,15 +107,16 @@ public class ConversationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.conversation_act);
         ButterKnife.bind(this);
+
         context = this;
 
         getIntentData();
 
+        getSessionCaseInfo(mTargetId);
+
         initActionBar();
 
         isReconnect(getIntent());
-
-        enterFragment(Conversation.ConversationType.GROUP, mTargetId);
 
         report();
     }
@@ -314,7 +315,12 @@ public class ConversationActivity extends AppCompatActivity {
                 .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
 
+        Log.d("jam","url -fragment :"+uri);
+
         fragment.setUri(uri);
+
+
+
     }
 
     /**
@@ -415,6 +421,10 @@ public class ConversationActivity extends AppCompatActivity {
         Uri uri = getIntent().getData();
         mTargetId = uri.getQueryParameter("targetId");
         mTitle = uri.getQueryParameter("title");
+
+        Log.d("jam", "mTargetId:" + mTargetId);
+        Log.d("jam", "mTitle:" + mTitle);
+        Log.d("jam", "uri:" + uri);
         mConversationType = Conversation.ConversationType.valueOf(getIntent().getData().getLastPathSegment().toUpperCase(Locale.getDefault()));
 
     }

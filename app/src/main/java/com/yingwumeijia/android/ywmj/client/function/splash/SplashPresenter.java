@@ -10,6 +10,7 @@ import com.yingwumeijia.android.ywmj.client.function.collect.CollectContract;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginRobot;
 import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -59,7 +60,7 @@ public class SplashPresenter implements SplashContract.Presenter {
         @Override
         public void loginSuccess(UserBean userBean) {
             Constant.setLoginIn(context);
-            MainActivity.start(context);
+            startMainActivity();
         }
 
         @Override
@@ -71,7 +72,7 @@ public class SplashPresenter implements SplashContract.Presenter {
         @Override
         public void connectError() {
             mView.showNetConnectError();
-            MainActivity.start(context);
+            startMainActivity();
         }
     };
 }

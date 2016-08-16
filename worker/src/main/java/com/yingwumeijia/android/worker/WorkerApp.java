@@ -70,6 +70,15 @@ public class WorkerApp extends StarterApplication {
      */
     private void initRongClound() {
 
+        if (BuildConfig.DEBUG) {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_DEV);
+        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_TEST);
+        } else {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_RELASE);
+        }
+
+
         /**
          *
          * OnCreate 会被多个进程重入，这段保护代码，确保只有您需要使用 RongIM 的进程和 Push 进程执行了 init。

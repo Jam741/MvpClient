@@ -25,14 +25,14 @@ import timber.log.Timber;
  * Created by Jam on 2016/8/1.
  * jamisonline.he@gmail.com
  */
-public class MyApp extends StarterApplication{
+public class MyApp extends StarterApplication {
 
-    private static class ApiServiceHolder{
+    private static class ApiServiceHolder {
 
         private static final ApiService API_SERVICE = RetrofitBuilder.get().retrofit().create(ApiService.class);
     }
 
-    public static final ApiService getApiService(){
+    public static final ApiService getApiService() {
         return ApiServiceHolder.API_SERVICE;
     }
 
@@ -43,9 +43,9 @@ public class MyApp extends StarterApplication{
         //createRetrofit;
         if (BuildConfig.DEBUG) {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_DEV).build();
-        }else if (BuildConfig.FLAVOR.equals("ywmjtest")){
+        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        }else {
+        } else {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
         }
         //init loger of Timber
@@ -119,6 +119,14 @@ public class MyApp extends StarterApplication{
      */
     private void initRongClound() {
 
+
+        if (BuildConfig.DEBUG) {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_DEV);
+        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_TEST);
+        } else {
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_RELASE);
+        }
 
 
         /**

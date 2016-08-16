@@ -14,53 +14,43 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
 
     public static class GroupConversationBean implements Serializable{
 
-
         /**
-         * id : 21
-         * name : J - 187****2397
-         * caseInfo : {"id":1062,"caseName":"J","caseCover":"http://o8nljewkg.bkt.clouddn.com/o_1amdfpmii1rn61vmptcb16k248k1r.jpg","status":1}
+         * id : 7
+         * name : iiii-本案实施团队
+         * caseInfo : {"id":1055,"caseName":"iiii","caseCover":"http://o8nljewkg.bkt.clouddn.com/o_1aq6pduqm7su1s4u12glvvlb2e1a.jpg","status":1}
+         * teamPhone : 13411111111
          * available : true
-         * createTime : 2016-07-21 15:53:43
-         * members : [{"userId":81,"userJoinType":1,"userType":"c","userDetailType":0,"showName":"哈哈","headImage":"http://o8nljewkg.bkt.clouddn.com/1467343405422.jpg","userTypeEnum":"CUSTOMER","userDetailTypeEnum":"EMPTY","userJoinTypeEnum":"CREATOR"},{"userId":171,"userJoinType":2,"userType":"m","userDetailType":0,"showName":"测试客服","headImage":"http://o8nljewkg.bkt.clouddn.com/o_1ao3jmbhk11qj1q031k9s10685qac.png","userTypeEnum":"MANAGER","userDetailTypeEnum":"EMPTY","userJoinTypeEnum":"SERVANT"}]
-         * memberIds : [81,171]
+         * createTime : 2016-08-15 18:07:06
+         * members : [{"userId":1,"userJoinType":2,"userType":"m","userDetailType":2,"userTitle":"客服","showName":"小鹦","showHead":"http://o8nljewkg.bkt.clouddn.com/o_1ao3jmbhk11qj1q031k9s10685qac.png","gender":2,"sessionId":7,"imUid":"m1"},{"userId":3,"userJoinType":3,"userType":"e","userDetailType":1,"userTitle":"设计师","showName":"我是业者－设计师","showHead":"http://o8nljewkg.bkt.clouddn.com/o_1ao3jmbhk11qj1q031k9s10685qac.png","gender":1,"sessionId":7,"imUid":"e3"},{"userId":5,"userJoinType":3,"userType":"e","userDetailType":2,"userTitle":"项目经理","showName":"经纬哥","showHead":"http:test","gender":1,"sessionId":7,"imUid":"e5"},{"userId":17,"userJoinType":3,"userType":"e","userDetailType":3,"userTitle":"家居顾问","showName":"顾问一号","showHead":"http://o8nljewkg.bkt.clouddn.com/o_1aq60pk8skmbsbl14e0l3710gur.jpg","gender":0,"sessionId":7,"imUid":"e17"},{"userId":26,"userJoinType":1,"userType":"c","showName":"业主2372","showHead":"http://o8nljewkg.bkt.clouddn.com/1471253996160.jpg","gender":0,"sessionId":7,"imUid":"c26"}]
          */
 
         private int id;
         private String name;
         /**
-         * id : 1062
-         * caseName : J
-         * caseCover : http://o8nljewkg.bkt.clouddn.com/o_1amdfpmii1rn61vmptcb16k248k1r.jpg
+         * id : 1055
+         * caseName : iiii
+         * caseCover : http://o8nljewkg.bkt.clouddn.com/o_1aq6pduqm7su1s4u12glvvlb2e1a.jpg
          * status : 1
          */
 
         private CaseInfoBean caseInfo;
+        private String teamPhone;
         private boolean available;
         private String createTime;
-        private String teamPhone;
-
-        public String getTeamPhone() {
-            return teamPhone;
-        }
-
-        public void setTeamPhone(String teamPhone) {
-            this.teamPhone = teamPhone;
-        }
-
         /**
-         * userId : 81
-         * userJoinType : 1
-         * userType : c
-         * userDetailType : 0
-         * showName : 哈哈
-         * headImage : http://o8nljewkg.bkt.clouddn.com/1467343405422.jpg
-         * userTypeEnum : CUSTOMER
-         * userDetailTypeEnum : EMPTY
-         * userJoinTypeEnum : CREATOR
+         * userId : 1
+         * userJoinType : 2
+         * userType : m
+         * userDetailType : 2
+         * userTitle : 客服
+         * showName : 小鹦
+         * showHead : http://o8nljewkg.bkt.clouddn.com/o_1ao3jmbhk11qj1q031k9s10685qac.png
+         * gender : 2
+         * sessionId : 7
+         * imUid : m1
          */
 
         private List<MembersBean> members;
-        private List<Integer> memberIds;
 
         public int getId() {
             return id;
@@ -84,6 +74,14 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
 
         public void setCaseInfo(CaseInfoBean caseInfo) {
             this.caseInfo = caseInfo;
+        }
+
+        public String getTeamPhone() {
+            return teamPhone;
+        }
+
+        public void setTeamPhone(String teamPhone) {
+            this.teamPhone = teamPhone;
         }
 
         public boolean isAvailable() {
@@ -110,15 +108,7 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
             this.members = members;
         }
 
-        public List<Integer> getMemberIds() {
-            return memberIds;
-        }
-
-        public void setMemberIds(List<Integer> memberIds) {
-            this.memberIds = memberIds;
-        }
-
-        public static class CaseInfoBean implements Serializable {
+        public static class CaseInfoBean {
             private int id;
             private String caseName;
             private String caseCover;
@@ -162,11 +152,12 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
             private int userJoinType;
             private String userType;
             private int userDetailType;
+            private String userTitle;
             private String showName;
-            private String headImage;
-            private String userTypeEnum;
-            private String userDetailTypeEnum;
-            private String userJoinTypeEnum;
+            private String showHead;
+            private int gender;
+            private int sessionId;
+            private String imUid;
 
             public int getUserId() {
                 return userId;
@@ -200,6 +191,14 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
                 this.userDetailType = userDetailType;
             }
 
+            public String getUserTitle() {
+                return userTitle;
+            }
+
+            public void setUserTitle(String userTitle) {
+                this.userTitle = userTitle;
+            }
+
             public String getShowName() {
                 return showName;
             }
@@ -208,36 +207,36 @@ public class GroupResultBean extends BaseBean<GroupResultBean.GroupConversationB
                 this.showName = showName;
             }
 
-            public String getHeadImage() {
-                return headImage;
+            public String getShowHead() {
+                return showHead;
             }
 
-            public void setHeadImage(String headImage) {
-                this.headImage = headImage;
+            public void setShowHead(String showHead) {
+                this.showHead = showHead;
             }
 
-            public String getUserTypeEnum() {
-                return userTypeEnum;
+            public int getGender() {
+                return gender;
             }
 
-            public void setUserTypeEnum(String userTypeEnum) {
-                this.userTypeEnum = userTypeEnum;
+            public void setGender(int gender) {
+                this.gender = gender;
             }
 
-            public String getUserDetailTypeEnum() {
-                return userDetailTypeEnum;
+            public int getSessionId() {
+                return sessionId;
             }
 
-            public void setUserDetailTypeEnum(String userDetailTypeEnum) {
-                this.userDetailTypeEnum = userDetailTypeEnum;
+            public void setSessionId(int sessionId) {
+                this.sessionId = sessionId;
             }
 
-            public String getUserJoinTypeEnum() {
-                return userJoinTypeEnum;
+            public String getImUid() {
+                return imUid;
             }
 
-            public void setUserJoinTypeEnum(String userJoinTypeEnum) {
-                this.userJoinTypeEnum = userJoinTypeEnum;
+            public void setImUid(String imUid) {
+                this.imUid = imUid;
             }
         }
     }

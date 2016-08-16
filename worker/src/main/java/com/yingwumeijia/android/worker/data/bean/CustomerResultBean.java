@@ -9,15 +9,15 @@ public class CustomerResultBean extends BaseBean<CustomerResultBean.CustomerInfo
 
     public static class CustomerInfo {
 
-        private UserBean customerDto;
+        private UserBean employeeDto;
         private int collectionCount;
 
         public UserBean getCustomerDto() {
-            return customerDto;
+            return employeeDto;
         }
 
-        public void setCustomerDto(UserBean customerDto) {
-            this.customerDto = customerDto;
+        public void setCustomerDto(UserBean employeeDto) {
+            this.employeeDto = employeeDto;
         }
 
         public int getCollectionCount() {

@@ -298,6 +298,7 @@ public class LoginRobot implements LoginDataProvider {
                     if (error_count <= 2) {
                         getToken();
                     } else {
+                        Constant.setLoginOut(mContext);
                         mLoginCallBack.loginError("登录失败");
                         if (RongIM.getInstance() != null)
                             RongIM.getInstance().disconnect();
@@ -323,7 +324,7 @@ public class LoginRobot implements LoginDataProvider {
                      */
                     RongIM.setUserInfoProvider(new MyUserInfoProvider(), true);
                     RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
-                    Log.d("LoginActivity", "--=======================-onSuccess : " + userid);
+                    Log.d("LoginActivity", "--=============login==========-onSuccess : " + userid);
                     Constant.setLoginIn(mContext);
                     Constant.saveUserLoginInfo(mPhone, mPassword, mContext);
                     if (mCurrentStatus == STATUS.LOGIN) {
@@ -342,6 +343,7 @@ public class LoginRobot implements LoginDataProvider {
                  */
                 @Override
                 public void onError(RongIMClient.ErrorCode errorCode) {
+                    Constant.setLoginOut(mContext);
                     mLoginCallBack.loginError("登录失败");
                     Log.d("LoginActivity", "-=========================-onError : " + errorCode);
                     if (RongIM.getInstance() != null) {

@@ -160,6 +160,12 @@ public class Constant {
     //微博授权KEY
     public static String WB_APP_KEY = "2293291411";
 
+    public static String RONG_CLOUD_APP_KEY_DEV = "sfci50a7cve6i";
+    public static String RONG_CLOUD_APP_KEY_TEST = "x18ywvqf87m3c";
+    public static String RONG_CLOUD_APP_KEY_RELASE = "y745wfm84k0ov";
+
+
+    public static String GAO_DE_LOCATION_KEY = "3e53d86afda143099e318e5554c5d2b6";
 
     public static String ACTION_SCROLL_NAV ="com.ywmj.client.scroll";
 }
