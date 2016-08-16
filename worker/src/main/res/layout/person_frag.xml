@@ -105,8 +105,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:textColor="@color/text_color_whide"
-                    android:textSize="@dimen/text_title_lag"
-                    tools:text="Name" />
+                    android:textSize="@dimen/text_title_lag" />
 
                 <TextView
                     android:id="@+id/tv_collect_count"

@@ -2,6 +2,7 @@ package com.yingwumeijia.android.worker.funcation.login;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.ActivityCompat;
@@ -17,6 +18,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.worker.R;
@@ -97,7 +99,9 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public void showLoginError(String errorMessage) {
-        T.showShort(context,errorMessage);
+
+        Log.d("jam", "xxxx" + errorMessage);
+        T.showShort(getActivity(), errorMessage);
     }
 
     @Override
@@ -152,7 +156,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-        Log.d("jam",""+i);
+        Log.d("jam", "" + i);
         if (i == EditorInfo.IME_ACTION_GO) {
                 /*隐藏软键盘*/
             InputMethodManager imm = (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);

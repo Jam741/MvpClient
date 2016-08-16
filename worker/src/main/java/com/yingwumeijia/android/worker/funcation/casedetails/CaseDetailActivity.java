@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.HorizontalScrollView;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.OnTabSelectListener;
+import com.rx.android.jamspeedlibrary.utils.ScreenUtils;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.worker.R;
@@ -87,6 +89,11 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
 
         //lock sliding
         drawerRoot.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+
+        //init drawerLayout
+        ViewGroup.LayoutParams lp = rightDrawer.getLayoutParams();
+        lp.width = ScreenUtils.getScreenWidth() * 8 / 12;
+        rightDrawer.setLayoutParams(lp);
 
         //set listener
         btnCollect.setOnCheckedChangeListener(this);

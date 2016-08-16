@@ -27,7 +27,6 @@ import retrofit2.Response;
 public class  LoginRobot implements LoginDataProvider {
 
     private Response<LoginResultBean> mResponse;
-    private Response<RegisterResultBean> mRegisterResponse;
     private Response<FindPwdResultBean> mFindpasswordResponse;
     private LoginCallBack mLoginCallBack;
     private int error_count = 0;
@@ -178,6 +177,7 @@ public class  LoginRobot implements LoginDataProvider {
                     if (error_count <= 2) {
                         getToken();
                     } else {
+                        Constant.setLoginOut(mContext);
                         mLoginCallBack.loginError("登录失败");
                         if (RongIM.getInstance() != null)
                             RongIM.getInstance().disconnect();
@@ -222,6 +222,7 @@ public class  LoginRobot implements LoginDataProvider {
                  */
                 @Override
                 public void onError(RongIMClient.ErrorCode errorCode) {
+                    Constant.setLoginOut(mContext);
                     mLoginCallBack.loginError("登录失败");
                     Log.d("LoginActivity", "-=========================-onError : " + errorCode);
                     if (RongIM.getInstance() != null) {

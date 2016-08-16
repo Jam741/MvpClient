@@ -83,6 +83,8 @@ public interface PersonContract {
          */
         List<String> createTabs();
 
+        void sendLoginStateBroadcast(boolean isLogin);
+
 
     }
 

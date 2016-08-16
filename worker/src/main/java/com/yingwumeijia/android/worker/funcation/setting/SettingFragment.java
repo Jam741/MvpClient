@@ -1,12 +1,16 @@
 package com.yingwumeijia.android.worker.funcation.setting;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -150,4 +154,6 @@ dismisBaseProgressDialog();
                 break;
         }
     }
+
+
 }

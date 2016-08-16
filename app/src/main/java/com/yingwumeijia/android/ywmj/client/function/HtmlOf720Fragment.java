@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import com.bumptech.glide.Glide;
@@ -40,6 +42,9 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
     FrameLayout previewLayout;
     ImageView bgImage;
     ImageView playButton;
+
+    /*empty*/
+    LinearLayout emptylayout;
 
     public static HtmlOf720Fragment newInstance(String url,String previewImg) {
 
@@ -77,6 +82,10 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             previewLayout.addView(playButton);
             root.addView(previewLayout);
 
+            emptylayout = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.empty_of_720, null);
+            emptylayout.setVisibility(View.GONE);
+            root.addView(emptylayout);
+
         }
         return root;
     }
@@ -87,6 +96,10 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
 
         //get url for arguments
         getData();
+
+
+        if (!needLoadUrl())return;
+
 
         //init web
         initWebView();
@@ -100,6 +113,19 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             Glide.with(context).load(mPreviewImg).into(bgImage);
             showPreviewLayout();
         }
+    }
+
+
+    private boolean needLoadUrl() {
+        if (TextUtils.isEmpty(mUrl)){
+            emptylayout.setVisibility(View.VISIBLE);
+            Glide.with(context).load(mPreviewImg).into(bgImage);
+            showPreviewLayout();
+            playButton.setVisibility(View.GONE);
+            return false;
+        }
+        emptylayout.setVisibility(View.GONE);
+        return true;
     }
 
     /**

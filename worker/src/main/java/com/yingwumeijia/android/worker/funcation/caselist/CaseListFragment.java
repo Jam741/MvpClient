@@ -82,7 +82,6 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
         Log.d("jam", "context:" + context);
 
         //init drawerLayout
-        drawerRoot.setStatusBarBackground(R.color.colorPrimaryDark);
         ViewGroup.LayoutParams lp = rightDrawer.getLayoutParams();
         lp.width = ScreenUtils.getScreenWidth() * 8 / 12;
         rightDrawer.setLayoutParams(lp);

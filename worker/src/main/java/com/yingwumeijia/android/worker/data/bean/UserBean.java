@@ -10,31 +10,29 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserBean {
 
-
     /**
-     * id : 0
-     * userName :
-     * userPhone :
-     * userType :
-     * userTypeId : 0
+     * id : 37
+     * userName : 15681112269
+     * userPhone : 15681112269
+     * userType : e
+     * userTypeId : 48
      * deleted : false
-     * available : false
-     * name :
-     * gender :
-     * mail :
-     * idCard :
-     * idImageA :
-     * idImageB :
-     * idHoldImage :
-     * createUserId : 0
-     * createTime :
-     * updateTime :
-     * lastLoginTime :
-     * entityId : 0
-     * nickName :
-     * headImage :
-     * showName :
-     * showHead :
+     * available : true
+     * name : 王二麻子
+     * gender : 0
+     * createUserId : 4
+     * createTime : 1471312625000
+     * updateTime : 1471320607000
+     * lastLoginTime : 1471314751000
+     * entityId : 14
+     * userDetailType : 1
+     * companyId : 1
+     * headImage : http://o8nljewkg.bkt.clouddn.com/FhD9O-olKl1WIn1FGt4EXa5lSVCP
+     * lifePhotos : http://o8nljewkg.bkt.clouddn.com/o_1aq8gvbgeh3aa032cs31p1ka6c.png
+     * resume : 里斯本竞技ytrytrytyrty
+     * showName : 王二麻子
+     * userDetailTypeDesc : 设计师
+     * showHead : http://o8nljewkg.bkt.clouddn.com/FhD9O-olKl1WIn1FGt4EXa5lSVCP
      */
 
     private int id;
@@ -45,22 +43,29 @@ public class UserBean {
     private boolean deleted;
     private boolean available;
     private String name;
-    private String gender;
-    private String mail;
-    private String idCard;
-    private String idImageA;
-    private String idImageB;
-    private String idHoldImage;
+    private int gender;
     private int createUserId;
-    private String createTime;
-    private String updateTime;
-    private String lastLoginTime;
+    private long createTime;
+    private long updateTime;
+    private long lastLoginTime;
     private int entityId;
-    private String nickName;
+    private int userDetailType;
+    private int companyId;
+    private String headImage;
+    private String lifePhotos;
+    private String resume;
     private String showName;
+    private String userDetailTypeDesc;
     private String showHead;
     private String userTitle;
-    private String imUid;
+
+    public String getUserTitle() {
+        return userTitle;
+    }
+
+    public void setUserTitle(String userTitle) {
+        this.userTitle = userTitle;
+    }
 
     public int getId() {
         return id;
@@ -126,52 +131,12 @@ public class UserBean {
         this.name = name;
     }
 
-    public String getGender() {
+    public int getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(int gender) {
         this.gender = gender;
-    }
-
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-
-    public String getIdCard() {
-        return idCard;
-    }
-
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
-    }
-
-    public String getIdImageA() {
-        return idImageA;
-    }
-
-    public void setIdImageA(String idImageA) {
-        this.idImageA = idImageA;
-    }
-
-    public String getIdImageB() {
-        return idImageB;
-    }
-
-    public void setIdImageB(String idImageB) {
-        this.idImageB = idImageB;
-    }
-
-    public String getIdHoldImage() {
-        return idHoldImage;
-    }
-
-    public void setIdHoldImage(String idHoldImage) {
-        this.idHoldImage = idHoldImage;
     }
 
     public int getCreateUserId() {
@@ -182,27 +147,27 @@ public class UserBean {
         this.createUserId = createUserId;
     }
 
-    public String getCreateTime() {
+    public long getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String createTime) {
+    public void setCreateTime(long createTime) {
         this.createTime = createTime;
     }
 
-    public String getUpdateTime() {
+    public long getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(String updateTime) {
+    public void setUpdateTime(long updateTime) {
         this.updateTime = updateTime;
     }
 
-    public String getLastLoginTime() {
+    public long getLastLoginTime() {
         return lastLoginTime;
     }
 
-    public void setLastLoginTime(String lastLoginTime) {
+    public void setLastLoginTime(long lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
 
@@ -214,12 +179,44 @@ public class UserBean {
         this.entityId = entityId;
     }
 
-    public String getNickName() {
-        return nickName;
+    public int getUserDetailType() {
+        return userDetailType;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setUserDetailType(int userDetailType) {
+        this.userDetailType = userDetailType;
+    }
+
+    public int getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(int companyId) {
+        this.companyId = companyId;
+    }
+
+    public String getHeadImage() {
+        return headImage;
+    }
+
+    public void setHeadImage(String headImage) {
+        this.headImage = headImage;
+    }
+
+    public String getLifePhotos() {
+        return lifePhotos;
+    }
+
+    public void setLifePhotos(String lifePhotos) {
+        this.lifePhotos = lifePhotos;
+    }
+
+    public String getResume() {
+        return resume;
+    }
+
+    public void setResume(String resume) {
+        this.resume = resume;
     }
 
     public String getShowName() {
@@ -230,27 +227,19 @@ public class UserBean {
         this.showName = showName;
     }
 
+    public String getUserDetailTypeDesc() {
+        return userDetailTypeDesc;
+    }
+
+    public void setUserDetailTypeDesc(String userDetailTypeDesc) {
+        this.userDetailTypeDesc = userDetailTypeDesc;
+    }
+
     public String getShowHead() {
         return showHead;
     }
 
     public void setShowHead(String showHead) {
         this.showHead = showHead;
-    }
-
-    public String getUserTitle() {
-        return userTitle;
-    }
-
-    public void setUserTitle(String userTitle) {
-        this.userTitle = userTitle;
-    }
-
-    public String getImUid() {
-        return imUid;
-    }
-
-    public void setImUid(String imUid) {
-        this.imUid = imUid;
     }
 }

@@ -1,5 +1,6 @@
 package com.yingwumeijia.android.worker.funcation.setting;
 
+import android.app.Activity;
 import android.content.Context;
 
 import com.rx.android.jamspeedlibrary.utils.DataCleanManager;
@@ -7,7 +8,9 @@ import com.yingwumeijia.android.worker.WorkerApp;
 import com.yingwumeijia.android.worker.data.bean.BaseBean;
 import com.yingwumeijia.android.worker.funcation.aboutus.AboutUsActivity;
 import com.yingwumeijia.android.worker.funcation.login.LoginActivity;
+import com.yingwumeijia.android.worker.funcation.setpassword.SetPwdActivity;
 import com.yingwumeijia.android.worker.utils.StartActivityManager;
+import com.yingwumeijia.android.worker.utils.UserManager;
 import com.yingwumeijia.android.worker.utils.constants.Constant;
 
 import io.rong.imkit.RongIM;
@@ -79,7 +82,8 @@ public class SettingPresenter implements SettingContract.Presenter {
 
     @Override
     public void startSetPassword() {
-
+        if (!UserManager.userPrecondition(context)) return;
+        SetPwdActivity.start((Activity) context);
     }
 
     @Override

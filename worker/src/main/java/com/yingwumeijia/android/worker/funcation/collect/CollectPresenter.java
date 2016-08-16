@@ -130,6 +130,7 @@ public class CollectPresenter implements CollectContract.Presenter,
             xRecyclerView.setLoadingListener(this);
             xRecyclerView.addFootView(new LoadingMoreFooter(context, "已经全部加载完毕"));
             xRecyclerView.setAdapter(mListAdapter);
+            xRecyclerView.loadMoreComplete();
         }
     }
 

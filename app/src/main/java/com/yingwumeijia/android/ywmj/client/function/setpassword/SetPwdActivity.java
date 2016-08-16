@@ -1,12 +1,16 @@
 package com.yingwumeijia.android.ywmj.client.function.setpassword;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,6 +25,7 @@ import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,7 +35,7 @@ import retrofit2.Response;
  * Created by Jam on 16/6/17 下午9:46.
  * Describe:
  */
-public class SetPwdActivity extends BaseActivity {
+public class SetPwdActivity extends BaseActivity implements TextView.OnEditorActionListener {
     @Bind(R.id.topTitle)
     TextView topTitle;
     @Bind(R.id.topLeft)
@@ -70,8 +75,15 @@ public class SetPwdActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
         initActionBar();
         initView();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
     }
 
     private void initView() {
@@ -126,20 +138,24 @@ public class SetPwdActivity extends BaseActivity {
 
             }
         });
+
+        edNewPwdConfirm.setOnEditorActionListener(this);
+
     }
 
     private boolean newPwdConfirmCheckOk(EditText edNewPwdConfirm) {
-        return edNewPwdConfirm.getText().toString().equals(new_pwd);
+        return edNewPwdConfirm.getText().toString().equals(edNewPwd.getText().toString());
     }
 
     private boolean newPwdCheckOk(EditText edNewPwd) {
         new_pwd = edNewPwd.getText().toString();
-        return edNewPwd.getText().toString().length() >= Constant.PASSWORD_LENGTH_MINI && edNewPwd.getText().toString().length() <= Constant.PASSWORD_LENGTH_MAX;
+        return Constant.passwordRuleOk(edOldPwd.getText().toString());
     }
 
     private boolean oldPwdCheck(EditText edOldPwd) {
-        return edOldPwd.getText().toString().length() >= Constant.PASSWORD_LENGTH_MINI && edOldPwd.getText().toString().length() <= Constant.PASSWORD_LENGTH_MAX;
+        return Constant.passwordRuleOk(edOldPwd.getText().toString());
     }
+
 
 
     private void initActionBar() {
@@ -208,5 +224,24 @@ public class SetPwdActivity extends BaseActivity {
         new_pwd = edNewPwd.getText().toString();
         new_pwd_confirm = edNewPwdConfirm.getText().toString();
         return true;
+    }
+
+
+    @Override
+    public boolean onEditorAction(TextView textView, int actionId, KeyEvent event) {
+
+        if (actionId == EditorInfo.IME_ACTION_GO) {
+                /*隐藏软键盘*/
+            InputMethodManager imm = (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+            if (imm.isActive()) {
+                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(), 0);
+            }
+
+            if (inputCheckOk()) {
+                changePassword();
+            }
+            return true;
+        }
+        return false;
     }
 }

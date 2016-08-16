@@ -107,7 +107,7 @@
 
             </RelativeLayout>
 
-            <com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager
+            <com.yingwumeijia.android.worker.utils.view.IndexViewPager
                 android:id="@+id/vp_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

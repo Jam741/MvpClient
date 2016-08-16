@@ -15,7 +15,11 @@
             android:name=".funcation.splash.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!--登录页面-->
         <activity
@@ -49,11 +53,7 @@
         <!--案例列表页面-->
         <activity android:name=".funcation.caselist.CaseListActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <!--案例详情页面-->
         <activity android:name=".funcation.casedetails.CaseDetailActivity"
@@ -63,6 +63,9 @@
             android:screenOrientation="portrait"/>
         <!--搜索页面-->
         <activity android:name=".funcation.search.SearchActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".funcation.setpassword.SetPwdActivity"
             android:screenOrientation="portrait"/>
 
         <!--=====================================IM===============================================-->

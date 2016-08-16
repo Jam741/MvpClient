@@ -5,8 +5,9 @@ android {
         config {
             keyAlias 'ywmj_worker'
             keyPassword 'jia5201314'
-            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/worker/worker.jks')
+//            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/worker/worker.jks')
             storePassword 'jia5201314'
+            storeFile file('D:/MyProject/MvpClient/worker/worker.jks')
         }
     }
     compileSdkVersion 23

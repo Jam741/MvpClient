@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.worker.funcation.share;
 
-import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
+
+import com.yingwumeijia.android.worker.utils.constants.Constant;
 
 /**
  * Created by Jam on 2016/8/11 15:12.

@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
@@ -128,6 +129,7 @@ public class PersonPresenter implements PersonContract.Presenter {
         } else {
             mView.showNotloginLayout();
         }
+        sendLoginStateBroadcast(Constant.isLogin(context));
     }
 
 
@@ -139,10 +141,7 @@ public class PersonPresenter implements PersonContract.Presenter {
         public void onResponse(Call<CustomerResultBean> call, Response<CustomerResultBean> response) {
             mView.dismissProgressBar();
             if (response.body().getSucc()) {
-                if (response.body().getStateCode() == Constant.NOT_LOGIN_STATECODE) {
-                    mView.showNotloginLayout();
-                    sendLoginStateBroadcast(false);
-                } else {
+
                     UserBean userBean = response.body().getData().getCustomerDto();
                     showName = userBean.getShowName();
                     portraitUrl = userBean.getShowHead();
@@ -150,7 +149,6 @@ public class PersonPresenter implements PersonContract.Presenter {
                     mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
                     mView.setUserPortrait(portraitUrl);
                     mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
-                }
 
             } else {
                 mView.showLoadingFail(response.body().getMessage());

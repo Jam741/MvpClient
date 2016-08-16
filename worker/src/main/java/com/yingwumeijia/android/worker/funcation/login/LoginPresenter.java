@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.worker.funcation.login;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
 import com.yingwumeijia.android.worker.data.bean.UserBean;
@@ -29,10 +30,6 @@ public class LoginPresenter implements LoginContract.Presenter {
         FindPasswordActivity.start(context, phone);
     }
 
-    @Override
-    public void register(String phone)    {
-//        RegisterActivity.start(context, phone);
-    }
 
     @Override
     public void loginSuccessOperation(UserBean userBean) {
@@ -47,10 +44,11 @@ public class LoginPresenter implements LoginContract.Presenter {
         if (!checkPhone(phone)) return;
         if (!checkPassword(password)) return;
         mLognView.showProgressBar();
-        LoginRobot.createLoginRobot(context,phone, password, new LoginDataProvider.LoginCallBack() {
+        LoginRobot.createLoginRobot(context, phone, password, new LoginDataProvider.LoginCallBack() {
             @Override
             public void loginSuccess(UserBean userBean) {
                 mLognView.dismissProgressBar();
+                mLognView.showLoginSuccess();
                 loginSuccessOperation(userBean);
             }
 

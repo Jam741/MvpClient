@@ -45,7 +45,7 @@ public class Constant {
     public static final int PARAM_REGISTER = 1;
     public static final int PARAM_FIND = 2;
     public static final int PARAM_VIERFICATION = 3;
-
+    public static final int NOT_LOGIN_STATECODE = 312;
 
     /*---------------------------user login info----------------------------*/
     public static final String SP_LOGIN = "sp_login";
@@ -126,7 +126,7 @@ public class Constant {
 
 
     public static boolean passwordRuleOk(String password) {
-        return (password.length() >= PASSWORD_LENGTH_MINI && password.length() <= PASSWORD_LENGTH_MAX && Strings.isLetterDigit(password));
+        return (password.length() >= PASSWORD_LENGTH_MINI && password.length() <= PASSWORD_LENGTH_MAX);
     }
 
     public static boolean nikeNameRuleOk(String nikeName) {
@@ -156,9 +156,9 @@ public class Constant {
 
 
     //微信授权KEY
-    public static String WX_APP_ID = "wxa57345f69f5a674d";
+    public static String WX_APP_ID = "wxe317a57cc8b93035";
     //微博授权KEY
-    public static String WB_APP_KEY = "2293291411";
+    public static String WB_APP_KEY = "3416527308";
 
     public static String RONG_CLOUD_APP_KEY_DEV = "sfci50a7cve6i";
     public static String RONG_CLOUD_APP_KEY_TEST = "x18ywvqf87m3c";
@@ -167,5 +167,7 @@ public class Constant {
 
     public static String GAO_DE_LOCATION_KEY = "3e53d86afda143099e318e5554c5d2b6";
 
-    public static String ACTION_SCROLL_NAV ="com.ywmj.client.scroll";
+    public static String ACTION_SCROLL_NAV = "com.ywmj.client.scroll";
+
+    public static String ACTION_NOT_LOGIN = "com.ywmj.client.notlogin";
 }

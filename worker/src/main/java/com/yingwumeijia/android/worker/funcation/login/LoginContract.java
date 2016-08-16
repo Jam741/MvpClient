@@ -58,11 +58,6 @@ public interface LoginContract {
          */
         void findPassword(String phone);
 
-        /**
-         * 注册新账号
-         */
-        void register(String phone);
-
 
         /**
          * 登陆成功操作

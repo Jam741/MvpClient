@@ -1,5 +1,7 @@
 package com.yingwumeijia.android.worker.funcation.caselist;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -14,6 +16,11 @@ import com.yingwumeijia.android.worker.utils.base.activity.BaseActivity;
 public class CaseListActivity extends BaseActivity {
 
     private CaseListContract.Presenter mPresenter;
+
+    public static void start(Context context) {
+        Intent starter = new Intent(context, CaseListActivity.class);
+        context.startActivity(starter);
+    }
 
     @Override
     protected int getLayoutId() {

@@ -13,6 +13,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -105,17 +106,17 @@ public class ConversationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.conversation_act);
         ButterKnife.bind(this);
+
         context = this;
 
         getIntentData();
+
+        getSessionCaseInfo(mTargetId);
 
         initActionBar();
 
         isReconnect(getIntent());
 
-        enterFragment(Conversation.ConversationType.GROUP, mTargetId);
-
-        report();
     }
 
 
@@ -186,12 +187,11 @@ public class ConversationActivity extends AppCompatActivity {
     private void initActionBar() {
         topTitle.setText(mTitle);
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
-        TextViewUtils.setDrawableToLeft(context, topRight, R.mipmap.im_detail_call_ico);
 
     }
 
 
-    @OnClick({R.id.topLeft, R.id.btn__close_caseLayout, R.id.btn__close_stateLayout, R.id.topRight, R.id.btn_lookBack})
+    @OnClick({R.id.topLeft, R.id.btn__close_caseLayout, R.id.btn__close_stateLayout, R.id.btn_lookBack})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.topLeft:
@@ -202,13 +202,6 @@ public class ConversationActivity extends AppCompatActivity {
                 break;
             case R.id.btn__close_caseLayout:
                 caseLayout.setVisibility(View.GONE);
-                break;
-            case R.id.topRight:
-                if (!TextUtils.isEmpty(teamPhone)) {
-                    call(teamPhone);
-                } else {
-                    T.showShort(context, "没有电话号码");
-                }
                 break;
             case R.id.btn_lookBack:
                 CaseBean caseBean = new CaseBean();
@@ -222,81 +215,6 @@ public class ConversationActivity extends AppCompatActivity {
 
     public static final int request_code_call_phone = 001;
 
-
-    /**
-     * 拨打电话提示
-     *
-     * @param teamPhone
-     */
-    private void call(final String teamPhone) {
-        AlertDialog dialog = new AlertDialog.Builder(context)
-                .setTitle(R.string.dialog_title)
-                .setMessage("确定联系本案团队家居顾问吗?")
-                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        checkPermession();
-                    }
-                })
-                .setNegativeButton("取消", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
-                    }
-                })
-                .show();
-    }
-
-    /**
-     * 检查权限
-     */
-    private void checkPermession() {
-        if (ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            //申请WRITE_EXTERNAL_STORAGE权限
-            ActivityCompat.requestPermissions(ConversationActivity.this, new String[]{Manifest.permission.CALL_PHONE}, request_code_call_phone);
-        } else {
-            callTeamPhone();
-        }
-    }
-
-    /**
-     * 拨打电话
-     */
-    private void callTeamPhone() {
-        if (TextUtils.isEmpty(teamPhone)) {
-            T.showShort(context, "没有电话号码");
-        } else {
-            CallUtils.callPhone(teamPhone, ConversationActivity.this);
-            report();
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch (requestCode) {
-            case request_code_call_phone:
-                doNext(requestCode, grantResults);
-                break;
-        }
-    }
-
-    /**
-     * 拨打电话权限回调
-     *
-     * @param requestCode
-     * @param grantResults
-     */
-    private void doNext(int requestCode, int[] grantResults) {
-        if (requestCode == request_code_call_phone) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Permission Granted
-                callTeamPhone();
-            } else {
-                // Permission Denied
-                T.showShort(context, R.string.no_pressmion);
-            }
-        }
-    }
 
 
     /**
@@ -312,27 +230,12 @@ public class ConversationActivity extends AppCompatActivity {
                 .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
 
-        fragment.setUri(uri);
-    }
+        Log.d("jam","url -fragment :"+uri);
 
-    /**
-     * 报告拨号次数
-     */
-    private void report() {
-//        WorkerApp
-//                .getApiService()
-//                .report(mTargetId)
-//                .enqueue(new Callback<BaseBean>() {
-//                    @Override
-//                    public void onResponse(Call<BaseBean> call, Response<BaseBean> response) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onFailure(Call<BaseBean> call, Throwable t) {
-//
-//                    }
-//                });
+        fragment.setUri(uri);
+
+
+
     }
 
     @Override
@@ -363,8 +266,10 @@ public class ConversationActivity extends AppCompatActivity {
 
                 reconnect(token);
             } else {
+                Log.d("jam", "no push");
                 //程序切到后台，收到消息后点击进入,会执行这里
                 if (RongIM.getInstance() == null || RongIM.getInstance().getRongIMClient() == null) {
+                    Log.d("jam", "n  reconnect");
 
                     reconnect(token);
                 } else {
@@ -411,6 +316,10 @@ public class ConversationActivity extends AppCompatActivity {
         Uri uri = getIntent().getData();
         mTargetId = uri.getQueryParameter("targetId");
         mTitle = uri.getQueryParameter("title");
+
+        Log.d("jam", "mTargetId:" + mTargetId);
+        Log.d("jam", "mTitle:" + mTitle);
+        Log.d("jam", "uri:" + uri);
         mConversationType = Conversation.ConversationType.valueOf(getIntent().getData().getLastPathSegment().toUpperCase(Locale.getDefault()));
 
     }

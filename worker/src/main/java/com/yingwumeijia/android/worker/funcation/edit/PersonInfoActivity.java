@@ -37,6 +37,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -103,9 +104,16 @@ public class PersonInfoActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
         initActionBar();
         initData();
         initView();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
     }
 
     private void initView() {
