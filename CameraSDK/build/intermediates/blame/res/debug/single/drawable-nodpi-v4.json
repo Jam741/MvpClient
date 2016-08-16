@@ -1,5 +1,13 @@
 [
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_luma.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_luma.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_screen.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_screen.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nashville_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\nashville_map.png"
     },
@@ -8,32 +16,56 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\hefe_gradient_map.png"
     },
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\edge_burn.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\edge_burn.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\kelvin_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\kelvin_map.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lookup_amatorka.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\lookup_amatorka.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_curves.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_curves.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_metal.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_metal.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_color_shift.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_color_shift.png"
     },
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_process.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_process.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\amaro_map.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\amaro_map.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\soft_light.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\soft_light.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_overlay_map_warm.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_overlay_map_warm.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lock.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\lock.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_edge_burn.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\sutro_edge_burn.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\blackboard.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\blackboard.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_blowout.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\brannan_blowout.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\xpro_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\xpro_map.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_blowout.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_blowout.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nmap.png",
@@ -44,216 +76,12 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\hefe_metal.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lomo_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\lomo_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_soft_light.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hefe_soft_light.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\inkwell_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\inkwell_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_gradient_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hefe_gradient_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_process.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\brannan_process.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\shutter_pressed.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\shutter_pressed.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_metal.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\sutro_metal.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_overlay_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\earlybird_overlay_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_curves.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_curves.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\shutter_default.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\shutter_default.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\vignette_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\vignette_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_contrast.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\brannan_contrast.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_metal.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\sutro_metal.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_metal.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hefe_metal.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_luma.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\brannan_luma.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nashville_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\nashville_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_color_shift.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\toaster_color_shift.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_overlay_map_warm.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\toaster_overlay_map_warm.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_overlay_map.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_overlay_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_contrast.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_contrast.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hefe_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lookup_amatorka.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\lookup_amatorka.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\walden_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\walden_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_blowout.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_blowout.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\mystickers.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\mystickers.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\overlay_map.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\overlay_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\valencia_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\valencia_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_map.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\hefe_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_metal.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\toaster_metal.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\shutter_pressed.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\shutter_pressed.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\rise_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\rise_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_luma.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_luma.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_screen.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_screen.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_blowout.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\earlybird_blowout.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\edge_burn.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\edge_burn.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lookup_amatorka.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\lookup_amatorka.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nblowout.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\nblowout.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_curves.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_curves.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\mystickers.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\mystickers.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_metal.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\toaster_metal.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_curves.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\toaster_curves.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_screen.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\brannan_screen.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_curves.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\earlybird_curves.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_process.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_process.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\overlay_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\overlay_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\amaro_map.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\amaro_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hudson_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hudson_map.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\soft_light.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\soft_light.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_edge_burn.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\sutro_edge_burn.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_curves.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\sutro_curves.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_blowout.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_blowout.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sierra_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\sierra_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\kelvin_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\kelvin_map.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sierra_vignette.png",
@@ -264,16 +92,16 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\valencia_gradient_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\earlybird_map.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_curves.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_curves.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\walden_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\walden_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\inkwell_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\inkwell_map.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_metal.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\sutro_metal.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_soft_light.png",
@@ -282,18 +110,6 @@
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hudson_background.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\hudson_background.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sierra_vignette.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\sierra_vignette.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hudson_background.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\hudson_background.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sutro_edge_burn.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\sutro_edge_burn.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_soft_light.png",
@@ -316,20 +132,12 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\valencia_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\blackboard.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\blackboard.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lomo_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\lomo_map.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_map.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\valencia_gradient_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\valencia_gradient_map.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nblowout.png",
@@ -340,32 +148,36 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\xpro_map.png"
     },
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\earlybird_overlay_map.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\earlybird_overlay_map.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\vignette_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\vignette_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\soft_light.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\soft_light.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\toaster_soft_light.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\toaster_soft_light.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_contrast.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_contrast.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\sierra_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\sierra_map.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\amaro_map.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\amaro_map.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_blowout.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_blowout.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nmap.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\nmap.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\mystickers.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\mystickers.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\edge_burn.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-nodpi\\edge_burn.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\overlay_map.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\overlay_map.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\hefe_map.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\hefe_map.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\lock.png",

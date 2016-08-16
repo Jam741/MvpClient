@@ -2,9 +2,5 @@
     {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\voip_outgoing_ring.mp3",
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\raw\\voip_outgoing_ring.mp3"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\voip_outgoing_ring.mp3",
-        "source": "E:\\Project\\MVP\\Client\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\raw\\voip_outgoing_ring.mp3"
     }
 ]

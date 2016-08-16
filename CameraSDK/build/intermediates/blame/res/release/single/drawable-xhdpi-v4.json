@@ -1,193 +1,5 @@
 [
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\image_square_selected.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\image_square_selected.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\dialog_example.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\dialog_example.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\dialog_example.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\dialog_example.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_sma.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\crop_img_sma.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\image_square_selected.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\image_square_selected.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_sma.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\crop_img_sma.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\camerasdk_checkbox_checked.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\camerasdk_checkbox_checked.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_big.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\crop_img_big.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\default_check_s.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\default_check_s.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_big.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\crop_img_big.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\camerasdk_checkbox_normal.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\camerasdk_checkbox_normal.png"
-    },
-    {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\btn_back.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\btn_back.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\message_popover_arrow.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\message_popover_arrow.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\new_icon.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\new_icon.png"
     },
@@ -204,36 +16,36 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\statusdetail_comment_top_arrow.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\image_square_selected.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\image_square_selected.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\camerasdk_checkbox_checked.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\camerasdk_checkbox_checked.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\dialog_example.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\dialog_example.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
@@ -244,28 +56,20 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\statusdetail_comment_top_arrow.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\statusdetail_comment_top_arrow.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
@@ -276,48 +80,60 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\btn_back.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\btn_back.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_sma.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\crop_img_sma.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\camerasdk_checkbox_normal.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\camerasdk_checkbox_normal.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
@@ -328,19 +144,31 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\crop_img_big.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\crop_img_big.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\message_popover_arrow.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-xhdpi\\message_popover_arrow.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "E:\\Project\\MVP\\Client\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\new_icon.png",
-        "source": "E:\\Project\\MVP\\Client\\CameraSDK\\res\\drawable-xhdpi\\new_icon.png"
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     }
 ]
