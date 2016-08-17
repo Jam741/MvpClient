@@ -1,10 +1,16 @@
 package com.yingwumeijia.android.worker.funcation.person;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -82,6 +88,12 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(ACTION_CHANGE_COLLECT_COUNT);
+        context.registerReceiver(broadcastReceiver,filter);
+
+
         mPresenter.bingPageAdapter(vpContent);
         mPresenter.bingViewPager(vpContent, tabNav);
     }
@@ -96,6 +108,7 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
     public void onDestroyView() {
         super.onDestroyView();
         ButterKnife.unbind(this);
+        context.unregisterReceiver(broadcastReceiver);
     }
 
     @OnClick({R.id.top_back, R.id.iv_portrait, R.id.btn_login, R.id.btn_ed_person})
@@ -176,5 +189,22 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
     public void dismissProgressBar() {
         dismisBaseProgressDialog();
     }
+
+    public static final String ACTION_CHANGE_COLLECT_COUNT = "com.ywmj.android.worker.collectcount";
+
+
+    private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Log.d("jam","broad");
+            new Handler().post(new Runnable() {
+                @Override
+                public void run() {
+                    mPresenter.start();
+                }
+            });
+        }
+    };
+
 }
 

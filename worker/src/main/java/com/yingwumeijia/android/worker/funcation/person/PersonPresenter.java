@@ -14,6 +14,7 @@ import com.yingwumeijia.android.worker.data.bean.CustomerResultBean;
 import com.yingwumeijia.android.worker.data.bean.UserBean;
 import com.yingwumeijia.android.worker.funcation.TabWithPagerAdapter;
 import com.yingwumeijia.android.worker.funcation.collect.CollectFragment;
+import com.yingwumeijia.android.worker.funcation.collect.CollectOldFragment;
 import com.yingwumeijia.android.worker.funcation.collect.CollectPresenter;
 import com.yingwumeijia.android.worker.funcation.setting.SettingFragment;
 import com.yingwumeijia.android.worker.funcation.setting.SettingPresenter;
@@ -92,11 +93,15 @@ public class PersonPresenter implements PersonContract.Presenter {
     public List<Fragment> createFragments() {
         List<Fragment> fragments = new ArrayList<>();
         if (fragments.size() == 0) {
-            CollectFragment collectFragment = CollectFragment.newInstance();
-            CollectPresenter collectPresenter = new CollectPresenter(context, collectFragment);
+//            CollectFragment collectFragment = CollectFragment.newInstance();
+//            CollectPresenter collectPresenter = new CollectPresenter(context, collectFragment);
+//            SettingFragment settingFragment = SettingFragment.newInstance();
+//            SettingPresenter settingPresenter = new SettingPresenter(context, settingFragment);
+//            fragments.add(collectFragment);
+//            fragments.add(settingFragment);
+            fragments.add(new CollectOldFragment());
             SettingFragment settingFragment = SettingFragment.newInstance();
             SettingPresenter settingPresenter = new SettingPresenter(context, settingFragment);
-            fragments.add(collectFragment);
             fragments.add(settingFragment);
         }
         return fragments;

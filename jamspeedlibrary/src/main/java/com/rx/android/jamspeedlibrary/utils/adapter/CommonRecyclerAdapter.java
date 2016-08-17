@@ -41,6 +41,10 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
 
     public abstract void convert(RecyclerViewHolder holder, T t, int position);
 
+    public List<T> getDatas(){
+        return this.mDatas;
+    }
+
     public T getItemData(int position) {
         return this.mDatas.get(position);
     }
@@ -73,7 +77,7 @@ public abstract class CommonRecyclerAdapter<T> extends RecyclerView.Adapter<Recy
 
     public void remove(int position) {
         this.mDatas.remove(position);
-        notifyItemRemoved(position);
+        notifyDataSetChanged();
     }
 
     public void addRange(List<T> data, int position) {

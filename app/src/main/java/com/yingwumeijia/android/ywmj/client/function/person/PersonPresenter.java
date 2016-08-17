@@ -17,6 +17,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.CustomerResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectFragment;
+import com.yingwumeijia.android.ywmj.client.function.collect.CollectOldFragment;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectPresenter;
 import com.yingwumeijia.android.ywmj.client.function.setting.SettingFragment;
 import com.yingwumeijia.android.ywmj.client.function.setting.SettingPresenter;
@@ -96,11 +97,15 @@ public class PersonPresenter implements PersonContract.Presenter {
     public List<Fragment> createFragments() {
         List<Fragment> fragments = new ArrayList<>();
         if (fragments.size() == 0) {
-            CollectFragment collectFragment = CollectFragment.newInstance();
-            CollectPresenter collectPresenter = new CollectPresenter(context, collectFragment);
+//            CollectFragment collectFragment = CollectFragment.newInstance();
+//            CollectPresenter collectPresenter = new CollectPresenter(context, collectFragment);
+//            SettingFragment settingFragment = SettingFragment.newInstance();
+//            SettingPresenter settingPresenter = new SettingPresenter(context, settingFragment);
+//            fragments.add(collectFragment);
+//            fragments.add(settingFragment);
+            fragments.add(new CollectOldFragment());
             SettingFragment settingFragment = SettingFragment.newInstance();
             SettingPresenter settingPresenter = new SettingPresenter(context, settingFragment);
-            fragments.add(collectFragment);
             fragments.add(settingFragment);
         }
         return fragments;

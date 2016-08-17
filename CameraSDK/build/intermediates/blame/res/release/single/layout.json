@@ -52,12 +52,12 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
