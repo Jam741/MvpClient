@@ -129,6 +129,11 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
         ActivityCompat.finishAfterTransition(getActivity());
     }
 
+    @Override
+    public boolean isCurrent() {
+        return ((LoginActivity) getActivity()).isCurrent;
+    }
+
 
     @Override
     public void setPresener(LoginContract.Presenter presenter) {
@@ -160,7 +165,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-        Log.d("jam",""+i);
+        Log.d("jam", "" + i);
         if (i == EditorInfo.IME_ACTION_GO) {
                 /*隐藏软键盘*/
             InputMethodManager imm = (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);

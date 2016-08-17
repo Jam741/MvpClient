@@ -47,6 +47,9 @@ public interface LoginContract {
          */
         void finish();
 
+
+        boolean isCurrent();
+
     }
 
     interface Presenter extends BasePresenter {

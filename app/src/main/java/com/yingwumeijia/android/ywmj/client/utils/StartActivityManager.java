@@ -85,7 +85,6 @@ public class StartActivityManager {
      * @param context
      */
     public static void startSubConversationListActivity(Context context) {
-        if (!UserManager.userPrecondition(context)) return;
         if (RongIM.getInstance() != null) {
             RongIM.getInstance().startSubConversationList(context, Conversation.ConversationType.GROUP);
         }

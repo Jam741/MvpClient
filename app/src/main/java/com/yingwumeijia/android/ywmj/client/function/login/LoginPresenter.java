@@ -40,7 +40,9 @@ public class LoginPresenter implements LoginContract.Presenter {
         mLognView.showLoginSuccess();
         UserManager.saveUserInfo(userBean);
         mLognView.finish();
-        StartActivityManager.startMain(context);
+        
+        if (!mLognView.isCurrent())
+            StartActivityManager.startMain(context);
     }
 
     @Override
@@ -48,7 +50,7 @@ public class LoginPresenter implements LoginContract.Presenter {
         if (!checkPhone(phone)) return;
         if (!checkPassword(password)) return;
         mLognView.showProgressBar();
-        LoginRobot.createLoginRobot(context,phone, password, new LoginDataProvider.LoginCallBack() {
+        LoginRobot.createLoginRobot(context, phone, password, new LoginDataProvider.LoginCallBack() {
             @Override
             public void loginSuccess(UserBean userBean) {
                 mLognView.dismissProgressBar();

@@ -30,9 +30,16 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private RegisterFragment registerFragment;
     private FindPasswordPresenter mFindpasswordPresenter;
     private FindpasswordFragment findpasswordFragment;
+    public boolean isCurrent;
 
     public static void start(Context context) {
         Intent starter = new Intent(context, LoginActivity.class);
+        context.startActivity(starter);
+    }
+
+    public static void start(Context context, boolean isCurrent) {
+        Intent starter = new Intent(context, LoginActivity.class);
+        starter.putExtra("KEY_IS_CURRENT", isCurrent);
         context.startActivity(starter);
     }
 
@@ -44,6 +51,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        isCurrent = getIntent().getBooleanExtra("KEY_IS_CURRENT", false);
 
         //setup the ActionBar
         setUpToolBar();

@@ -8,13 +8,14 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.rx.android.jamspeedlibrary.utils.LogUtil;
-import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
-import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
+import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
+import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -22,8 +23,6 @@ import butterknife.OnClick;
 import io.rong.imkit.RongIM;
 import io.rong.imkit.model.UIConversation;
 import io.rong.imlib.model.Conversation;
-import retrofit2.Call;
-import retrofit2.Callback;
 
 /**
  * Created by Jam on 16/7/6 下午3:55.
@@ -35,6 +34,8 @@ public class ConversationSubListActivity extends AppCompatActivity {
     TextView topTitle;
     @Bind(R.id.topLeft)
     TextView topLeft;
+    @Bind(R.id.empty_layout)
+    LinearLayout emptyLayout;
 
     public static void start(Activity activity) {
         Intent intent = new Intent(activity, ConversationSubListActivity.class);
@@ -45,15 +46,27 @@ public class ConversationSubListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_conversation_lsit_sub);
+        ButterKnife.bind(this);
+
 //                    RongIM.setConversationSListBehaviorListener(new MyConversationListBehaviorListener());
         RongIM.setConversationListBehaviorListener(new MyConversationListBehaviorListener());
 
-        ButterKnife.bind(this);
+
         initActionBar();
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (Constant.isLogin(this)) {
+            emptyLayout.setVisibility(View.GONE);
+        } else {
+            emptyLayout.setVisibility(View.VISIBLE);
+        }
+    }
 
     private void initActionBar() {
         topTitle.setText("聊天列表");
@@ -69,6 +82,15 @@ public class ConversationSubListActivity extends AppCompatActivity {
     protected void onDestroy() {
         ButterKnife.unbind(this);
         super.onDestroy();
+    }
+
+    @OnClick({R.id.btn_login})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_login:
+                LoginActivity.start(this, true);
+                break;
+        }
     }
 
 
