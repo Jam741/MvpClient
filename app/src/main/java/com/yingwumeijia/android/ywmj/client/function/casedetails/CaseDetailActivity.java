@@ -18,6 +18,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
@@ -46,7 +47,7 @@ import butterknife.OnClick;
  * Describe:
  */
 public class CaseDetailActivity extends BaseActivity implements CaseDetailContract.View,
-        ViewPager.OnPageChangeListener, OnTabSelectListener, CompoundButton.OnCheckedChangeListener {
+        ViewPager.OnPageChangeListener, OnTabSelectListener {
 
 
     @Bind(R.id.topTitle)
@@ -54,7 +55,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     @Bind(R.id.topLeft)
     TextView topLeft;
     @Bind(R.id.topRight_second)
-    CheckBox btnCollect;
+    ImageView btnCollect;
     @Bind(R.id.ctab_nav)
     CommonTabLayout ctabNav;
     @Bind(R.id.hsv_nav)
@@ -76,6 +77,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     private CaseDetailContract.Presenter mPresenter;
     private int mCaseId;
     private int mCurrentPosition = 0;
+    private boolean isCollect;
 
     public static void start(Context context, int caseId) {
         Intent starter = new Intent(context, CaseDetailActivity.class);
@@ -104,7 +106,6 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         rightDrawer.setLayoutParams(lp);
 
         //set listener
-        btnCollect.setOnCheckedChangeListener(this);
         vpContent.addOnPageChangeListener(this);
         vpContent.setOffscreenPageLimit(5);
         vpContent.setScanScroll(false);
@@ -182,12 +183,14 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
 
     @Override
     public void setCollected() {
-        btnCollect.setChecked(true);
+        isCollect = true;
+        btnCollect.setImageResource(R.mipmap.case_details_like_light_ic);
     }
 
     @Override
     public void setUnCollected() {
-        btnCollect.setChecked(false);
+        isCollect = false;
+        btnCollect.setImageResource(R.mipmap.case_details_like_ico);
     }
 
     @Override
@@ -217,7 +220,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
         dismisBaseProgressDialog();
     }
 
-    @OnClick({R.id.topLeft, R.id.btn_menu, R.id.topRight, R.id.btn_connectTeam})
+    @OnClick({R.id.topLeft, R.id.btn_menu, R.id.topRight, R.id.btn_connectTeam, R.id.topRight_second})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.topLeft:
@@ -231,6 +234,14 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 break;
             case R.id.btn_connectTeam:
                 mPresenter.connectWithTeam(mCaseId);
+                break;
+            case R.id.topRight_second:
+                if (!UserManager.userPrecondition(context)) return;
+                if (isCollect) {
+                    mPresenter.cancelCollect(mCaseId);
+                } else {
+                    mPresenter.collect(mCaseId);
+                }
                 break;
         }
     }
@@ -269,15 +280,5 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     protected void onDestroy() {
         super.onDestroy();
         ButterKnife.unbind(this);
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-        if (!UserManager.userPrecondition(context)) return;
-        if (b) {
-            mPresenter.collect(mCaseId);
-        } else {
-            mPresenter.cancelCollect(mCaseId);
-        }
     }
 }

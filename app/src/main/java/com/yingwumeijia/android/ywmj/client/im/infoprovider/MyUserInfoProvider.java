@@ -39,7 +39,7 @@ public class MyUserInfoProvider implements RongIM.UserInfoProvider {
                             } else if (userType.equals("e")) {
                                 showName = showName + "-" + response.body().getData().getUserTitle();
                             } else if (userType.equals("m")) {
-                                showName = showName + "-" + response.body().getData().getUserTitle();
+                                showName = showName + "-" + "美家客服";
                             }
                             UserInfo userInfo = new UserInfo(
                                     imUid,

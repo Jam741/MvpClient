@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.model.GlideUrl;
@@ -171,6 +172,11 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
             iwxapi = WXAPIFactory.createWXAPI(mContext, Constant.WX_APP_ID, true);
             /*将应用的appID注册到微信*/
             iwxapi.registerApp(Constant.WX_APP_ID);
+        }
+
+        if (!iwxapi.isWXAppInstalled()) {
+            Toast.makeText(mContext, "您还未安装微信客户端", Toast.LENGTH_SHORT).show();
+            return;
         }
     }
 

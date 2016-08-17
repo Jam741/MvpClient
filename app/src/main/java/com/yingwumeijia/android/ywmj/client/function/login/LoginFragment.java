@@ -105,7 +105,7 @@ public class LoginFragment extends BaseFragment implements LoginContract.View,
 
     @Override
     public void showLoginError(String errorMessage) {
-        T.showShort(context,errorMessage);
+        Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show();
     }
 
     @Override

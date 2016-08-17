@@ -263,7 +263,6 @@ public class CaseListFragment extends BaseFragment implements CaseListContract.V
                 StartActivityManager.startSubConversationListActivity(context);
                 break;
             case R.id.iv_mine:
-                if (!UserManager.userPrecondition(context))return;
                 PersonActivity.start(context);
                 break;
         }

@@ -18,5 +18,8 @@ public interface SplashContract {
         void login();
 
         void startMainActivity();
+
+        void loadBaseUrl();
+
     }
 }

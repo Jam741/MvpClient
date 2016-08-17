@@ -33,6 +33,11 @@ import retrofit2.http.Query;
 public interface ApiService {
 
 
+    @GET("serviceQuery/server")
+    Call<BaseBean<String>> getService(@Query("appType") String appType,
+                                      @Query("version") String version);
+
+
     /**
      * 注册
      *

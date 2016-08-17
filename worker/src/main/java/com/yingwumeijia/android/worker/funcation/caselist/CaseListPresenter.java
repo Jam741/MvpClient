@@ -259,6 +259,11 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
         if (mType_set == null) {
             mType_set = new HashMap<>();
         }
+
+        if (data.getHouseType().size()>0) data.getHouseType().get(0).setSelected(true);
+        if (data.getDecorateStyleType().size()>0) data.getDecorateStyleType().get(0).setSelected(true);
+        if (data.getCostRangeType().size()>0) data.getCostRangeType().get(0).setSelected(true);
+
         mType_set.clear();
         mType_set.put(KEY_HOUS_TYPE, data.getHouseType());
         mType_set.put(KEY_DECORATE_STYLE_TYPE, data.getDecorateStyleType());

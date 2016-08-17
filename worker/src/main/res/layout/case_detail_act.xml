@@ -55,16 +55,16 @@
                     android:paddingRight="22dp"
                     tools:ignore="RelativeOverlap,RtlSymmetry" />
 
-                <CheckBox
+                <ImageView
                     android:id="@+id/topRight_second"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toLeftOf="@id/topRight"
                     android:button="@null"
-                    android:drawableLeft="@drawable/btn_collect_selector"
                     android:gravity="center_vertical"
                     android:paddingLeft="22dp"
                     android:paddingRight="11dp"
+                    android:src="@mipmap/case_details_like_ico"
                     tools:ignore="RtlSymmetry" />
 
                 <View

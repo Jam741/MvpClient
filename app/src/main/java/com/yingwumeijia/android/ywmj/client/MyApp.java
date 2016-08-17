@@ -35,19 +35,19 @@ public class MyApp extends StarterApplication {
     public static final ApiService getApiService() {
         return ApiServiceHolder.API_SERVICE;
     }
-
     @Override
     public void onCreate() {
         super.onCreate();
 
         //createRetrofit;
-        if (BuildConfig.DEBUG) {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_DEV).build();
-        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        } else {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
-        }
+        new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
+//        if (BuildConfig.DEBUG) {
+//            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_DEV).build();
+//        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
+//            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
+//        } else {
+//            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
+//        }
         //init loger of Timber
         initTimber();
 
@@ -121,7 +121,7 @@ public class MyApp extends StarterApplication {
 
 
         if (BuildConfig.DEBUG) {
-            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_DEV);
+            RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_TEST);
         } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
             RongIM.init(appContext(), Constant.RONG_CLOUD_APP_KEY_TEST);
         } else {

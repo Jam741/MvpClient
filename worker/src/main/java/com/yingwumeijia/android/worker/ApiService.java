@@ -16,6 +16,7 @@ import com.yingwumeijia.android.worker.data.bean.UserBean;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
@@ -27,6 +28,10 @@ import retrofit2.http.Query;
  */
 public interface ApiService {
 
+
+    @GET("serviceQuery/server")
+    Call<BaseBean<String>> getService(@Path("appType") String appType,
+                                      @Path("version") String version);
 
     /**
      * 登陆

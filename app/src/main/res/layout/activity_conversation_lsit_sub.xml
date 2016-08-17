@@ -6,10 +6,20 @@
 
     <include layout="@layout/toolbr_layout"/>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </FrameLayout>
+
     <fragment
         android:id="@+id/subconversationlist"
         android:name="io.rong.imkit.fragment.SubConversationListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 
 </LinearLayout>
