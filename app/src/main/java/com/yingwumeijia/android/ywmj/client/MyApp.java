@@ -152,7 +152,7 @@ public class MyApp extends StarterApplication {
                     new CameraInputProvider(RongContext.getInstance()),//相机
                     new LocationInputProvider(RongContext.getInstance()),//地理位置
 //                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
-//                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
+//                     new ContactsProvider(RongContext.getInstance())//自定义通讯录
             };
 //            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
             RongIM.setConnectionStatusListener(new MyConnectionStatusListener());
