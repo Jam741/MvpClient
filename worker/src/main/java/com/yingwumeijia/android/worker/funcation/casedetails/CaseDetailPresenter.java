@@ -183,7 +183,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void connectWithTeam(int caseId) {
-        //立即联系他们
+//        //立即联系他们
 //        WorkerApp
 //                .getApiService()
 //                .createGroupConversation(caseId)

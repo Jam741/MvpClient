@@ -101,7 +101,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
                 break;
             case R.id.btn_shareToWeibo:
                 registerToWb();
-                sendMultiMessage(false, false, true, false, false, false);
+                sendMultiMessage(true, false, false, false, false, false);
                 dismiss();
                 break;
             case R.id.cancel:
@@ -239,6 +239,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
 
         if (!iwxapi.isWXAppInstalled()) {
             Toast.makeText(mContext, "您未安装微博，请下载后分享", Toast.LENGTH_SHORT).show();
+            Log.d("jam","----------------未安装微博");
             return;
         }
 
@@ -249,6 +250,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         SendMultiMessageToWeiboRequest request = new SendMultiMessageToWeiboRequest();
         request.transaction = String.valueOf(System.currentTimeMillis());
         request.multiMessage = weiboMessage;
+        Log.d("jam","----------------调起微博");
         mWeiboShareAPI.sendRequest(mContext, request); //发送请求消息到微博，唤起微博分享界面
     }
 

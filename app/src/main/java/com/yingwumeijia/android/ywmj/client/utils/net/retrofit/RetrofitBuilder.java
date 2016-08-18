@@ -58,7 +58,6 @@ public class RetrofitBuilder {
                     .client(client)
                     .build();
         }
-
         return mRetrofit;
     }
 

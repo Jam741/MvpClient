@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.aboutus.AboutUsActivity;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -150,7 +151,7 @@ public class SettingFragment extends BaseFragment implements SettingContract.Vie
                 mPresenter.startAgreementActivity();
                 break;
             case R.id.btn_aboout_us:
-                mPresenter.startAgreementActivity();
+                AboutUsActivity.start(context);
                 break;
             case R.id.btn_login_out:
                 mPresenter.loginOut();

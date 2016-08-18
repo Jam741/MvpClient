@@ -35,8 +35,7 @@ public class SplashFragment extends BaseFragment implements SplashContract.View 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-//        mPresenter.loadBaseUrl();
-        mPresenter.login();
+        mPresenter.start();
     }
 
     @Override

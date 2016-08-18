@@ -141,6 +141,7 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
             mFindPasswordView.dismissProgressBar();
             if (response.body().getSucc()) {
                 mFindPasswordView.showSendSmsCodeSucess();
+                mFindPasswordView.lockSendSmsButton();
                 if (myCountDownTimer != null) {
                     myCountDownTimer.cancel();
                     myCountDownTimer = null;

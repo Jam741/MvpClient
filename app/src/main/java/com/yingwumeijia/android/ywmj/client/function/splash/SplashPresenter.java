@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 
 import com.rx.android.jamspeedlibrary.utils.AppUtils;
 import com.rx.android.jamspeedlibrary.utils.T;
@@ -25,6 +26,7 @@ import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.RetrofitBuilder;
 
 import io.rong.imkit.RongContext;
 import io.rong.imkit.RongIM;
+import io.rong.imkit.utils.SystemUtils;
 import io.rong.imkit.widget.provider.CameraInputProvider;
 import io.rong.imkit.widget.provider.ImageInputProvider;
 import io.rong.imkit.widget.provider.InputProvider;
@@ -82,7 +84,8 @@ public class SplashPresenter implements SplashContract.Presenter {
 
     @Override
     public void start() {
-
+//        login();
+        loadBaseUrl();
     }
 
     LoginDataProvider.LoginCallBack loginCallBack = new LoginDataProvider.LoginCallBack() {
@@ -111,6 +114,7 @@ public class SplashPresenter implements SplashContract.Presenter {
         public void onResponse(Call<BaseBean<SeverBean>> call, Response<BaseBean<SeverBean>> response) {
             if (response.body().getSucc()) {
                 Constant.saveBaseUrl(context, response.body().getData().getServerUrl());
+
                 new RetrofitBuilder.Builder().context(context).baseUrl(response.body().getData().getServerUrl()).build();
 
                 //初始化融云
@@ -118,7 +122,7 @@ public class SplashPresenter implements SplashContract.Presenter {
                 login();
             } else {
 
-                login();
+                loadBaseUrl();
 
                 baseUrlErrorCount++;
                 checkErrorCount();
@@ -173,6 +177,11 @@ public class SplashPresenter implements SplashContract.Presenter {
     private void initRongClound(String imKey) {
 
 
+        String current = SystemUtils.getCurProcessName(context);
+        String mainProcessName = context.getPackageName();
+
+        Log.d("jam", "current :" + current);
+        Log.d("jam", "mainProcessName :" + mainProcessName);
         /**
          *
          * OnCreate 会被多个进程重入，这段保护代码，确保只有您需要使用 RongIM 的进程和 Push 进程执行了 init。
@@ -185,6 +194,7 @@ public class SplashPresenter implements SplashContract.Presenter {
              * IMKit SDK调用第一步 初始化
              */
             RongIM.init(context, imKey);
+
 
 //            if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))) {
 //

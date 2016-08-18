@@ -152,10 +152,6 @@
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\toaster_soft_light.png"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\brannan_luma.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\brannan_luma.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\sutro_curves.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\sutro_curves.png"
     },
@@ -166,6 +162,10 @@
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\xpro_map.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\xpro_map.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\brannan_luma.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\brannan_luma.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\hefe_gradient_map.png",
