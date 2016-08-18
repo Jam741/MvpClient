@@ -8,12 +8,12 @@
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
-        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",

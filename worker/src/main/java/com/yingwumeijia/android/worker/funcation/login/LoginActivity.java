@@ -13,12 +13,19 @@ import com.yingwumeijia.android.worker.R;
 import com.yingwumeijia.android.worker.utils.ActivityUtils;
 import com.yingwumeijia.android.worker.utils.base.activity.BaseActivity;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 /**
  * Created by Jam on 2016/8/2.
  * jamisonline.he@gmail.com
  */
 public class LoginActivity extends BaseActivity implements View.OnClickListener {
 
+    @Bind(R.id.topTitle)
+    TextView topTitle;
+    @Bind(R.id.topLeft)
+    TextView topLeft;
     private LoginContract.Presenter mLoginPresenter;
     private LoginFragment loginFragment;
 
@@ -36,6 +43,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        ButterKnife.bind(this);
+
         //setup the ActionBar
         setUpToolBar();
 
@@ -43,7 +52,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         initFragment();
 
     }
-    
+
     private void initFragment() {
         loginFragment =
                 (LoginFragment) getSupportFragmentManager().findFragmentById(R.id.contentFragment);
@@ -61,8 +70,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     }
 
     private void setUpToolBar() {
-        TextView topTitle = (TextView) findViewById(R.id.topTitle);
-        TextView topLeft = (TextView) findViewById(R.id.topLeft);
         topTitle.setText("账号登录");
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
         topLeft.setOnClickListener(this);

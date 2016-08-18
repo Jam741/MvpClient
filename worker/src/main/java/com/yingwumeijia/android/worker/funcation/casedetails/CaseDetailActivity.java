@@ -108,6 +108,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
             mPresenter = new CaseDetailPresenter(this, context);
         }
         mPresenter.start();
+        mPresenter.getShareData(mCaseId);
         mPresenter.undateVisitNum(mCaseId);
         mPresenter.loadDetailData(mCaseId);
     }

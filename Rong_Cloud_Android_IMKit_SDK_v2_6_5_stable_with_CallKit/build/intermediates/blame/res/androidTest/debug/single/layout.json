@@ -168,12 +168,12 @@
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_base_conversation.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_conversation.xml",
-        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_conversation.xml"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_progress.xml",
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_progress.xml"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_public_service_conversation.xml",
+        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_item_public_service_conversation.xml"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_public_service_inf.xml",
@@ -212,12 +212,12 @@
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_picsel_catalog_listview.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_input_pager_layout.xml",
-        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_input_pager_layout.xml"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_block.xml",
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_block.xml"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_input_pager_layout.xml",
+        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_input_pager_layout.xml"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_item_text_message_evaluate.xml",
@@ -308,12 +308,12 @@
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_picsel_grid_item.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_txt_provider.xml",
-        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_txt_provider.xml"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_fr_image.xml",
         "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_fr_image.xml"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_wi_txt_provider.xml",
+        "source": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\bundles\\debug\\res\\layout\\rc_wi_txt_provider.xml"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\rc_ac_albums.xml",

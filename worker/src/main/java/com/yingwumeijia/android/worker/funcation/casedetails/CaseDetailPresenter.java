@@ -221,7 +221,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void start() {
-        mTabView = mView.getTabView();
+                mTabView = mView.getTabView();
         mViewPager = (IndexViewPager) mView.getViewPager();
         mNacRecyclerView = mView.getNavRecyclerView();
         mNacRecyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -336,7 +336,6 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                         shareBitmap = resource;
                     }
                 });
-
 
                 shareBean = response.body().getData();
             }

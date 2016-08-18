@@ -104,6 +104,7 @@
                 android:id="@+id/case_layout"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:visibility="visible"
                 android:background="@color/bg_whide">
 
                 <ImageView
@@ -116,15 +117,35 @@
                     tools:src="@mipmap/ic_launcher" />
 
 
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/btn__close_caseLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/vertical_margin"
+                    android:src="@mipmap/im_detail_close_ico" />
+
+
+
                 <TextView
                     android:id="@+id/tv_case_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_toLeftOf="@id/btn__close_caseLayout"
+                    android:ellipsize="end"
                     android:layout_alignTop="@id/iv_case_img"
                     android:layout_toRightOf="@id/iv_case_img"
                     android:textColor="@color/text_color_black"
                     android:textSize="@dimen/text_normal"
-                    tools:text="案例名称" />
+                    tools:text="" />
 
                 <TextView
                     android:id="@+id/btn_lookBack"
@@ -138,16 +159,6 @@
                     android:text="点击回顾案例"
                     android:textColor="@color/text_color_less"
                     android:textSize="@dimen/text_small" />
-
-
-                <ImageView
-                    android:id="@+id/btn__close_caseLayout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:padding="@dimen/vertical_margin"
-                    android:src="@mipmap/im_detail_close_ico" />
             </RelativeLayout>
         </LinearLayout>
 

@@ -15,7 +15,7 @@ import io.rong.imkit.RongIM;
 public class Constant {
 
 
-    public static final String BASE_URL = "http://192.168.28.16:8185/";
+    public static final String BASE_URL = "http://192.168.28.15:8185/";
 
     //王经纬
     public static final String BASE_URL_WANG = "http://192.168.28.193:8082/";

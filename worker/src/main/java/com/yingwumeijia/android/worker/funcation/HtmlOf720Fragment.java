@@ -97,7 +97,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
         getData();
 
 
-        if (!needLoadUrl())return;
+        if (!needLoadUrl()) return;
 
         //init web
         initWebView();
@@ -114,7 +114,8 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
     }
 
     private boolean needLoadUrl() {
-        if (TextUtils.isEmpty(mUrl)){
+        if (TextUtils.isEmpty(mUrl)) {
+            mProgressBar.setVisibility(View.GONE);
             emptylayout.setVisibility(View.VISIBLE);
             Glide.with(context).load(mPreviewImg).into(bgImage);
             showPreviewLayout();

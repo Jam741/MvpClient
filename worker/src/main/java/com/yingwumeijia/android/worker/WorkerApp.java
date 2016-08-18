@@ -16,6 +16,7 @@ import io.rong.imkit.RongIM;
 import io.rong.imkit.widget.provider.CameraInputProvider;
 import io.rong.imkit.widget.provider.ImageInputProvider;
 import io.rong.imkit.widget.provider.InputProvider;
+import io.rong.imkit.widget.provider.LocationInputProvider;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.Conversation;
 import timber.log.Timber;
@@ -44,9 +45,9 @@ public class WorkerApp extends StarterApplication {
         //createRetrofit;
         if (BuildConfig.DEBUG) {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        }else if (BuildConfig.FLAVOR.equals("ywmjtest")){
+        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        }else {
+        } else {
             new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
         }
 
@@ -100,7 +101,7 @@ public class WorkerApp extends StarterApplication {
             InputProvider.ExtendProvider[] provider = {
                     new ImageInputProvider(RongContext.getInstance()),//图片
                     new CameraInputProvider(RongContext.getInstance()),//相机
-//                    new LocationInputProvider(RongContext.getInstance()),//地理位置
+                    new LocationInputProvider(RongContext.getInstance()),//地理位置
 //                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
 //                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
             };
@@ -109,8 +110,6 @@ public class WorkerApp extends StarterApplication {
         }
 
     }
-
-
 
 
     private class MyConnectionStatusListener implements RongIMClient.ConnectionStatusListener {

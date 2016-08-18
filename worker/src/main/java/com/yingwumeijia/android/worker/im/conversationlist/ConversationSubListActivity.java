@@ -7,11 +7,18 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import com.rx.android.jamspeedlibrary.utils.T;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.worker.R;
+import com.yingwumeijia.android.worker.funcation.caselist.CaseListActivity;
+import com.yingwumeijia.android.worker.funcation.person.PersonActivity;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -52,18 +59,27 @@ public class ConversationSubListActivity extends AppCompatActivity {
 
     private void initActionBar() {
         topTitle.setText("聊天列表");
-        TextViewUtils.setDrawableToLeft(this, topLeft, R.mipmap.back_ico);
     }
 
-    @OnClick(R.id.topLeft)
-    public void onClick() {
-        ActivityCompat.finishAfterTransition(this);
-    }
 
     @Override
     protected void onDestroy() {
         ButterKnife.unbind(this);
         super.onDestroy();
+    }
+
+    @OnClick({R.id.topLeft, R.id.topRight, R.id.topRight_second})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.topLeft:
+                break;
+            case R.id.topRight:
+                PersonActivity.start(this);
+                break;
+            case R.id.topRight_second:
+                CaseListActivity.start(this);
+                break;
+        }
     }
 
 
@@ -103,6 +119,42 @@ public class ConversationSubListActivity extends AppCompatActivity {
         @Override
         public boolean onConversationClick(Context context, View view, UIConversation uiConversation) {
             return false;
+        }
+    }
+
+
+    /**
+     * 菜单、返回键响应
+     */
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // TODO Auto-generated method stub
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            exitBy2Click(); //调用双击退出函数
+        }
+        return false;
+    }
+
+    /**
+     * 双击退出函数
+     */
+    private static Boolean isExit = false;
+
+    private void exitBy2Click() {
+        Timer tExit;
+        if (!isExit) {
+            isExit = true; // 准备退出
+            T.showShort(this, "再按一次退出程序");
+            tExit = new Timer();
+            tExit.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    isExit = false; // 取消退出
+                }
+            }, 2000); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务
+
+        } else {
+            ActivityCompat.finishAffinity(this);
         }
     }
 }

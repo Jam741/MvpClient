@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_screen.png",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_screen.png"
-    },
-    {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_luma.png",
         "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_luma.png"
+    },
+    {
+        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\brannan_screen.png",
+        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\res\\drawable-nodpi\\brannan_screen.png"
     },
     {
         "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4\\nashville_map.png",

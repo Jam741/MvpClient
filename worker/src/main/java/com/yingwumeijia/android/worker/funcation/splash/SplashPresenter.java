@@ -60,6 +60,7 @@ public class SplashPresenter implements SplashContract.Presenter {
         @Override
         public void loginSuccess(UserBean userBean) {
             Constant.setLoginIn(context);
+            ActivityCompat.finishAfterTransition((Activity) context);
             StartActivityManager.startMain(context);
         }
 

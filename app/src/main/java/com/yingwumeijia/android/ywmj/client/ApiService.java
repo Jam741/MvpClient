@@ -12,6 +12,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
+import com.yingwumeijia.android.ywmj.client.data.bean.SeverBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.ShareBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.TokenResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
@@ -34,8 +35,8 @@ public interface ApiService {
 
 
     @GET("serviceQuery/server")
-    Call<BaseBean<String>> getService(@Query("appType") String appType,
-                                      @Query("version") String version);
+    Call<BaseBean<SeverBean>> getService(@Query("appType") String appType,
+                                         @Query("version") String version);
 
 
     /**

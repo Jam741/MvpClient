@@ -30,19 +30,6 @@
             android:background="@color/bg_whide">
 
             <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:drawableLeft="@mipmap/home_list_title_ico"
-                android:drawablePadding="10dp"
-                android:paddingLeft="15dp"
-                android:textColor="@color/text_color_black"
-                android:textSize="15sp"
-                tools:ignore="RelativeOverlap,RtlSymmetry"
-                tools:text="北欧风" />
-
-            <TextView
                 android:id="@+id/tv_collect_count"
                 android:layout_width="71dp"
                 android:layout_height="32dp"
@@ -53,6 +40,24 @@
                 android:textColor="@color/text_color_black"
                 android:textSize="@dimen/text_small"
                 tools:text="收藏12" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_collect_count"
+                android:drawableLeft="@mipmap/home_list_title_ico"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:textColor="@color/text_color_black"
+                android:textSize="15sp"
+                tools:ignore="RelativeOverlap,RtlSymmetry"
+                tools:text="" />
+
 
         </RelativeLayout>
     </RelativeLayout>

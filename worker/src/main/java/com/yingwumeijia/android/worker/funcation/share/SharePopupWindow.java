@@ -12,11 +12,13 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.popuwindowlibrary.BasePopupWindow;
 import com.sina.weibo.sdk.api.ImageObject;
 import com.sina.weibo.sdk.api.TextObject;
 import com.sina.weibo.sdk.api.VoiceObject;
+import com.sina.weibo.sdk.api.WebpageObject;
 import com.sina.weibo.sdk.api.WeiboMultiMessage;
 import com.sina.weibo.sdk.api.share.BaseResponse;
 import com.sina.weibo.sdk.api.share.IWeiboHandler;
@@ -35,6 +37,7 @@ import com.yingwumeijia.android.worker.utils.constants.Constant;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.util.UUID;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -90,7 +93,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
                 break;
             case R.id.btn_shareToWeibo:
                 registerToWb();
-                sendMultiMessage(true, true, false, false, false, false);
+                sendMultiMessage(true, false, false, false, false, false);
                 dismiss();
                 break;
             case R.id.cancel:
@@ -163,6 +166,7 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
             /*将应用的appID注册到微信*/
             iwxapi.registerApp(Constant.WX_APP_ID);
         }
+
     }
 
     /**
@@ -171,6 +175,10 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
      * @param flag 0为微信会话 ，2为朋友圈
      */
     private void wechatShare(int flag) {
+        if (!iwxapi.isWXAppInstalled()) {
+            Toast.makeText(mContext, "您未安装微信，请下载后分享", Toast.LENGTH_SHORT).show();
+            return;
+        }
         WXWebpageObject webpage = new WXWebpageObject();
         webpage.webpageUrl = mShareModel.getmShareUrl();
         WXMediaMessage msg = new WXMediaMessage(webpage);
@@ -220,9 +228,16 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
      */
     private void sendMultiMessage(boolean hasText, boolean hasImage, boolean hasWebpage,
                                   boolean hasMusic, boolean hasVideo, boolean hasVoice) {
+
+        if (!iwxapi.isWXAppInstalled()) {
+            Toast.makeText(mContext, "您未安装微博，请下载后分享", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         WeiboMultiMessage weiboMessage = new WeiboMultiMessage();//初始化微博的分享消息
         if (hasText) weiboMessage.textObject = getTextObj();
         if (hasImage) weiboMessage.imageObject = getImageObj();
+        if(hasWebpage) weiboMessage.mediaObject = getWeiboPageObj();
         SendMultiMessageToWeiboRequest request = new SendMultiMessageToWeiboRequest();
         request.transaction = String.valueOf(System.currentTimeMillis());
         request.multiMessage = weiboMessage;
@@ -247,6 +262,18 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         return voiceObject;
     }
 
+    private WebpageObject getWeiboPageObj(){
+        WebpageObject webpageObject = new WebpageObject();
+        byte[] bytes = bmpToByteArray(mShareModel.getmShareImg(), true);
+        webpageObject.setThumbImage(BitmapFactory.decodeByteArray(bytes,0,bytes.length));
+        webpageObject.title = mShareModel.getmShareTitle();//不能超过512
+        webpageObject.actionUrl = mShareModel.getmShareUrl();// 不能超过512
+        webpageObject.description = mShareModel.getmDescription();//不能超过1024
+        webpageObject.identify = UUID.randomUUID().toString();//这个不知道做啥的
+        webpageObject.defaultText = "Webpage 默认文案";//这个也不知道做啥的
+        return webpageObject;
+    }
+
 //    protected void onNewIntent(Intent intent) {
 //        super.onNewIntent(intent);
 //        mWeiboShareAPI.handleWeiboResponse(intent, this); //当前应用唤起微博分享后，返回当前应用
@@ -263,4 +290,5 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
                 break;
         }
     }
+
 }

@@ -3,6 +3,7 @@ package com.yingwumeijia.android.worker.funcation.findpassword;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.CountDownTimer;
+import android.view.inputmethod.InputMethodManager;
 
 import com.rx.android.jamspeedlibrary.utils.PhoneNumberUtils;
 import com.yingwumeijia.android.worker.WorkerApp;

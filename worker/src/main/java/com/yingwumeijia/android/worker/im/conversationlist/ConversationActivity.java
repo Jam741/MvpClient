@@ -67,6 +67,7 @@ public class ConversationActivity extends AppCompatActivity {
     @Bind(R.id.iv_case_img)
     ImageView ivCaseImg;
 
+
     private Activity context;
 
     /**
@@ -130,11 +131,13 @@ public class ConversationActivity extends AppCompatActivity {
                 .enqueue(new Callback<GroupResultBean>() {
                     @Override
                     public void onResponse(Call<GroupResultBean> call, Response<GroupResultBean> response) {
+                        Log.d("jam","-xx-"+response.body().getData().getName());
                         if (response.body().getSucc()) {
+                            Log.d("jam","--"+response.body().getData().getName());
                             mTitle = response.body().getData().getName();
                             caseInfoBean = response.body().getData().getCaseInfo();
+                            if (caseInfoBean != null)caseLayout.setVisibility(View.VISIBLE);
                             available = response.body().getData().isAvailable();
-                            teamPhone = response.body().getData().getTeamPhone();
                             initCaseInfo();
                             initActionBar();
                         }
@@ -143,7 +146,7 @@ public class ConversationActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<GroupResultBean> call, Throwable t) {
-
+                        Log.i("jam","-----error----"+t.getMessage());
                     }
                 });
     }
