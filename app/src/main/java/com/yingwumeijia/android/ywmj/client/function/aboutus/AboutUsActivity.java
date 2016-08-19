@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.rx.android.jamspeedlibrary.utils.AppUtils;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.HtmlActivity;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 
 import butterknife.Bind;
@@ -61,7 +62,8 @@ public class AboutUsActivity extends BaseActivity {
     private void initActionBar() {
         topTitle.setText("关于鹦鹉美家");
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
-        tvVersionName.setText(AppUtils.getAppName(context) + AppUtils.getVersionName(context));    }
+        tvVersionName.setText(AppUtils.getAppName(context) + AppUtils.getVersionName(context));
+    }
 
     @OnClick({R.id.topLeft, R.id.btn_function_describe})
     public void onClick(View view) {
@@ -70,7 +72,8 @@ public class AboutUsActivity extends BaseActivity {
                 ActivityCompat.finishAfterTransition(context);
                 break;
             case R.id.btn_function_describe:
-
+                //功能介绍
+                HtmlActivity.start(context, "功能介绍", "http://139.196.233.188:8082/consoleMobile/template/introduce.html");
                 break;
         }
     }

@@ -22,6 +22,7 @@ import com.yingwumeijia.android.ywmj.client.im.listener.MyConnectionStatusListen
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
+import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.CookieManger;
 import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.RetrofitBuilder;
 
 import io.rong.imkit.RongContext;
@@ -31,10 +32,15 @@ import io.rong.imkit.widget.provider.CameraInputProvider;
 import io.rong.imkit.widget.provider.ImageInputProvider;
 import io.rong.imkit.widget.provider.InputProvider;
 import io.rong.imkit.widget.provider.LocationInputProvider;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.jackson.JacksonConverterFactory;
+import timber.log.Timber;
 
 /**
  * Created by Jam on 2016/8/8 18:01.
@@ -45,6 +51,7 @@ public class SplashPresenter implements SplashContract.Presenter {
     private final SplashContract.View mView;
     private final Context context;
     private int baseUrlErrorCount = 0;
+
 
 
     public SplashPresenter(SplashContract.View mView, Context context) {
@@ -77,10 +84,35 @@ public class SplashPresenter implements SplashContract.Presenter {
 
     @Override
     public void loadBaseUrl() {
-        MyApp.getApiService()
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Constant.BASE_URL)
+                .addConverterFactory(JacksonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+                .client(defaultClient())
+                .build();
+
+        ApiService apiService = retrofit.create(ApiService.class);
+
+        apiService
                 .getService(String.valueOf(1), AppUtils.getVersionName(context))
                 .enqueue(severCallback);
     }
+
+    private OkHttpClient defaultClient() {
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
+            @Override
+            public void log(String message) {
+                Timber.d(message);
+            }
+        });
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        builder.addInterceptor(loggingInterceptor);
+        builder.cookieJar(new CookieManger(context));
+        return builder.build();
+    }
+
 
     @Override
     public void start() {
@@ -203,7 +235,6 @@ public class SplashPresenter implements SplashContract.Presenter {
             //扩展功能自定义
             InputProvider.ExtendProvider[] provider = {
                     new ImageInputProvider(RongContext.getInstance()),//图片
-                    new CameraInputProvider(RongContext.getInstance()),//相机
                     new LocationInputProvider(RongContext.getInstance()),//地理位置
 //                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
 //                     new ContactsProvider(RongContext.getInstance())//自定义通讯录

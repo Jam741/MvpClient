@@ -40,21 +40,7 @@ public class WorkerApp extends StarterApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-
-
-        //createRetrofit;
-        if (BuildConfig.DEBUG) {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        } else if (BuildConfig.FLAVOR.equals("ywmjtest")) {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_TEST).build();
-        } else {
-            new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL_RELEASE).build();
-        }
-
-        //init loger of Timber
         initTimber();
-
-        initRongClound();
     }
 
     private void initTimber() {

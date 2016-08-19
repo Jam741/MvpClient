@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.rx.android.jamspeedlibrary.utils.AppUtils;
 import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.worker.R;
+import com.yingwumeijia.android.worker.funcation.HtmlActivity;
 import com.yingwumeijia.android.worker.utils.base.activity.BaseActivity;
 
 import butterknife.Bind;
@@ -70,7 +71,8 @@ public class AboutUsActivity extends BaseActivity {
                 ActivityCompat.finishAfterTransition(context);
                 break;
             case R.id.btn_function_describe:
-
+                //功能介绍
+                HtmlActivity.start(context, "功能介绍", "http://139.196.233.188:8082/consoleMobile/template/introduce.html");
                 break;
         }
     }

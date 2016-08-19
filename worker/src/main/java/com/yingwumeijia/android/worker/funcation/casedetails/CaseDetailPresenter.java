@@ -58,7 +58,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     private TabWithPagerAdapter mTabWithPagerAdapter;
     private ArrayList<CustomTabEntity> mTabEntities;
     private CommonTabLayout mTabView;
-    private final String[] mTabsStrings = {"   720全景", "   细节图片", "   项目造价", "   材料品牌", "   平面布置", "   团队简介"};
+    private final String[] mTabsStrings = {"   720全景", "   细节图片", "   项目造价", "   材料品牌", "   平面布置", "   项目团队"};
 
     //share
     private SharePopupWindow sharePopupWindow;
@@ -253,6 +253,8 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                 createPageAdapter();
                 bindAdapterForPager();
                 bindAdapterForNav();
+                if (response.body().getData().isIsCollected()) mView.setCollected();
+                else mView.setUnCollected();
             } else {
                 mView.showLoadDataFail(response.body().getMessage());
             }

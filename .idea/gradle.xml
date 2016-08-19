@@ -5,12 +5,12 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CameraSDK" />
-            <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit" />
+            <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_11_stable" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/jamspeedlibrary" />
             <option value="$PROJECT_DIR$/popuwindowlibrary" />
@@ -21,7 +21,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CameraSDK" />
-            <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit" />
+            <option value="$PROJECT_DIR$/Rong_Cloud_Android_IMKit_SDK_v2_6_11_stable" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/jamspeedlibrary" />
             <option value="$PROJECT_DIR$/popuwindowlibrary" />

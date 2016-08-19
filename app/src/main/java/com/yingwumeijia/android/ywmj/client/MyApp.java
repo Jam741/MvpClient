@@ -28,21 +28,14 @@ import timber.log.Timber;
  */
 public class MyApp extends StarterApplication {
 
-    private static class ApiServiceHolder {
+    ApiService apiService;
 
-        private static final ApiService API_SERVICE = RetrofitBuilder.get().retrofit().create(ApiService.class);
-    }
-
-    public static final ApiService getApiService() {
-        return RetrofitBuilder.get().retrofit().create(ApiService.class);
-    }
 
     @Override
     public void onCreate() {
         super.onCreate();
 
         //createRetrofit;
-        new RetrofitBuilder.Builder().context(appContext()).baseUrl(Constant.BASE_URL).build();
 
         initTimber();
 

@@ -54,33 +54,33 @@
             android:background="@color/colorAccent" />
     </RelativeLayout>
 
-    <fragment
-        android:id="@+id/subconversationlist"
+    <FrameLayout
+        android:id="@+id/rojng"
         android:name="io.rong.imkit.fragment.SubConversationListFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/topLayout" />
 
-    <LinearLayout
-        android:id="@+id/empty_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/topLayout"
-        android:gravity="center"
-        android:visibility="gone"
-        android:orientation="vertical">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/empty_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/topLayout"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone"-->
+        <!--android:orientation="vertical">-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="113dp"
-            android:drawableTop="@drawable/no_collection_ico"
-            android:gravity="center"
-            android:text="哎呀,什么都没有呢,快去查看案例吧"
-            android:textColor="#999999"
-            android:textSize="16dp"
-            android:visibility="gone" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="113dp"-->
+            <!--android:drawableTop="@drawable/no_collection_ico"-->
+            <!--android:gravity="center"-->
+            <!--android:text="哎呀,什么都没有呢,快去查看案例吧"-->
+            <!--android:textColor="#999999"-->
+            <!--android:textSize="16dp"-->
+            <!--android:visibility="gone" />-->
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

@@ -211,6 +211,10 @@ public class SetPwdActivity extends BaseActivity implements TextView.OnEditorAct
             edNewPwdConfirm.setError(getResources().getString(R.string.input_password_error));
             return false;
         }
+        if (!edNewPwd.getText().toString().equals(edNewPwdConfirm.getText().toString())) {
+            edNewPwdConfirm.setError(getResources().getString(R.string.input_password_error));
+            return false;
+        }
 
         old_pwd = edOldPwd.getText().toString();
         new_pwd = edNewPwd.getText().toString();

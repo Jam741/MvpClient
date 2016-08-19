@@ -78,10 +78,18 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     private int mCaseId;
     private int mCurrentPosition = 0;
     private boolean isCollect;
+    private boolean isBack;
 
     public static void start(Context context, int caseId) {
         Intent starter = new Intent(context, CaseDetailActivity.class);
         starter.putExtra("KEY_CASE_ID", caseId);
+        context.startActivity(starter);
+    }
+
+    public static void start(Context context, int caseId,boolean back) {
+        Intent starter = new Intent(context, CaseDetailActivity.class);
+        starter.putExtra("KEY_CASE_ID", caseId);
+        starter.putExtra("KEY_BACK", back);
         context.startActivity(starter);
     }
 
@@ -129,6 +137,7 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
     private void getIntentData() {
         Intent intent = getIntent();
         mCaseId = intent.getIntExtra("KEY_CASE_ID", 0);
+        isBack = intent.getBooleanExtra("KEY_BACK", false);
     }
 
     @Override
@@ -233,7 +242,10 @@ public class CaseDetailActivity extends BaseActivity implements CaseDetailContra
                 mPresenter.launchShareSDK();
                 break;
             case R.id.btn_connectTeam:
-                mPresenter.connectWithTeam(mCaseId);
+                if (isBack)
+                    ActivityCompat.finishAfterTransition(context);
+                else
+                    mPresenter.connectWithTeam(mCaseId);
                 break;
             case R.id.topRight_second:
                 if (!UserManager.userPrecondition(context)) return;

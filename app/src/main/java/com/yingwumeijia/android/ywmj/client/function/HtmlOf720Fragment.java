@@ -21,6 +21,7 @@ import android.widget.ProgressBar;
 import com.bumptech.glide.Glide;
 import com.rx.android.jamspeedlibrary.utils.NetUtils;
 import com.yingwumeijia.android.ywmj.client.R;
+import com.yingwumeijia.android.ywmj.client.function.login.LoginActivity;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebChromeClient;
 import com.yingwumeijia.android.ywmj.client.function.web.MyWebViewClient;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
@@ -79,6 +80,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             bgImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
             playButton = new ImageView(context);
             playButton.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
+            previewLayout.addView(bgImage);
             previewLayout.addView(playButton);
             root.addView(previewLayout);
 
@@ -121,6 +123,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             mProgressBar.setVisibility(View.GONE);
             emptylayout.setVisibility(View.VISIBLE);
             Glide.with(context).load(mPreviewImg).into(bgImage);
+            Log.d("jam","====mPreviewImg===="+mPreviewImg);
             showPreviewLayout();
             playButton.setVisibility(View.GONE);
             return false;

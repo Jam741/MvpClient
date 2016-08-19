@@ -87,6 +87,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
         ed_smsCode.setError(getResources().getString(R.string.input_smsCode_error));
     }
 
+
     @Override
     public void sendSmsCodeUnlock() {
         btnSendSmsCode.setEnabled(true);
@@ -230,8 +231,8 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
             InputMethodManager imm =
                     (InputMethodManager) textView.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
 
-            if (imm.isActive()){
-                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(),0);
+            if (imm.isActive()) {
+                imm.hideSoftInputFromWindow(textView.getApplicationWindowToken(), 0);
             }
 
             mRegisterPresenter.register(
@@ -243,4 +244,5 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
         }
         return false;
     }
+
 }

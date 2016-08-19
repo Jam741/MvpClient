@@ -29,6 +29,7 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
+import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
@@ -51,6 +52,7 @@ import retrofit2.Response;
  * Describe:
  */
 public class ConversationActivity extends AppCompatActivity {
+
     @Bind(R.id.topTitle)
     TextView topTitle;
     @Bind(R.id.topLeft)
@@ -218,7 +220,7 @@ public class ConversationActivity extends AppCompatActivity {
                 caseBean.setCaseCover(caseInfoBean.getCaseCover());
                 caseBean.setCaseId(caseInfoBean.getId());
                 caseBean.setCaseName(caseInfoBean.getCaseName());
-                StartActivityManager.startCaseDetailActivity(ConversationActivity.this, caseBean.getCaseId());
+                CaseDetailActivity.start(context, caseBean.getCaseId(), true);
                 break;
         }
     }
@@ -315,10 +317,9 @@ public class ConversationActivity extends AppCompatActivity {
                 .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
 
-        Log.d("jam","url -fragment :"+uri);
+        Log.d("jam", "url -fragment :" + uri);
 
         fragment.setUri(uri);
-
 
 
     }

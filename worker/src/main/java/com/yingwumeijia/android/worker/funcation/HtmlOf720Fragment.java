@@ -78,6 +78,7 @@ public class HtmlOf720Fragment extends BaseFragment implements View.OnClickListe
             bgImage.setScaleType(ImageView.ScaleType.CENTER_CROP);
             playButton = new ImageView(context);
             playButton.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.CENTER));
+            previewLayout.addView(bgImage);
             previewLayout.addView(playButton);
             root.addView(previewLayout);
 

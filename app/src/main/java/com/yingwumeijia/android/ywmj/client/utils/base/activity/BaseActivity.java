@@ -7,6 +7,7 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.kaopiz.kprogresshud.KProgressHUD;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
 
@@ -18,6 +19,9 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected ProgressDialog baseProgressDialog;
 
     protected Activity context;
+
+    protected KProgressHUD progressBar;
+
 
 
     @Override
@@ -32,15 +36,15 @@ public abstract class BaseActivity extends AppCompatActivity {
     int getLayoutId();
 
     protected void showBaseProgresDialog() {
-        if (baseProgressDialog == null) {
-            baseProgressDialog = new ProgressDialog(context);
+        if (progressBar == null) {
+            progressBar = KProgressHUD.create(context);
         }
-        baseProgressDialog.show();
+        progressBar.show();
     }
 
     protected void dismisBaseProgressDialog() {
-        if (baseProgressDialog != null && baseProgressDialog.isShowing())
-            baseProgressDialog.dismiss();
+        if (progressBar != null && progressBar.isShowing())
+            progressBar.dismiss();
     }
 
 

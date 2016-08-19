@@ -92,7 +92,7 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
 
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_CHANGE_COLLECT_COUNT);
-        context.registerReceiver(broadcastReceiver,filter);
+        context.registerReceiver(broadcastReceiver, filter);
 
         mPresenter.bingPageAdapter(vpContent);
         mPresenter.bingViewPager(vpContent, tabNav);
@@ -118,13 +118,15 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
                 finish();
                 break;
             case R.id.iv_portrait:
-                mPresenter.startEditPersonActivity();
+                if (Constant.isLogin(context))
+                    mPresenter.startEditPersonActivity();
                 break;
             case R.id.btn_login:
                 mPresenter.startLoginActivity();
                 break;
             case R.id.btn_ed_person:
-                mPresenter.startEditPersonActivity();
+                if (Constant.isLogin(context))
+                    mPresenter.startEditPersonActivity();
                 break;
         }
     }
@@ -196,7 +198,7 @@ public class PersonFragment extends BaseFragment implements PersonContract.View 
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.d("jam","broad");
+            Log.d("jam", "broad");
             new Handler().post(new Runnable() {
                 @Override
                 public void run() {

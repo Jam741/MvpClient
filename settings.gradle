@@ -1,1 +1,1 @@
-include ':app', ':jamspeedlibrary', ':CameraSDK', ':Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit', ':popuwindowlibrary', ':worker'
+include ':app', ':jamspeedlibrary', ':CameraSDK', ':popuwindowlibrary', ':worker', ':Rong_Cloud_Android_IMKit_SDK_v2_6_11_stable'

@@ -15,6 +15,8 @@ import io.rong.imkit.RongIM;
  */
 public class Constant {
 
+    public static final String BASE_URL = "http://192.168.28.15:8185/";
+
     //sever
     public static final String BASE_URL_DEV = "http://192.168.28.16:8183/";
     //测试
@@ -170,4 +172,14 @@ public class Constant {
     public static String ACTION_SCROLL_NAV = "com.ywmj.client.scroll";
 
     public static String ACTION_NOT_LOGIN = "com.ywmj.client.notlogin";
+
+    public static void saveBaseUrl(Context context, String baseUrl) {
+        if (!baseUrl.endsWith("/")) baseUrl = baseUrl + "/";
+        SPUtils.put(context, "KEY_BASE_URL", baseUrl);
+    }
+
+
+    public static String getBaseUrl(Context context) {
+        return (String) SPUtils.get(context, "KEY_BASE_URL", "");
+    }
 }

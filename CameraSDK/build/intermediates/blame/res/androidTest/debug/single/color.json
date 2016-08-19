@@ -1,46 +1,46 @@
 [
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\default_text_color.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\color\\default_text_color.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_light.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_primary_text_material_light.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_dark.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/default_text_color.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/color/default_text_color.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\folder_text_color.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\bundles\\debug\\res\\color\\folder_text_color.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_search_url_text.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_search_url_text.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_light.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_light.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_search_url_text.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_search_url_text.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\switch_thumb_material_dark.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\switch_thumb_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/folder_text_color.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/color/folder_text_color.xml"
     },
     {
-        "merged": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_material_dark.xml",
-        "source": "D:\\MyProject\\MvpClient\\CameraSDK\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\color\\abc_primary_text_material_dark.xml"
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color/abc_secondary_text_material_light.xml"
     }
 ]

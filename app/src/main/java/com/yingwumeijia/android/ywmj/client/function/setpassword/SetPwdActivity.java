@@ -157,7 +157,6 @@ public class SetPwdActivity extends BaseActivity implements TextView.OnEditorAct
     }
 
 
-
     private void initActionBar() {
         topTitle.setText("密码设置");
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
@@ -216,6 +215,11 @@ public class SetPwdActivity extends BaseActivity implements TextView.OnEditorAct
 
 
         if (!new_pwd_confirm_ok) {
+            edNewPwdConfirm.setError(getResources().getString(R.string.input_password_error));
+            return false;
+        }
+
+        if (!edNewPwd.getText().toString().equals(edNewPwdConfirm.getText().toString())) {
             edNewPwdConfirm.setError(getResources().getString(R.string.input_password_error));
             return false;
         }

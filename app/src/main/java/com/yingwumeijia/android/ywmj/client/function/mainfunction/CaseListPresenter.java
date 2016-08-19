@@ -146,7 +146,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void loadCaseListDate() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCaseList(page_Num, Constant.PAGE_SIZE, stytle_id, hoseType_id, cost_id)
                 .enqueue(caseListCallback);
@@ -154,7 +154,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
 
     @Override
     public void loadCaseTypeData() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCaseTypeSet()
                 .enqueue(caseTypeCallback);

@@ -9,6 +9,7 @@ import com.yingwumeijia.android.worker.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.worker.data.bean.GroupResultBean;
 import com.yingwumeijia.android.worker.data.bean.LoginResultBean;
 import com.yingwumeijia.android.worker.data.bean.RegisterResultBean;
+import com.yingwumeijia.android.worker.data.bean.SeverBean;
 import com.yingwumeijia.android.worker.data.bean.ShareBean;
 import com.yingwumeijia.android.worker.data.bean.TokenResultBean;
 import com.yingwumeijia.android.worker.data.bean.UserBean;
@@ -29,9 +30,11 @@ import retrofit2.http.Query;
 public interface ApiService {
 
 
+
     @GET("serviceQuery/server")
-    Call<BaseBean<String>> getService(@Path("appType") String appType,
-                                      @Path("version") String version);
+    Call<BaseBean<SeverBean>> getService(@Query("appType") String appType,
+                                         @Query("version") String version);
+
 
     /**
      * 登陆

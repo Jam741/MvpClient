@@ -15,14 +15,13 @@ public class SplashActivity extends BaseActivity {
 
     private SplashContract.Presenter mPresenter;
 
+    //init fragment
+    SplashFragment splashFragment;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //init fragment
-        SplashFragment splashFragment =
-                (SplashFragment) getSupportFragmentManager().findFragmentById(R.id.contentFragment);
         if (splashFragment == null) {
             //create fragment
             splashFragment = SplashFragment.newInstance();

@@ -5,9 +5,9 @@ android {
         config {
             keyAlias 'ywmj_worker'
             keyPassword 'jia5201314'
-//            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/worker/worker.jks')
+            storeFile file('/Users/jiaminghe/Desktop/MvpClient/MvpClient/worker/worker.jks')
             storePassword 'jia5201314'
-            storeFile file('D:/MyProject/MvpClient/worker/worker.jks')
+//            storeFile file('D:/MyProject/MvpClient/worker/worker.jks')
         }
     }
     compileSdkVersion 23
@@ -55,7 +55,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
-    compile project(':Rong_Cloud_Android_IMKit_SDK_v2_6_5_stable_with_CallKit')
     compile project(':CameraSDK')
     compile project(':jamspeedlibrary')
     compile project(':popuwindowlibrary')
@@ -63,4 +62,5 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.4.0'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile project(':Rong_Cloud_Android_IMKit_SDK_v2_6_11_stable')
 }

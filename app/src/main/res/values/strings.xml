@@ -22,7 +22,7 @@
     <string name="password_rule_text">8-20位数字或字母</string>
 
     <string name="agree_agreement">我同意《用户服务协议》</string>
-    <string name="must_agree_agreement">未同意《用户服务协议》</string>
+    <string name="must_agree_agreement">请同意用户协议</string>
     <string name="case_list_nav_style">风格</string>
     <string name="case_list_nav_fx">房型</string>
     <string name="case_list_nav_time">造价</string>

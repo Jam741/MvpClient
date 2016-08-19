@@ -10,7 +10,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
+import com.kaopiz.kprogresshud.KProgressHUD;
 import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.ywmj.client.R;
 
@@ -32,6 +34,9 @@ public abstract class BaseFragment extends Fragment {
      * 默认加载进度条
      */
     protected ProgressDialog baseProgressDialog;
+
+    protected KProgressHUD progressBar;
+
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -79,15 +84,15 @@ public abstract class BaseFragment extends Fragment {
     }
 
     protected void showBaseProgresDialog() {
-        if (baseProgressDialog == null) {
-            baseProgressDialog = new ProgressDialog(context);
+        if (progressBar == null) {
+            progressBar = KProgressHUD.create(context);
         }
-        baseProgressDialog.show();
+        progressBar.show();
     }
 
     protected void dismisBaseProgressDialog() {
-        if (baseProgressDialog != null && baseProgressDialog.isShowing())
-            baseProgressDialog.dismiss();
+        if (progressBar != null && progressBar.isShowing())
+            progressBar.dismiss();
     }
 
 

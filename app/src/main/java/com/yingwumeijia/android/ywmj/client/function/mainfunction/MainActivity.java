@@ -10,12 +10,14 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.rx.android.jamspeedlibrary.utils.T;
+import com.yingwumeijia.android.ywmj.client.ApiService;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.function.person.PersonActivity;
 import com.yingwumeijia.android.ywmj.client.function.search.SearchActivity;
 import com.yingwumeijia.android.ywmj.client.utils.ActivityUtils;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
+import com.yingwumeijia.android.ywmj.client.utils.net.retrofit.RetrofitBuilder;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,6 +31,15 @@ import butterknife.OnClick;
  * Describe:
  */
 public class MainActivity extends BaseActivity {
+
+    private static class ApiServiceHolder {
+        private static final ApiService API_SERVICE = RetrofitBuilder.get().retrofit().create(ApiService.class);
+    }
+
+    public static ApiService getApiService() {
+        return ApiServiceHolder.API_SERVICE;
+    }
+
 
 
     private CaseListContract.Presenter mCaseListPresenter;

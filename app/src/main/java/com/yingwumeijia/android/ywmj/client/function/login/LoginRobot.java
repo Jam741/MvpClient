@@ -265,6 +265,10 @@ public class LoginRobot implements LoginDataProvider {
         @Override
         public void onResponse(Call<FindPwdResultBean> call, Response<FindPwdResultBean> response) {
             if (response.body().getSucc()) {
+                if (RongIM.getInstance() != null) {
+                    RongIM.getInstance().disconnect();
+                    RongIM.getInstance().logout();
+                }
                 getToken();
             } else {
                 mLoginCallBack.loginError(response.body().getMessage());
