@@ -201,11 +201,12 @@ public class  LoginRobot implements LoginDataProvider {
                      *                         此时最好将本参数设置为 true，由 IMKit 将用户信息缓存到本地内存中。
                      * @see UserInfoProvider
                      */
-                    RongIM.setUserInfoProvider(new MyUserInfoProvider(), true);
-                    RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
+//                    RongIM.setUserInfoProvider(new MyUserInfoProvider(), true);
+//                    RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
                     Log.d("LoginActivity", "--=======================-onSuccess : " + userid);
                     Constant.setLoginIn(mContext);
                     Constant.saveUserLoginInfo(mPhone, mPassword, mContext);
+                    Constant.saveImId(mContext, userid);
                     if (mCurrentStatus == STATUS.LOGIN) {
                         mLoginCallBack.loginSuccess(mResponse.body().getData());
                     } else if (mCurrentStatus == STATUS.REGISTER) {

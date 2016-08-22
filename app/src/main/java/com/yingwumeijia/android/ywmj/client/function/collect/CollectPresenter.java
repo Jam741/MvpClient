@@ -15,6 +15,7 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseListResultBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -51,7 +52,7 @@ public class CollectPresenter implements CollectContract.Presenter,
 
     @Override
     public void cancelCollect(int caseId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .cancelCollection(caseId)
                 .enqueue(cancleCollectCallback);
@@ -64,7 +65,7 @@ public class CollectPresenter implements CollectContract.Presenter,
 
     @Override
     public void getCollectList() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCollectionList(page_num, Constant.PAGE_SIZE)
                 .enqueue(caseListCallback);

@@ -27,6 +27,7 @@ import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
@@ -217,7 +218,7 @@ public class PersonInfoActivity extends BaseActivity {
     private void upLoadPortrait(final String filePath, final String key) {
         showBaseProgresDialog();
         LogUtil.getInstance().debug("jam", "======key=========" + key);
-        MyApp
+        MainActivity
                 .getApiService()
                 .getUpLoadToken()
                 .enqueue(new Callback<BaseBean<String>>() {
@@ -250,7 +251,7 @@ public class PersonInfoActivity extends BaseActivity {
     }
 
     private void postToSever(String url) {
-        MyApp.getApiService()
+        MainActivity.getApiService()
                 .uploadHeadImage(url)
                 .enqueue(new Callback<BaseBean>() {
                     @Override

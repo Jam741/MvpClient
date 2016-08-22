@@ -20,6 +20,22 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+
+    //地图包、搜索包需要的基础权限
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    //定位包、导航包需要的额外权限（注：基础权限也需要）
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -37,7 +53,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <!--登陆-->
         <activity
@@ -164,9 +179,22 @@
             android:configChanges="keyboardHidden|orientation"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"></activity>
-        <service
-            android:name="com.sina.weibo.sdk.net.DownloadService"
-            android:exported="false"></service>
+
+
+        <!--=====================================高德地图===============================================-->
+
+        <activity
+            android:name=".im.map.AMAPLocationActivity"
+            android:screenOrientation="portrait" />
+
+        <!--Debug-->
+        <!--<meta-data-->
+        <!--android:name="com.amap.api.v2.apikey"-->
+        <!--android:value="3e53d86afda143099e318e5554c5d2b6" />-->
+        <!--Release-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="3e53d86afda143099e318e5554c5d2b6" />
 
         <!-- CameraSDK相册选取 -->
         <activity android:name="com.muzhi.camerasdk.PhotoPickActivity" />

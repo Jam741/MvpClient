@@ -39,6 +39,7 @@ import com.yingwumeijia.android.ywmj.client.function.HtmlFragment;
 import com.yingwumeijia.android.ywmj.client.function.HtmlOf720Fragment;
 import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginFragment;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.function.share.SharePopupWindow;
 import com.yingwumeijia.android.ywmj.client.im.conversationlist.ConversationActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
@@ -47,6 +48,7 @@ import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
 import com.yingwumeijia.android.ywmj.client.utils.view.IndexViewPager;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -96,7 +98,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void undateVisitNum(int caseId) {
-        MyApp.getApiService()
+        MainActivity.getApiService()
                 .upDateVisitNum(caseId)
                 .enqueue(updateVisitCallback);
     }
@@ -144,7 +146,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     @Override
     public void loadDetailData(int caseId) {
         mView.showProgressBar();
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCaseDetail(caseId)
                 .enqueue(caseDataCallback);
@@ -182,7 +184,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void collect(int caseId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .collectionCase(caseId)
                 .enqueue(collectCallbace);
@@ -190,7 +192,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void cancelCollect(int caseId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .cancelCollection(caseId)
                 .enqueue(cancelCollectCallback);
@@ -200,7 +202,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
     @Override
     public void connectWithTeam(int caseId) {
         //立即联系他们
-        MyApp
+        MainActivity
                 .getApiService()
                 .createGroupConversation(caseId)
                 .enqueue(connectCallback);
@@ -218,7 +220,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void getShareData(int caseId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getShareData(caseId)
                 .enqueue(getShareCallback);
@@ -233,6 +235,11 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                     shareBean.getDesignConcept(),
                     shareBean.getCaseName());
         }
+        return shareModel;
+    }
+
+    @Override
+    public ShareModel getShareModel() {
         return shareModel;
     }
 
@@ -271,8 +278,8 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                 bindAdapterForPager();
                 bindAdapterForNav();
 
-                Log.d("jam","========"+response.body().getData().isIsCollected());
-                Log.d("jam","========"+response.body().getData().isIsContact());
+                Log.d("jam", "========" + response.body().getData().isIsCollected());
+                Log.d("jam", "========" + response.body().getData().isIsContact());
 
                 mView.showIsContact(response.body().getData().isIsContact());
                 if (response.body().getData().isIsCollected()) mView.setCollected();
@@ -355,6 +362,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
                 Glide.with(context).load(response.body().getData().getCover()).asBitmap().into(new SimpleTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+
                         shareBitmap = resource;
                     }
                 });
@@ -369,5 +377,26 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
         }
     };
+
+    public static byte[] bmpToByteArray(final Bitmap bmp, final boolean needRecycle) {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.JPEG, 100, output);
+        int i = 3276800 / output.toByteArray().length;
+        if (i < 100) {
+            output.reset();// 重置baos即清空baos
+            bmp.compress(Bitmap.CompressFormat.JPEG, i, output);// 这里压缩options%，把压缩后的数据存放到baos中
+        }
+        if (needRecycle) {
+            bmp.recycle();
+        }
+        byte[] result = output.toByteArray();
+        try {
+            output.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 
 }

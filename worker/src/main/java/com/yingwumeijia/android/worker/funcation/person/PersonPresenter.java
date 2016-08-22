@@ -2,6 +2,7 @@ package com.yingwumeijia.android.worker.funcation.person;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -24,6 +25,8 @@ import com.yingwumeijia.android.worker.utils.constants.Constant;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.rong.imkit.RongIM;
+import io.rong.imlib.model.UserInfo;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -151,7 +154,13 @@ public class PersonPresenter implements PersonContract.Presenter {
                 mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
                 mView.setUserPortrait(portraitUrl);
                 mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
-
+                if (RongIM.getInstance() != null)
+                    RongIM.getInstance().refreshUserInfoCache(
+                        new UserInfo(
+                                Constant.getImId(context),
+                                showName,
+                                Uri.parse(portraitUrl))
+                );
             } else {
                 mView.showLoadingFail(response.body().getMessage());
                 mView.showNetConnectError();

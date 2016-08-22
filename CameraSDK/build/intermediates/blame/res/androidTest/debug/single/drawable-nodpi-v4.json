@@ -48,12 +48,12 @@
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/toaster_curves.png"
     },
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/hudson_background.png",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/hudson_background.png"
-    },
-    {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/toaster_metal.png",
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/toaster_metal.png"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/hudson_background.png",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/hudson_background.png"
     },
     {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/nmap.png",
@@ -156,12 +156,12 @@
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/hefe_map.png"
     },
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/sutro_metal.png",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/sutro_metal.png"
-    },
-    {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/soft_light.png",
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/soft_light.png"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/sutro_metal.png",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-nodpi-v4/sutro_metal.png"
     },
     {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-nodpi-v4/nblowout.png",

@@ -21,6 +21,9 @@ public interface CaseDetailContract {
 
     interface Presenter extends BasePresenter {
 
+
+//        void showShare
+
         /**
          * 更新访问数
          */
@@ -61,6 +64,7 @@ public interface CaseDetailContract {
 
         ShareModel createShareModel();
 
+        ShareModel getShareModel();
     }
 
     interface View extends BaseView<Presenter> {

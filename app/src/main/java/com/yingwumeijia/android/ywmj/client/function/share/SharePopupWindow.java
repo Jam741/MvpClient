@@ -1,6 +1,7 @@
 package com.yingwumeijia.android.ywmj.client.function.share;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,14 +26,17 @@ import com.sina.weibo.sdk.api.ImageObject;
 import com.sina.weibo.sdk.api.TextObject;
 import com.sina.weibo.sdk.api.VoiceObject;
 import com.sina.weibo.sdk.api.WebpageObject;
+import com.sina.weibo.sdk.api.WeiboMessage;
 import com.sina.weibo.sdk.api.WeiboMultiMessage;
 import com.sina.weibo.sdk.api.share.BaseResponse;
 import com.sina.weibo.sdk.api.share.IWeiboHandler;
 import com.sina.weibo.sdk.api.share.IWeiboShareAPI;
+import com.sina.weibo.sdk.api.share.SendMessageToWeiboRequest;
 import com.sina.weibo.sdk.api.share.SendMultiMessageToWeiboRequest;
 import com.sina.weibo.sdk.api.share.WeiboShareSDK;
 import com.sina.weibo.sdk.auth.AuthInfo;
 import com.sina.weibo.sdk.constant.WBConstants;
+import com.sina.weibo.sdk.utils.Utility;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.ShareModel;
 import com.tencent.mm.sdk.modelmsg.SendMessageToWX;
@@ -65,12 +69,15 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
     /*和微博通讯的api接口*/
     IWeiboShareAPI mWeiboShareAPI;
 
+    private byte[] bitmapBytes;
+
     /*和微信通讯的api接口*/
     IWXAPI iwxapi;
 
     public SharePopupWindow(Activity context, ShareModel shareModel) {
         super(context);
         this.mShareModel = shareModel;
+        bitmapBytes = bmpToByteArray(mShareModel.getmShareImg(), false);
     }
 
 
@@ -101,7 +108,9 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
                 break;
             case R.id.btn_shareToWeibo:
                 registerToWb();
-                sendMultiMessage(false, false, true, false, false, false);
+//                sendMultiMessage(false, false, true, false, false, false);
+//                shareWebPage(mShareModel, mContext);
+                sendSingleMessage(true, false, true, false, false);
                 dismiss();
                 break;
             case R.id.cancel:
@@ -153,15 +162,26 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
     }
 
 
+    private void getCreateShareBitmap() {
+
+
+    }
+
+
     /**
      * 创建微博授权类
      */
     public void registerToWb() {
         if (mWeiboShareAPI == null) {
+            // 快速授权时，请不要传入 SCOPE，否则可能会授权不成功
+            mAuthInfo = new AuthInfo(mContext, ShareConstant.APP_KEY, ShareConstant.REDIRECT_URL, ShareConstant.SCOPE);
+
             mWeiboShareAPI = WeiboShareSDK.createWeiboAPI(mContext, ShareConstant.APP_KEY);
             mWeiboShareAPI.registerApp();    // 将应用注册到微博客户端
         }
     }
+
+    private AuthInfo mAuthInfo;
 
 
     /**
@@ -177,6 +197,9 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
 
     }
 
+    SendMessageToWX.Req req;
+    WXMediaMessage msg;
+
     /**
      * 发起微信分享
      *
@@ -187,18 +210,27 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
             Toast.makeText(mContext, "您未安装微信，请下载后分享", Toast.LENGTH_SHORT).show();
             return;
         }
+
+
+        req = new SendMessageToWX.Req();
         WXWebpageObject webpage = new WXWebpageObject();
         webpage.webpageUrl = mShareModel.getmShareUrl();
-        WXMediaMessage msg = new WXMediaMessage(webpage);
-        msg.title = mShareModel.getmShareTitle();
-        msg.description = mShareModel.getmDescription();
-        //这里替换一张自己工程里的图片资源
-        Log.d("jam", "share_wx__" + mShareModel.getmShareUrl());
-//        msg.setThumbImage(compressImage(mShareModel.getmShareImg()));
-        msg.thumbData = bmpToByteArray(mShareModel.getmShareImg(), true);
+
+        if (msg == null) {
+            msg = new WXMediaMessage(webpage);
+            msg.title = mShareModel.getmShareTitle();
+            msg.description = mShareModel.getmDescription();
+            //这里替换一张自己工程里的图片资源
+            Log.d("jam", "share_wx__" + mShareModel.getmShareUrl());
+//            msg.setThumbImage(mShareModel.getmShareImg());
+            msg.thumbData = bitmapBytes;
+        }
+
         SendMessageToWX.Req req = new SendMessageToWX.Req();
         req.transaction = String.valueOf(System.currentTimeMillis());
         req.message = msg;
+
+
         req.scene = flag == 0 ? SendMessageToWX.Req.WXSceneSession : SendMessageToWX.Req.WXSceneTimeline;
         iwxapi.sendReq(req);
     }
@@ -224,58 +256,55 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
     }
 
 
+    WeiboMultiMessage weiboMessage;
+
     /**
-     * 发送消息到微博
+     * 第三方应用发送请求消息到微博，唤起微博分享界面。
+     * 当{@link IWeiboShareAPI#getWeiboAppSupportAPI()} < 10351 时，只支持分享单条消息，即
+     * 文本、图片、网页、音乐、视频中的一种，不支持Voice消息。
      *
-     * @param hasText
-     * @param hasImage
-     * @param hasWebpage
-     * @param hasMusic
-     * @param hasVideo
-     * @param hasVoice
+     * @param hasText    分享的内容是否有文本
+     * @param hasImage   分享的内容是否有图片
+     * @param hasWebpage 分享的内容是否有网页
+     * @param hasMusic   分享的内容是否有音乐
+     * @param hasVideo   分享的内容是否有视频
      */
-    private void sendMultiMessage(boolean hasText, boolean hasImage, boolean hasWebpage,
-                                  boolean hasMusic, boolean hasVideo, boolean hasVoice) {
+    private void sendSingleMessage(boolean hasText, boolean hasImage, boolean hasWebpage,
+                                   boolean hasMusic, boolean hasVideo/*, boolean hasVoice*/) {
+
 
         if (!mWeiboShareAPI.isWeiboAppInstalled()) {
             Toast.makeText(mContext, "您未安装微博，请下载后分享", Toast.LENGTH_SHORT).show();
-            Log.d("jam","----------------未安装微博");
             return;
         }
 
-        WeiboMultiMessage weiboMessage = new WeiboMultiMessage();//初始化微博的分享消息
-        if (hasText) weiboMessage.textObject = getTextObj();
-        if (hasImage) weiboMessage.imageObject = getImageObj();
-        if(hasWebpage) weiboMessage.mediaObject = getWeiboPageObj();
+        // 1. 初始化微博的分享消息
+        // 用户可以分享文本、图片、网页、音乐、视频中的一种
+        if (weiboMessage == null) {
+            weiboMessage = new WeiboMultiMessage();
+            if (hasWebpage) {
+                weiboMessage.mediaObject = getWeiboPageObj();
+            }
+
+            if (hasText)
+                weiboMessage.textObject = getTextObj("我在鹦鹉美家发现了一个精美案例:" + mShareModel.getmShareTitle() + "@鹦鹉美家");
+        }
+
+        // 2. 初始化从第三方到微博的消息请求
+//        SendMessageToWeiboRequest request = new SendMessageToWeiboRequest();
         SendMultiMessageToWeiboRequest request = new SendMultiMessageToWeiboRequest();
+        // 用transaction唯一标识一个请求
         request.transaction = String.valueOf(System.currentTimeMillis());
         request.multiMessage = weiboMessage;
-        Log.d("jam","----------------调起微博");
-        mWeiboShareAPI.sendRequest(mContext, request); //发送请求消息到微博，唤起微博分享界面
+
+        // 3. 发送请求消息到微博，唤起微博分享界面
+        mWeiboShareAPI.sendRequest(mContext, request);
     }
 
-    private TextObject getTextObj() {
-        TextObject textObject = new TextObject();
-        textObject.text = mShareModel.getmDescription();
-        return textObject;
-    }
 
-    private ImageObject getImageObj() {
-        ImageObject imageObject = new ImageObject();
-        imageObject.setImageObject(mShareModel.getmShareImg());
-        return imageObject;
-    }
-
-    private VoiceObject getVoiceObj() {
-        VoiceObject voiceObject = new VoiceObject();
-        voiceObject.dataHdUrl = mShareModel.getmShareUrl();
-        return voiceObject;
-    }
-
-    private WebpageObject getWeiboPageObj(){
+    private WebpageObject getWeiboPageObj() {
         WebpageObject webpageObject = new WebpageObject();
-        byte[] bytes = bmpToByteArray(mShareModel.getmShareImg(), true);
-        webpageObject.setThumbImage(BitmapFactory.decodeByteArray(bytes,0,bytes.length));
+        webpageObject.thumbData = bitmapBytes;
         webpageObject.title = mShareModel.getmShareTitle();//不能超过512
         webpageObject.actionUrl = mShareModel.getmShareUrl();// 不能超过512
         webpageObject.description = mShareModel.getmDescription();//不能超过1024
@@ -284,10 +313,18 @@ public class SharePopupWindow extends BasePopupWindow implements View.OnClickLis
         return webpageObject;
     }
 
-//    protected void onNewIntent(Intent intent) {
-//        super.onNewIntent(intent);
-//        mWeiboShareAPI.handleWeiboResponse(intent, this); //当前应用唤起微博分享后，返回当前应用
-//    }
+
+    /**
+     * 创建文本消息对象。
+     *
+     * @return 文本消息对象。
+     */
+    private TextObject getTextObj(String text) {
+        TextObject textObject = new TextObject();
+        textObject.text = text;
+        return textObject;
+    }
+
 
     @Override
     public void onResponse(BaseResponse baseResp) {//接收微客户端博请求的数据。

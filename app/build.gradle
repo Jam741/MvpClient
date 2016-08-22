@@ -33,8 +33,8 @@ android {
 
 
     productFlavors {
-        ywmjtest{}
-        ywmj{ }
+        ywmjtest {}
+        ywmj {}
         aliclound {}
         xiaomi {}
         qihu360 {}
@@ -46,8 +46,15 @@ android {
         flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
     }
 
-    lintOptions{
+    lintOptions {
         abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            aidl.srcDirs = ['src/main/aidl']
+        }
     }
 }
 
@@ -64,4 +71,5 @@ dependencies {
     compile project(':popuwindowlibrary')
     compile files('libs/weiboSDKCore_3.1.4.jar')
     compile project(':Rong_Cloud_Android_IMKit_SDK_v2_6_11_stable')
+    compile files('libs/AMap_Services_V2.5.0.jar')
 }

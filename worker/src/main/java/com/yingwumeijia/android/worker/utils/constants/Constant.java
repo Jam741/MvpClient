@@ -182,4 +182,13 @@ public class Constant {
     public static String getBaseUrl(Context context) {
         return (String) SPUtils.get(context, "KEY_BASE_URL", "");
     }
+
+    public static String getImId(Context context) {
+        return (String) SPUtils.get(context, "KEY_IM", "");
+    }
+
+    public static void saveImId(Context context, String imId) {
+        SPUtils.put(context, "KEY_IM", imId);
+    }
+
 }

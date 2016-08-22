@@ -44,12 +44,12 @@
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/sticker_6.png"
     },
     {
-        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/introduction_unfold_ic.png",
-        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/introduction_unfold_ic.png"
-    },
-    {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/sticker_19.png",
         "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/sticker_19.png"
+    },
+    {
+        "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/introduction_unfold_ic.png",
+        "source": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/introduction_unfold_ic.png"
     },
     {
         "merged": "/Users/jiaminghe/Desktop/MvpClient/MvpClient/CameraSDK/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/sticker_16.png",

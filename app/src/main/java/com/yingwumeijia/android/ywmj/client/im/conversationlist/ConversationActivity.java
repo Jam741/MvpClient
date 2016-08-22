@@ -30,6 +30,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.function.casedetails.CaseDetailActivity;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import com.yingwumeijia.android.ywmj.client.utils.net.GlideUtils;
@@ -114,7 +115,9 @@ public class ConversationActivity extends AppCompatActivity {
 
         getIntentData();
 
-        getSessionCaseInfo(mTargetId);
+        if (getIntent().getData().getQueryParameter("push") == null) {
+            getSessionCaseInfo(mTargetId);
+        }
 
         initActionBar();
 
@@ -128,7 +131,7 @@ public class ConversationActivity extends AppCompatActivity {
      * 获取会话案例信息
      */
     private void getSessionCaseInfo(String targetId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getConversionInfo(targetId)
                 .enqueue(new Callback<GroupResultBean>() {
@@ -182,6 +185,7 @@ public class ConversationActivity extends AppCompatActivity {
      * 初始化案例信息
      */
     private void initCaseInfo() {
+        caseLayout.setVisibility(View.VISIBLE);
         GlideUtils.loadSimpleImage(context, ivCaseImg, caseInfoBean.getCaseCover());
         tvCaseName.setText(caseInfoBean.getCaseName());
         initCaseState(caseInfoBean.getStatus());
@@ -328,7 +332,7 @@ public class ConversationActivity extends AppCompatActivity {
      * 报告拨号次数
      */
     private void report() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .report(mTargetId)
                 .enqueue(new Callback<BaseBean>() {

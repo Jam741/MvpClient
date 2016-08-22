@@ -21,6 +21,7 @@ import com.rx.android.jamspeedlibrary.utils.TextViewUtils;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.base.activity.BaseActivity;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -178,7 +179,7 @@ public class EditPersionInfoActivity extends BaseActivity {
 
     private void editOperation(final String mInputString) {
         showBaseProgresDialog();
-        MyApp
+        MainActivity
                 .getApiService()
                 .updateNickName(mInputString)
                 .enqueue(new Callback<BaseBean>() {

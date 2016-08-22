@@ -39,7 +39,7 @@
 
     `
     <!--=====================-->
-    <string name="edit_password_succ">修改密码成功</string>
+    <string name="edit_password_succ">重置密码成功</string>
 
 
     <string name="sendSmsCode_succ">短信验证码发送成功</string>

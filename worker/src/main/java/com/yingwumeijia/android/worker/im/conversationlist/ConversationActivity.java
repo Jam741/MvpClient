@@ -112,7 +112,9 @@ public class ConversationActivity extends AppCompatActivity {
 
         getIntentData();
 
-        getSessionCaseInfo(mTargetId);
+        if (getIntent().getData().getQueryParameter("push") == null) {
+            getSessionCaseInfo(mTargetId);
+        }
 
         initActionBar();
 
@@ -131,12 +133,12 @@ public class ConversationActivity extends AppCompatActivity {
                 .enqueue(new Callback<GroupResultBean>() {
                     @Override
                     public void onResponse(Call<GroupResultBean> call, Response<GroupResultBean> response) {
-                        Log.d("jam","-xx-"+response.body().getData().getName());
+                        Log.d("jam", "-xx-" + response.body().getData().getName());
                         if (response.body().getSucc()) {
-                            Log.d("jam","--"+response.body().getData().getName());
+                            Log.d("jam", "--" + response.body().getData().getName());
                             mTitle = response.body().getData().getName();
                             caseInfoBean = response.body().getData().getCaseInfo();
-                            if (caseInfoBean != null)caseLayout.setVisibility(View.VISIBLE);
+                            if (caseInfoBean != null) caseLayout.setVisibility(View.VISIBLE);
                             available = response.body().getData().isAvailable();
                             initCaseInfo();
                             initActionBar();
@@ -146,7 +148,7 @@ public class ConversationActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<GroupResultBean> call, Throwable t) {
-                        Log.i("jam","-----error----"+t.getMessage());
+                        Log.i("jam", "-----error----" + t.getMessage());
                     }
                 });
     }
@@ -181,6 +183,7 @@ public class ConversationActivity extends AppCompatActivity {
      * 初始化案例信息
      */
     private void initCaseInfo() {
+        caseLayout.setVisibility(View.VISIBLE);
         GlideUtils.loadSimpleImage(context, ivCaseImg, caseInfoBean.getCaseCover());
         tvCaseName.setText(caseInfoBean.getCaseName());
         initCaseState(caseInfoBean.getStatus());
@@ -219,7 +222,6 @@ public class ConversationActivity extends AppCompatActivity {
     public static final int request_code_call_phone = 001;
 
 
-
     /**
      * 加载会话页面 ConversationFragment
      *
@@ -233,10 +235,9 @@ public class ConversationActivity extends AppCompatActivity {
                 .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
 
-        Log.d("jam","url -fragment :"+uri);
+        Log.d("jam", "url -fragment :" + uri);
 
         fragment.setUri(uri);
-
 
 
     }

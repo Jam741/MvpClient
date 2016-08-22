@@ -14,6 +14,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginRobot;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.UserManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
@@ -83,7 +84,7 @@ public class RegisterPresenter implements RegisterContract.Presenter {
     public void sendSmsCode(String phone, int source) {
         if (!checkPhone(phone)) return;
         mRegisterView.showProgressBar();
-        MyApp
+        MainActivity
                 .getApiService()
                 .sendSmsCode(phone, source)
                 .enqueue(sendSmsCallback);

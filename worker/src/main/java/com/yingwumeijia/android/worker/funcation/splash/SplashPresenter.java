@@ -23,14 +23,19 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 import timber.log.Timber;
 
+import com.muzhi.camerasdk.model.Constants;
 import com.rx.android.jamspeedlibrary.utils.AppUtils;
+import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.worker.ApiService;
+import com.yingwumeijia.android.worker.DemoContext;
 import com.yingwumeijia.android.worker.MainActivity;
+import com.yingwumeijia.android.worker.R;
 import com.yingwumeijia.android.worker.data.bean.BaseBean;
 import com.yingwumeijia.android.worker.data.bean.SeverBean;
 import com.yingwumeijia.android.worker.data.bean.UserBean;
 import com.yingwumeijia.android.worker.funcation.login.LoginDataProvider;
 import com.yingwumeijia.android.worker.funcation.login.LoginRobot;
+import com.yingwumeijia.android.worker.im.RongCloudEvent;
 import com.yingwumeijia.android.worker.im.listener.MyConnectionStatusListener;
 import com.yingwumeijia.android.worker.utils.StartActivityManager;
 import com.yingwumeijia.android.worker.utils.constants.Constant;
@@ -160,7 +165,15 @@ public class SplashPresenter implements SplashContract.Presenter {
         @Override
         public void onFailure(Call<BaseBean<SeverBean>> call, Throwable t) {
             baseUrlErrorCount++;
-            login();
+            if (Constant.getBaseUrl(context).equals("")) {
+                ActivityCompat.finishAffinity((Activity) context);
+                new RetrofitBuilder.Builder().context(context).baseUrl(Constant.BASE_URL_RELEASE).build();
+            } else {
+                new RetrofitBuilder.Builder().context(context).baseUrl(Constant.getBaseUrl(context)).build();
+            }
+            ActivityCompat.finishAfterTransition((Activity) context);
+//            initRongClound(Constant.RONG_CLOUD_APP_KEY_RELASE);
+//
         }
     };
 
@@ -168,9 +181,13 @@ public class SplashPresenter implements SplashContract.Presenter {
     private void checkErrorCount() {
         if (baseUrlErrorCount >= 3) {
             if (Constant.getBaseUrl(context).equals("")) {
-                ActivityCompat.finishAffinity((Activity) context);
+                new RetrofitBuilder.Builder().context(context).baseUrl(Constant.BASE_URL_RELEASE).build();
+
             }
             new RetrofitBuilder.Builder().context(context).baseUrl(Constant.getBaseUrl(context)).build();
+
+            ActivityCompat.finishAfterTransition((Activity) context);
+            MainActivity.start(context);
         }
     }
 
@@ -225,17 +242,20 @@ public class SplashPresenter implements SplashContract.Presenter {
             RongIM.init(context, imKey);
 
 
+            DemoContext.init(context);
+            RongCloudEvent.init(context);
+
 //            if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))) {
 //
 //                DemoContext.init(this);
 //            }
             //扩展功能自定义
-            InputProvider.ExtendProvider[] provider = {
-                    new ImageInputProvider(RongContext.getInstance()),//图片
-                    new LocationInputProvider(RongContext.getInstance()),//地理位置
-//                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
-//                     new ContactsProvider(RongContext.getInstance())//自定义通讯录
-            };
+//            InputProvider.ExtendProvider[] provider = {
+//                    new ImageInputProvider(RongContext.getInstance()),//图片
+//                    new LocationInputProvider(RongContext.getInstance()),//地理位置
+////                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
+////                     new ContactsProvider(RongContext.getInstance())//自定义通讯录
+//            };
 //            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
             RongIM.setConnectionStatusListener(new MyConnectionStatusListener());
         }

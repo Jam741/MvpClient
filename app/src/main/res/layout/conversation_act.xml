@@ -104,7 +104,7 @@
                 android:id="@+id/case_layout"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:background="@color/bg_whide">
 
                 <ImageView

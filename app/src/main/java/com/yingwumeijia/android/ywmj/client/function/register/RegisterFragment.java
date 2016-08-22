@@ -66,6 +66,7 @@ public class RegisterFragment extends BaseFragment implements RegisterContract.V
             ed_phone.addTextChangedListener(phoneTextWatcher);
             btnSendSmsCode.setOnClickListener(this);
             btnRegister.setOnClickListener(this);
+            btnCheckAgreement.setOnClickListener(this);
             ed_password.setOnEditorActionListener(this);
 
         }

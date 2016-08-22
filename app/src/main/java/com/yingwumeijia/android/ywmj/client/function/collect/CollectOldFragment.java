@@ -23,6 +23,7 @@ import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseListResultBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.function.person.PersonFragment;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.base.fragment.BaseFragment;
@@ -143,7 +144,7 @@ public class CollectOldFragment extends BaseFragment {
      * 取消收藏
      */
     private void cancelCollect() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .cancelCollection(currentCaseId)
                 .enqueue(new Callback<BaseBean>() {
@@ -195,7 +196,7 @@ public class CollectOldFragment extends BaseFragment {
      * @param isRef
      */
     private void getCollectList(final boolean isRef) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCollectionList(pageNum, Constant.PAGE_SIZE)
                 .enqueue(new Callback<CaseListResultBean>() {

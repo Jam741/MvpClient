@@ -8,6 +8,7 @@ import android.util.Log;
 import com.rx.android.jamspeedlibrary.StarterApplication;
 import com.rx.android.jamspeedlibrary.utils.FakeCrashLibrary;
 import com.rx.android.jamspeedlibrary.utils.LogUtil;
+import com.yingwumeijia.android.worker.im.RongCloudEvent;
 import com.yingwumeijia.android.worker.utils.constants.Constant;
 import com.yingwumeijia.android.worker.utils.net.retrofit.RetrofitBuilder;
 
@@ -79,20 +80,20 @@ public class WorkerApp extends StarterApplication {
              */
             RongIM.init(this);
 
-//            if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))) {
-//
-//                DemoContext.init(this);
-//            }
-            //扩展功能自定义
-            InputProvider.ExtendProvider[] provider = {
-                    new ImageInputProvider(RongContext.getInstance()),//图片
-                    new CameraInputProvider(RongContext.getInstance()),//相机
-                    new LocationInputProvider(RongContext.getInstance()),//地理位置
-//                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
-//                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
-            };
-            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
-            RongIM.setConnectionStatusListener(new MyConnectionStatusListener());
+
+////            if (getApplicationInfo().packageName.equals(getCurProcessName(getApplicationContext()))) {
+////
+////                DemoContext.init(this);
+////            }
+//            //扩展功能自定义
+//            InputProvider.ExtendProvider[] provider = {
+//                    new ImageInputProvider(RongContext.getInstance()),//图片
+//                    new LocationInputProvider(RongContext.getInstance()),//地理位置
+////                    new VoIPInputProvider(RongContext.getInstance()),// 语音通话
+////                    new ContactsProvider(RongContext.getInstance())//自定义通讯录
+//            };
+//            RongIM.getInstance().resetInputExtensionProvider(Conversation.ConversationType.GROUP, provider);
+//            RongIM.setConnectionStatusListener(new MyConnectionStatusListener());
         }
 
     }

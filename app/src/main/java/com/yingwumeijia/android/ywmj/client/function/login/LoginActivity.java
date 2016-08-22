@@ -127,7 +127,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.topLeft:
-                ActivityCompat.finishAfterTransition(context);
+                ActivityCompat.finishAffinity(context);
                 break;
         }
     }

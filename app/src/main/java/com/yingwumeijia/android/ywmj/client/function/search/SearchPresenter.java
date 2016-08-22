@@ -14,6 +14,7 @@ import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.R;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.CaseListResultBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -92,7 +93,7 @@ public class SearchPresenter implements SearchContract.Presenter, XRecyclerView.
         mKey_words = keyWords;
         if (!checkKeywords(keyWords)) return;
         mView.showProgressBar();
-        MyApp
+        MainActivity
                 .getApiService()
                 .getSearchCaseList(mKey_words, page_num, Constant.PAGE_SIZE)
                 .enqueue(searchKeyWordsCallback);

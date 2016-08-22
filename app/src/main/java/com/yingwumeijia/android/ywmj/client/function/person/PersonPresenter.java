@@ -2,6 +2,7 @@ package com.yingwumeijia.android.ywmj.client.function.person;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +20,7 @@ import com.yingwumeijia.android.ywmj.client.function.TabWithPagerAdapter;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectFragment;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectOldFragment;
 import com.yingwumeijia.android.ywmj.client.function.collect.CollectPresenter;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.function.setting.SettingFragment;
 import com.yingwumeijia.android.ywmj.client.function.setting.SettingPresenter;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
@@ -28,6 +30,8 @@ import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.rong.imkit.RongIM;
+import io.rong.imlib.model.UserInfo;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -70,7 +74,7 @@ public class PersonPresenter implements PersonContract.Presenter {
     @Override
     public void loadingPersonData() {
         mView.showProgressBar();
-        MyApp
+        MainActivity
                 .getApiService()
                 .getCustomerInfo()
                 .enqueue(userInfoCallback);
@@ -147,13 +151,21 @@ public class PersonPresenter implements PersonContract.Presenter {
             mView.dismissProgressBar();
             if (response.body().getSucc()) {
 
-                    UserBean userBean = response.body().getData().getCustomerDto();
-                    showName = userBean.getShowName();
-                    portraitUrl = userBean.getShowHead();
-                    showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
-                    mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
-                    mView.setUserPortrait(portraitUrl);
-                    mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
+                UserBean userBean = response.body().getData().getCustomerDto();
+                showName = userBean.getShowName();
+                portraitUrl = userBean.getShowHead();
+                showPhone = PhoneNumberUtils.getCryptographicPhone(userBean.getUserPhone());
+                mView.setNikeName(TextUtils.isEmpty(showName) ? "点击编辑信息" : showName);
+                mView.setUserPortrait(portraitUrl);
+                mView.showCollectCount(response.body().getData().getCollectionCount() + "个收藏");
+
+                if (RongIM.getInstance() != null)
+                    RongIM.getInstance().refreshUserInfoCache(
+                            new UserInfo(
+                                    Constant.getImId(context),
+                                    showName,
+                                    Uri.parse(portraitUrl))
+                    );
 
             } else {
                 mView.showLoadingFail(response.body().getMessage());

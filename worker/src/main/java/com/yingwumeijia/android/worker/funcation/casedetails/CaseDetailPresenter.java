@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,6 +37,7 @@ import com.yingwumeijia.android.worker.utils.UserManager;
 import com.yingwumeijia.android.worker.utils.constants.Constant;
 import com.yingwumeijia.android.worker.utils.view.IndexViewPager;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -199,6 +201,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
             sharePopupWindow = new SharePopupWindow((Activity) context, createShareModel());
         sharePopupWindow.showPopupWindow();
     }
+
     @Override
     public void getShareData(int caseId) {
         WorkerApp
@@ -221,7 +224,7 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
     @Override
     public void start() {
-                mTabView = mView.getTabView();
+        mTabView = mView.getTabView();
         mViewPager = (IndexViewPager) mView.getViewPager();
         mNacRecyclerView = mView.getNavRecyclerView();
         mNacRecyclerView.setLayoutManager(new LinearLayoutManager(context));
@@ -305,26 +308,6 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
         }
     };
 
-    Callback<CreateConversationResult> connectCallback = new Callback<CreateConversationResult>() {
-        @Override
-        public void onResponse(Call<CreateConversationResult> call, Response<CreateConversationResult> response) {
-            mView.dismissProgressBar();
-            if (response.body().getSucc()) {
-                CreateConversationResult.GroupConversationBean conversationBean = response.body().getData();
-                String mCurrentSessionID = String.valueOf(conversationBean.getId());
-                StartActivityManager.startConversation(context, mCurrentSessionID, conversationBean.getName());
-            } else {
-                if (!UserManager.userPrecondition(context)) return;
-                mView.showLoadDataFail(response.body().getMessage());
-            }
-        }
-
-        @Override
-        public void onFailure(Call<CreateConversationResult> call, Throwable t) {
-            mView.dismissProgressBar();
-            mView.showNetConnectError();
-        }
-    };
 
 
     Callback<BaseBean<ShareBean>> getShareCallback = new Callback<BaseBean<ShareBean>>() {
@@ -348,4 +331,24 @@ public class CaseDetailPresenter implements CaseDetailContract.Presenter {
 
         }
     };
+
+    public static byte[] bmpToByteArray(final Bitmap bmp, final boolean needRecycle) {
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.JPEG, 100, output);
+        int i = 3276800 / output.toByteArray().length;
+        if (i < 100) {
+            output.reset();// 重置baos即清空baos
+            bmp.compress(Bitmap.CompressFormat.JPEG, i, output);// 这里压缩options%，把压缩后的数据存放到baos中
+        }
+        if (needRecycle) {
+            bmp.recycle();
+        }
+        byte[] result = output.toByteArray();
+        try {
+            output.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 }

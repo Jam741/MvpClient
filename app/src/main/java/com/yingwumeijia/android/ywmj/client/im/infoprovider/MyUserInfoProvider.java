@@ -7,6 +7,7 @@ import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.BaseBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.UserInfo;
@@ -25,7 +26,7 @@ public class MyUserInfoProvider implements RongIM.UserInfoProvider {
     }
 
     private UserInfo findUserById(final String imUid) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getMemberInfo(imUid)
                 .enqueue(new Callback<BaseBean<UserBean>>() {

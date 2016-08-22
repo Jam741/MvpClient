@@ -5,6 +5,7 @@ import android.net.Uri;
 import com.rx.android.jamspeedlibrary.utils.LogUtil;
 import com.yingwumeijia.android.ywmj.client.MyApp;
 import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 
 import io.rong.imkit.RongIM;
 import io.rong.imlib.model.Group;
@@ -23,7 +24,7 @@ public class MyGroupInfoProvider implements RongIM.GroupInfoProvider {
     }
 
     private Group findGroupById(final String groupId) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getConversionInfo(groupId)
                 .enqueue(new Callback<GroupResultBean>() {

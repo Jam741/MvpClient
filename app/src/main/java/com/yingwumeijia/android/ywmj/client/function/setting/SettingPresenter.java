@@ -107,7 +107,7 @@ public class SettingPresenter implements SettingContract.Presenter {
 
     @Override
     public void loginOut() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .setLogout()
                 .enqueue(loginOutCallback);

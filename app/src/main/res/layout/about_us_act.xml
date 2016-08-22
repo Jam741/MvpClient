@@ -27,7 +27,7 @@
         android:layout_marginBottom="30dp"
         android:layout_marginTop="@dimen/vertical_margin"
         tools:ignore="HardcodedText"
-        tools:text="鹦鹉美家v1.0.0" />
+        tools:text="鹦鹉美家 v1.0.0" />
 
 
     <View

@@ -16,6 +16,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.GroupResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.LoginResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.RegisterResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.TokenResultBean;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.im.infoprovider.MyGroupInfoProvider;
 import com.yingwumeijia.android.ywmj.client.im.infoprovider.MyUserInfoProvider;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
@@ -113,7 +114,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void register(final String phone, String password, String smsCode) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .register(phone, password, smsCode)
                 .enqueue(new Callback<RegisterResultBean>() {
@@ -143,7 +144,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void confirmOperation(String phone, String token) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .confirm(phone, token)
                 .enqueue(confirmCallback);
@@ -203,7 +204,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void login(String phone, String password, String verifyCode) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .login(phone, password, verifyCode)
                 .enqueue(new Callback<LoginResultBean>() {
@@ -228,7 +229,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void findPassword(String phone, String smsCode, String password) {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getBackPassword(phone, password, smsCode)
                 .enqueue(findPasswordCallback);
@@ -236,7 +237,7 @@ public class LoginRobot implements LoginDataProvider {
 
     @Override
     public void getToken() {
-        MyApp
+        MainActivity
                 .getApiService()
                 .getIMToken()
                 .enqueue(new Callback<TokenResultBean>() {
@@ -316,21 +317,10 @@ public class LoginRobot implements LoginDataProvider {
                 @Override
                 public void onSuccess(String userid) {
 
-                    /**
-                     * 设置用户信息的提供者，供 RongIM 调用获取用户名称和头像信息。
-                     *
-                     * @param userInfoProvider 用户信息提供者。
-                     * @param isCacheUserInfo  设置是否由 IMKit 来缓存用户信息。<br>
-                     *                         如果 App 提供的 UserInfoProvider
-                     *                         每次都需要通过网络请求用户数据，而不是将用户数据缓存到本地内存，会影响用户信息的加载速度；<br>
-                     *                         此时最好将本参数设置为 true，由 IMKit 将用户信息缓存到本地内存中。
-                     * @see UserInfoProvider
-                     */
-                    RongIM.setUserInfoProvider(new MyUserInfoProvider(), true);
-                    RongIM.setGroupInfoProvider(new MyGroupInfoProvider(), true);
                     Log.d("LoginActivity", "--=============login==========-onSuccess : " + userid);
                     Constant.setLoginIn(mContext);
                     Constant.saveUserLoginInfo(mPhone, mPassword, mContext);
+                    Constant.saveImId(mContext, userid);
                     if (mCurrentStatus == STATUS.LOGIN) {
                         mLoginCallBack.loginSuccess(mResponse.body().getData());
                     } else if (mCurrentStatus == STATUS.REGISTER) {

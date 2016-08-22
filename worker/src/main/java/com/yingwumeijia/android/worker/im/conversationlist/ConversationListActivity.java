@@ -3,14 +3,19 @@ package com.yingwumeijia.android.worker.im.conversationlist;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.rx.android.jamspeedlibrary.utils.T;
 import com.yingwumeijia.android.worker.R;
 import com.yingwumeijia.android.worker.funcation.caselist.CaseListActivity;
 import com.yingwumeijia.android.worker.funcation.person.PersonActivity;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -66,5 +71,35 @@ public class ConversationListActivity extends AppCompatActivity {
                 CaseListActivity.start(this);
                 break;
         }
+    }
+
+
+    /**
+     * 双击退出函数
+     */
+    private static Boolean isExit = false;
+
+    private void exitBy2Click() {
+        Timer tExit;
+        if (!isExit) {
+            isExit = true; // 准备退出
+            T.showShort(this, "再按一次退出程序");
+            tExit = new Timer();
+            tExit.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    isExit = false; // 取消退出
+                }
+            }, 2000); // 如果2秒钟内没有按下返回键，则启动定时器取消掉刚才执行的任务
+
+        } else {
+            ActivityCompat.finishAffinity(this);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
     }
 }

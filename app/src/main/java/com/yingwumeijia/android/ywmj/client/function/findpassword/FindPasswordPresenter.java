@@ -11,6 +11,7 @@ import com.yingwumeijia.android.ywmj.client.data.bean.FindPwdResultBean;
 import com.yingwumeijia.android.ywmj.client.data.bean.UserBean;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginDataProvider;
 import com.yingwumeijia.android.ywmj.client.function.login.LoginRobot;
+import com.yingwumeijia.android.ywmj.client.function.mainfunction.MainActivity;
 import com.yingwumeijia.android.ywmj.client.utils.StartActivityManager;
 import com.yingwumeijia.android.ywmj.client.utils.constants.Constant;
 
@@ -65,7 +66,7 @@ public class FindPasswordPresenter implements FindPasswordContract.Presenter {
     public void sendSmsCode(String phone) {
         if (!checkInputPhone(phone)) return;
         mFindPasswordView.showProgressBar();
-        MyApp
+        MainActivity
                 .getApiService()
                 .sendSmsCode(phone, Constant.PARAM_FIND)
                 .enqueue(sendSmsCallback);

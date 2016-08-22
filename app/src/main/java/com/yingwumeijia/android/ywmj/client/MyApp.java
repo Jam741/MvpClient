@@ -28,7 +28,16 @@ import timber.log.Timber;
  */
 public class MyApp extends StarterApplication {
 
-    ApiService apiService;
+
+//    private static class ApiServiceHolder {
+//        private static final ApiService API_SERVICE = null;
+////                RetrofitBuilder.get().retrofit().create(ApiService.class);
+//    }
+//
+//    public static ApiService getApiService() {
+//        return ApiServiceHolder.API_SERVICE;
+//    }
+//
 
 
     @Override

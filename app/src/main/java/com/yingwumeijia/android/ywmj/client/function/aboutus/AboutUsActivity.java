@@ -62,7 +62,7 @@ public class AboutUsActivity extends BaseActivity {
     private void initActionBar() {
         topTitle.setText("关于鹦鹉美家");
         TextViewUtils.setDrawableToLeft(context, topLeft, R.mipmap.back_ico);
-        tvVersionName.setText(AppUtils.getAppName(context) + AppUtils.getVersionName(context));
+        tvVersionName.setText(AppUtils.getAppName(context) + "" + AppUtils.getVersionName(context));
     }
 
     @OnClick({R.id.topLeft, R.id.btn_function_describe})

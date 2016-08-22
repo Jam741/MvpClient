@@ -147,7 +147,7 @@ public class CaseListPresenter implements CaseListContract.Presenter, XRecyclerV
     @Override
     public void loadCaseListDate() {
         MainActivity
-                .getApiService()
+                       .getApiService()
                 .getCaseList(page_Num, Constant.PAGE_SIZE, stytle_id, hoseType_id, cost_id)
                 .enqueue(caseListCallback);
     }

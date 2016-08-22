@@ -176,7 +176,7 @@ public class Constant {
     public static String RONG_CLOUD_APP_KEY_TEST = "x18ywvqf87m3c";
     public static String RONG_CLOUD_APP_KEY_RELASE = "y745wfm84k0ov";
 
-    public static String GAO_DE_LOCATION_KEY = "bc26ebb41cdaab04fcc0c4b8335879bb";
+    public static String GAO_DE_LOCATION_KEY = "3e53d86afda143099e318e5554c5d2b6";
 
 
     public static String ACTION_SCROLL_NAV = "com.ywmj.client.scroll";
@@ -191,6 +191,16 @@ public class Constant {
 
 
     public static String getBaseUrl(Context context) {
-       return (String) SPUtils.get(context, "KEY_BASE_URL", "");
+        return (String) SPUtils.get(context, "KEY_BASE_URL", "");
     }
+
+
+    public static String getImId(Context context) {
+        return (String) SPUtils.get(context, "KEY_IM", "");
+    }
+
+    public static void saveImId(Context context, String imId) {
+        SPUtils.put(context, "KEY_IM", imId);
+    }
+
 }
